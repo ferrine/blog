@@ -22,6 +22,8 @@ jobs:
           lfs: true
       - name: Install Conda environment from environment.yml
         uses: mamba-org/provision-with-micromamba@main
+        with:
+          cache-downloads: true
       - name: Print Env Config
         run: pip freeze
       - name: Build the Blog

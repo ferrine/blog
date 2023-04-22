@@ -25,7 +25,15 @@ author = 'Max Kochurov'
 extensions = [
     "ext.xref",
     "ablog",
+    "sphinx_reredirects",
 ]
+
+redirects = {
+    # redirects from old blog setup
+     "posts/2023/Feb/01/linear-regression-r2m2d2/index.html": "/posts/test.html",
+     "posts/2022/Feb/01/interpreting-loo-pit/index.html": "/posts/test.html"
+}
+
 
 templates_path = ['_templates']
 exclude_patterns = []

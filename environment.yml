@@ -5,6 +5,7 @@ dependencies:
   - python=3.10
   - ablog
   - sphinx
+  - sphinx-reredirects
   - pip:
     - pydata_sphinx_theme
     - sphinx-design

@@ -9,7 +9,7 @@ SOURCEDIR     = source
 BUILDDIR      = build
 LINKCHECKDIR  = build/linkcheck
 
-.PHONY: help Makefile env checklinks
+.PHONY: help Makefile env checklinks serve
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -26,6 +26,8 @@ checklinks:
 	@echo
 	@echo "Check finished. Report is in $(LINKCHECKDIR)."
 
+serve: html
+	python -m http.server --directory build/html
 
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

@@ -5,6 +5,15 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import sys
+import os
+import yaml
+here = os.path.abspath(".")
+sys.path.append(here)
+
+xref_links = yaml.safe_load(
+    open(os.path.join(here, "xref.yaml"))
+)
 
 project = 'In Search of the Holy Posterior'
 copyright = '2023, Max Kochurov'
@@ -13,7 +22,7 @@ author = 'Max Kochurov'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ["ext.xref"]
 
 templates_path = ['_templates']
 exclude_patterns = []

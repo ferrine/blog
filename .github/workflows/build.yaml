@@ -27,7 +27,7 @@ jobs:
       - name: Print Env Config
         run: pip freeze
       - name: Build the Blog
-        run: make html
+        run: make checklinks html
       - name: Store Build Content
         uses: actions/upload-artifact@v3
         with:

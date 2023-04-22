@@ -15,14 +15,17 @@ xref_links = yaml.safe_load(
     open(os.path.join(here, "xref.yaml"))
 )
 
-project = 'In Search of the Holy Posterior'
+project = html_title = 'In Search of the Holy Posterior'
 copyright = '2023, Max Kochurov'
 author = 'Max Kochurov'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["ext.xref"]
+extensions = [
+    "ext.xref",
+    "ablog",
+]
 
 templates_path = ['_templates']
 exclude_patterns = []

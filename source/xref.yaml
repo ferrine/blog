@@ -1,0 +1,7 @@
+misc: &misc
+  google:
+    - google
+    - https://google.com
+
+all:
+  <<: *misc

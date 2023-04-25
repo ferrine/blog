@@ -53,15 +53,21 @@ exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
+html_favicon = "_static/favicon.ico"
 html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "navbar_end": ["theme-switcher", "navbar-icon-links", "translations"],
+    "footer_start": ["copyright"],
+    "footer_end": [],
+}
+html_show_sourcelink = False
+html_sidebars = {
+    "header/about": ["profile"]
 }
 html_context = {
     "available_translations": {
         "en": "🇬🇧", 
         "ru": "🇷🇺"
-    }
+    },
 }
 html_static_path = ['_static']

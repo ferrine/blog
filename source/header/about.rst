@@ -4,51 +4,74 @@ About me
 Projects
 --------
 
-Neuroscience
-~~~~~~~~~~~~
-Neuroscience backed model to quantify treatment effect on human brain for a *Pharmaceutical company*. 
-Using a Bayesian model it became possible to work on scarce experimental data and quantify brain activity metrics from an interactive game.
+Brain Activity
+~~~~~~~~~~~~~~
+Developing drugs is a very tedious process that involves rigor testing on animals and on humans.
+While treatment effect for most of the cases can be relatively easy quantified, brain activity is a challenge.
+Measuring qualitative activity of human brain is a very non trivial task.
+It is only possible to get indirect measurement of what is treated and patients participate in a game that involves certain brain activities.
+In PyMC Labs I helped to create the model and a packaged solution to estimate the latent property of brain activity.
+The Bayesian model allowed to compile indirect measurements to inform about drug efficiency.
+
 
 AB Testing
 ~~~~~~~~~~
-Multiple AB testing projects evolved into a principled way to establish priors, plan the experiment and interpret the results. 
-I've included this knowledge into my Practical Bayes course and gave a talk at the :xref:`ODS workshop <talks:2022:data-elka>`.
+AB Testing is a very common hypothesis testing technique in many companies.
+Bayesian AB testing is not a new but rarely used approach to a classical problem. 
+Unlike traditional, Frequentist, approach, it enables more than qualitative decisions.
+Bayesian AB Testing is about qualitative answers to the same questions.
+So instead of "is there an effect", you can say "what is the effect".
+While this sounds similar, the latter enables to go beyond and do decision making with money in mind.
+You can plug Bayesian posterior into a financial model that translates to money language. 
+Find more from the :xref:`ODS workshop <talks:2022:data-elka>`.
 
-Bioengineering
+Bioinformatics
 ~~~~~~~~~~~~~~
-Bioengineering project to understand molecules structure. The main challenge is temporal nature of noisy observations. 
-The model had to infer the :xref:`wiki:hmm` structure from hundreds of noisy time series. 
-Classical machine learning had failed to take in account the structured solution.
+Molecules are everywhere. 
+Sometimes you need to figure out what a specific molecule is.
+There are numerous approaches to infer the molecule structure.
+One of them deals with a sequential procedure which is observed at every step with a lot of noise.
+The beauty is that this approach is cheap and scalable.
+The approach involves inference on the unobserved part of the experiment which generates the noisy observation.
+After understanding the latent process model Bayesian inference allowed to overcome influence of noise.
+In the project I developed parameter recovery study to understand which parts of the process are possible to control and which are not.
 
-Other
-~~~~~
-Other projects include marketing mix model, chemistry multilevel models and knowledge transfer between past and current experiments.
+Media Mix Models
+~~~~~~~~~~~~~~~~
+Media Mix Models are analytical tools used to optimize marketing strategies by measuring the effectiveness of various marketing channels.
+They help in determining the best combination of channels to maximize ROI, drive customer engagement, and allocate budget effectively.
+Bayesian Inference offers several benefits in marketing analytics, particularly when assessing channel effectiveness:
+Bayesian models can incorporate prior knowledge and adapt to new data, making them suitable for analyzing complex and dynamic marketing environments.
+By accounting for uncertainty, Bayesian models provide more reliable and stable estimates, aiding in better-informed decision-making.
+Bayesian models can handle sparse or small datasets, enabling accurate analysis even with limited data.
+You can estimate individual channel impacts, allowing for tailored optimization of marketing efforts and budget allocation.
+As new data becomes available, Bayesian models can be updated easily, allowing marketers to stay current with evolving trends and make timely adjustments to their strategies.
+
+
+Chemistry
+~~~~~~~~~
+Chemistry is a very structured domain where there are either a lot of experimental data and knowledge available.
+Unfortunately, not all cases are such.
+There are real world scenarios where data is scarce and expensive.
+Predictions are not the holy grail when you want to optimize the production process.
+Characteristics of the process are the ones that are of the most interest.
+Bayesian approach allows to get insights from scarce data, and conclude on relations strength driving informed data driven decision making.
 
 
 Teaching
 --------
 
-I'm an :xref:`invited lecturer <talks:2022:msu-practical-bayes>` at Moscow State University since 2022.
+* I'm an :xref:`invited lecturer <talks:2022:msu-practical-bayes>` at Moscow State University (2022).
+* Reading :xref:`State of Bayes <talks:2023:state-of-bayes>` free webinar series (2023).
 
 Experience
 ----------
-* Bayesian deep learning research at :xref:`misc:bayesgroup` 2017-2020
 * Large scale computer vision and distributed deep learning for collaborative environments
 * Strong Python, Linux and CI/CD experience
 
 .. image:: /images/pymc-labs-logo.png
     :height: 50
-
 .. image:: /images/msu-logo.png
     :height: 50
 .. image:: /images/sk-logo.png
-    :height: 50
-
-.. image:: /images/bayesgroup-logo.png
-    :height: 50
-.. image:: /images/samsung-logo.png
-    :height: 50
-.. image:: /images/yandex-logo.png
-    :height: 50
-.. image:: /images/ntechlab-logo.png
     :height: 50

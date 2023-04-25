@@ -11,13 +11,22 @@ import yaml
 here = os.path.abspath(".")
 sys.path.append(here)
 
+# References
 xref_links = yaml.safe_load(
     open(os.path.join(here, "xref.yaml"))
 )
 
+# Project info
+
 project = html_title = 'In Search of the Holy Posterior'
 copyright = '2023, Max Kochurov'
 author = 'Max Kochurov'
+
+# Translation
+
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = True     # optional.
+
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -37,6 +46,7 @@ redirects = {
 
 
 templates_path = ['_templates']
+
 exclude_patterns = []
 
 
@@ -45,4 +55,13 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "pydata_sphinx_theme"
+html_theme_options = {
+    "navbar_end": ["theme-switcher", "navbar-icon-links", "translations"],
+}
+html_context = {
+    "available_translations": {
+        "en": "🇬🇧", 
+        "ru": "🇷🇺"
+    }
+}
 html_static_path = ['_static']

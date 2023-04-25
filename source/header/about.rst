@@ -1,9 +1,6 @@
 About me
 ========
 
-.. image:: /images/profile_photo.jpeg 
-    :width: 400
-
 Projects
 --------
 
@@ -31,7 +28,7 @@ Other projects include marketing mix model, chemistry multilevel models and know
 Teaching
 --------
 
-I'm an :xref:`invited lecturer <talks:2022:msu-practical-bayes>` at Moscow State University since 2022..
+I'm an :xref:`invited lecturer <talks:2022:msu-practical-bayes>` at Moscow State University since 2022.
 
 Experience
 ----------

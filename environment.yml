@@ -2,10 +2,11 @@ name: blog-build
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3.9
   - ablog
   - sphinx
   - sphinx-reredirects
+  - sphinx-intl
   - pip:
     - pydata_sphinx_theme
     - sphinx-design

@@ -2,8 +2,6 @@ Updating Priors
 ===============
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
    :hidden:
 
    header/about

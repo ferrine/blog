@@ -43,7 +43,6 @@ gettext:
 
 update-locale: $(TRANSLATIONS:%=%/update-locale)
 	sphinx-intl update-txconfig-resources  --pot-dir build/gettext/ --transifex-project-name blog-28 --transifex-organization-name ferrine
-	tx push
 
 %/html:
 	@$(SPHINXBUILD) -b html -D language=$(@D) "$(SOURCEDIR)" "$(BUILDDIR)/html/$(@D)" $(SPHINXOPTS) $(O)

@@ -15,5 +15,5 @@ repos:
       - id: check-pot-files
         name: Check pot files are synced
         language: system
-        entry: make update-locale
+        entry: ./scripts/check-pot-consistency
         pass_filenames: false

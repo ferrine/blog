@@ -2,6 +2,24 @@ misc: &misc
   google:
     - google
     - https://google.com
+  bayesgroup:
+    - Bayes Group
+    - https://bayesgroup.ru/
 
-all:
-  <<: *misc
+talks:
+  "2022":
+    msu-practical-bayes:
+      - MSU Practical Bayes Announcement
+      - https://www.econ.msu.ru/students/mag/curricula/eco/andan/news/News.20220802192752_5070/
+    data-elka:
+      - Data Elka 2022
+      - https://ods.ai/events/data-elka-2022
+  "2023":
+    state-of-bayes:
+      - State of Bayes
+      - https://www.youtube.com/playlist?list=PL1iMFW7frOOsh5KOcfvKWM12bjh8zs9BQ
+
+wiki:
+  hmm:
+    - HMM
+    - https://en.wikipedia.org/wiki/Hidden_Markov_model

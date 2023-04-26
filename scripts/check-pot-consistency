@@ -1,0 +1,4 @@
+#!/bin/bash
+
+make update-locale
+[ `git status --untracked-files=all --short source/locale --porcelain=1 | wc -l` -eq 0 ] && exit 0 || exit 1

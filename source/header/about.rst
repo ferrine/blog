@@ -17,17 +17,17 @@ The Bayesian model allowed to compile indirect measurements to inform about drug
 AB Testing
 ~~~~~~~~~~
 AB Testing is a very common hypothesis testing technique in many companies.
-Bayesian AB testing is not a new but rarely used approach to a classical problem. 
+Bayesian AB testing is not a new but rarely used approach to a classical problem.
 Unlike traditional, Frequentist, approach, it enables more than qualitative decisions.
 Bayesian AB Testing is about qualitative answers to the same questions.
 So instead of "is there an effect", you can say "what is the effect".
 While this sounds similar, the latter enables to go beyond and do decision making with money in mind.
-You can plug Bayesian posterior into a financial model that translates to money language. 
+You can plug Bayesian posterior into a financial model that translates to money language.
 Find more from the :xref:`ODS workshop <talks:2022:data-elka>`.
 
 Bioinformatics
 ~~~~~~~~~~~~~~
-Molecules are everywhere. 
+Molecules are everywhere.
 Sometimes you need to figure out what a specific molecule is.
 There are numerous approaches to infer the molecule structure.
 One of them deals with a sequential procedure which is observed at every step with a lot of noise.

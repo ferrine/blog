@@ -64,6 +64,6 @@ html_show_sourcelink = False
 html_sidebars = {"header/about": ["profile"]}
 # options for custom templates
 html_context = {
-    # used in source/_templates/translations.html
+    # used in _templates/translations.html
     "available_translations": {"en": "🇬🇧", "ru": "🇷🇺"},
 }

@@ -1,4 +1,4 @@
-exclude: source/locale/
+exclude: (.tx|source/locale/)
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
@@ -10,3 +10,10 @@ repos:
     rev: 22.10.0
     hooks:
       - id: black
+  - repo: local
+    hooks:
+      - id: check-pot-files
+        name: Check pot files are synced
+        language: system
+        entry: make update-locale
+        pass_filenames: false

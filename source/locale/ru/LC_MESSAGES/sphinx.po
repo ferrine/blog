@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-26 13:45+0300\n"
+"POT-Creation-Date: 2023-04-26 14:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -24,9 +24,3 @@ msgstr ""
 #: ../../source/_templates/profile.html:3
 msgid "Max Kochurov"
 msgstr "Максим Кочуров"
-
-#~ msgid "Language"
-#~ msgstr ""
-
-msgid "On this page"
-msgstr "На этой странице"

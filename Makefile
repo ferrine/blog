@@ -39,7 +39,11 @@ serve: html
 	python -m http.server --directory $(BUILDDIR)/html
 
 gettext:
+	@echo collect project pot files
 	@$(SPHINXBUILD) -M gettext "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@echo collect theme pot files to $(BUILDDIR)/gettext/theme.pot
+	@$(eval theme_locale := $(shell python -c 'import os, pydata_sphinx_theme as theme; print(os.path.dirname(theme.__file__))')/locale/sphinx.pot)
+	@cp $(theme_locale) $(BUILDDIR)/gettext/theme.pot
 
 %/update-locale: gettext
 	sphinx-intl update -p $(BUILDDIR)/gettext -l $(@D)

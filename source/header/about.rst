@@ -61,5 +61,5 @@ Bayesian approach allows to get insights from scarce data, and conclude on relat
 Teaching
 --------
 
-* I'm an :xref:`invited lecturer <talks:2022:msu-practical-bayes>` at Moscow State University (2022).
-* Reading :xref:`State of Bayes <talks:2023:state-of-bayes>` free webinar series (2023).
+* (2022-) Moscow State University :xref:`invited lecturer <talks:2022:msu-practical-bayes>`.
+* (2023) Free webinar series  :xref:`State of Bayes <talks:2023:state-of-bayes>`.

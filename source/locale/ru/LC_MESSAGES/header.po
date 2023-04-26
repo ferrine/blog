@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-26 15:22+0300\n"
+"POT-Creation-Date: 2023-04-26 16:04+0300\n"
 "PO-Revision-Date: 2023-04-25 17:07+0000\n"
 "Last-Translator: Maxim Kochurov, 2023\n"
 "Language: ru\n"
@@ -192,7 +192,7 @@ msgstr "Преподавание"
 #: ../../source/header/about.rst:64
 #, fuzzy
 msgid ""
-"(2022-) Moscow State University :xref:`invited lecturer <talks:2022:msu-"
+"2022-\\* Moscow State University :xref:`invited lecturer <talks:2022:msu-"
 "practical-bayes>`."
 msgstr ""
 "Я :xref:`приглашенный лектор <talks:2022:msu-practical-bayes>` в МГУ "
@@ -200,7 +200,9 @@ msgstr ""
 
 #: ../../source/header/about.rst:65
 #, fuzzy
-msgid "Free webinar series  :xref:`State of Bayes <talks:2023:state-of-bayes>`."
+msgid ""
+"2023 Free webinar series  :xref:`State of Bayes <talks:2023:state-of-"
+"bayes>`."
 msgstr ""
 "Читаю :xref:`State of Bayes <talks:2023:state-of-bayes>` серию открытых "
 "вебинаров (2023)."

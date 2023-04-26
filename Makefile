@@ -10,6 +10,9 @@ BUILDDIR      = build
 LINKCHECKDIR  = build/linkcheck
 LOCALES = ru en
 TRANSLATIONS = ru
+TRANSIFEX_PROJECT = blog-28
+TRANSIFEX_ORGANIZATION = ferrine
+
 
 .PHONY: help Makefile env checklinks serve update-locale
 
@@ -42,7 +45,7 @@ gettext:
 	sphinx-intl update -p $(BUILDDIR)/gettext -l $(@D)
 
 update-locale: $(TRANSLATIONS:%=%/update-locale)
-	sphinx-intl update-txconfig-resources  --pot-dir build/gettext/ --transifex-project-name blog-28 --transifex-organization-name ferrine
+	sphinx-intl update-txconfig-resources  --pot-dir build/gettext/ --transifex-project-name $(TRANSIFEX_PROJECT) --transifex-organization-name $(TRANSIFEX_ORGANIZATION)
 
 %/html:
 	@$(SPHINXBUILD) -b html -D language=$(@D) "$(SOURCEDIR)" "$(BUILDDIR)/html/$(@D)" $(SPHINXOPTS) $(O)

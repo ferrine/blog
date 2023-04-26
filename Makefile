@@ -10,7 +10,7 @@ BUILDDIR      = build
 LINKCHECKDIR  = build/linkcheck
 LOCALES = ru en
 TRANSLATIONS = ru
-TRANSIFEX_PROJECT = blog-28
+TRANSIFEX_PROJECT = ferrine-github-io
 TRANSIFEX_ORGANIZATION = ferrine
 
 

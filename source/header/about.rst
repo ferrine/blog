@@ -63,15 +63,3 @@ Teaching
 
 * I'm an :xref:`invited lecturer <talks:2022:msu-practical-bayes>` at Moscow State University (2022).
 * Reading :xref:`State of Bayes <talks:2023:state-of-bayes>` free webinar series (2023).
-
-Experience
-----------
-* Large scale computer vision and distributed deep learning for collaborative environments
-* Strong Python, Linux and CI/CD experience
-
-.. image:: /images/pymc-labs-logo.png
-    :height: 50
-.. image:: /images/msu-logo.png
-    :height: 50
-.. image:: /images/sk-logo.png
-    :height: 50

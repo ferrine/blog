@@ -1,6 +1,3 @@
-Updating Priors
-===============
-
 .. toctree::
    :hidden:
 

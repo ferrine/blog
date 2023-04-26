@@ -1,4 +1,12 @@
-<figure>
-    <img src="/en/_static/profile_photo.jpeg" alt="Photo" style="width:100%">
+<figure style="text-align: center;">
+    <img src="{{pathto('_static/profile_photo.jpeg', 1)}}" alt="Photo" style="width:100%">
     <figcaption><h3>Max Kochurov</h3></figcaption>
+</figure>
+<figure>
+    <picture>
+        <img class="only-dark" src="{{pathto('_static/pymc-labs-logo-white.png', 1)}}" alt="PyMC Labs Logo" style="width:100%">
+        <img class="only-light" src="{{pathto('_static/pymc-labs-logo-black.png', 1)}}" alt="PyMC Labs Logo" style="width:100%">
+    </picture>
+    <img src="{{pathto('_static/ef-logo.svg', 1)}}" alt="MSU Logo" style="width:45%">
+    <img src="{{pathto('_static/sk-logo.svg', 1)}}" alt="Skoltech Logo" style="width:45%">
 </figure>

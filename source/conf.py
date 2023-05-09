@@ -7,8 +7,6 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import sys
 import os
-import ablog
-from pathlib import Path
 
 here = os.path.abspath(".")
 sys.path.append(here)
@@ -41,10 +39,3 @@ extensions = [
     "ablog",
     "sphinx_reredirects",
 ]
-
-redirects = {
-    # redirects from old blog setup
-    "pages/maxim-kochurov/index.html": "header/about.html",
-    "posts/2023/Feb/01/linear-regression-r2m2d2/index.html": "/posts/test.html",
-    "posts/2022/Feb/01/interpreting-loo-pit/index.html": "/posts/test.html",
-}

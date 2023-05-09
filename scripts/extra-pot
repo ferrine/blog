@@ -1,0 +1,12 @@
+#!/bin/bash
+
+locate () {
+    args=(${1//:/ })
+    base=$(python -c "import os, ${args[0]} as package; print(os.path.dirname(package.__file__))")
+    echo $base${args[1]}
+}
+
+for var in "$@"
+do
+    echo $(locate $var)
+done

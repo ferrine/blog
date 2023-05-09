@@ -8,6 +8,8 @@ dependencies:
   - sphinx-reredirects
   - sphinx-intl
   - pre-commit
+  - IPython
+  - nbsphinx
   - pip:
     - pydata_sphinx_theme
     - sphinx-design

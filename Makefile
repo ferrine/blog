@@ -12,7 +12,9 @@ LOCALES = ru en
 TRANSLATIONS = ru
 TRANSIFEX_PROJECT = ferrine-github-io
 TRANSIFEX_ORGANIZATION = ferrine
-
+# literally no idea how to make this properly
+EXTRA_POTS = ./scripts/extra-pot
+POTS = pydata_sphinx_theme:/locale/sphinx.pot ablog:/locales/sphinx.pot
 
 .PHONY: help Makefile env checklinks serve update-locale
 
@@ -41,9 +43,10 @@ serve: html
 gettext:
 	@echo collect project pot files
 	@$(SPHINXBUILD) -M gettext "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-	@echo collect theme pot files to $(BUILDDIR)/gettext/theme.pot
-	@$(eval theme_locale := $(shell python -c 'import os, pydata_sphinx_theme as theme; print(os.path.dirname(theme.__file__))')/locale/sphinx.pot)
-	@cp $(theme_locale) $(BUILDDIR)/gettext/theme.pot
+	@echo merge extra pot files to $(BUILDDIR)/gettext/sphinx.pot
+	@msgcat $(BUILDDIR)/gettext/sphinx.pot $(shell $(EXTRA_POTS) $(POTS)) > $(BUILDDIR)/gettext/sphinx-m.pot
+	@mv $(BUILDDIR)/gettext/sphinx-m.pot $(BUILDDIR)/gettext/sphinx.pot
+
 
 %/update-locale: gettext
 	sphinx-intl update -p $(BUILDDIR)/gettext -l $(@D)

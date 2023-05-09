@@ -37,7 +37,7 @@ checklinks:
 	@echo
 	@echo "Check finished. Report is in $(LINKCHECKDIR)."
 
-serve: html
+serve:
 	python -m http.server --directory $(BUILDDIR)/html
 
 gettext:

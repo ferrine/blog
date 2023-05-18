@@ -2,10 +2,14 @@
 
 Media Mix Models
 ================
+
+.. figure:: /images/cases/marketing.jpeg
+
 Media Mix Models are analytical tools used to optimize marketing strategies by measuring the effectiveness of various marketing channels.
 They help in determining the best combination of channels to maximize ROI, drive customer engagement, and allocate budget effectively.
 Bayesian Inference offers several benefits in marketing analytics, particularly when assessing channel effectiveness:
 Bayesian models can incorporate prior knowledge and adapt to new data, making them suitable for analyzing complex and dynamic marketing environments.
+
 By accounting for uncertainty, Bayesian models provide more reliable and stable estimates, aiding in better-informed decision-making.
 Bayesian models can handle sparse or small datasets, enabling accurate analysis even with limited data.
 You can estimate individual channel impacts, allowing for tailored optimization of marketing efforts and budget allocation.

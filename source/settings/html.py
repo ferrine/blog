@@ -10,6 +10,10 @@ html_css_files = [
     "css/dark/default.css",
     "css/font/default.css",
 ]
+html_js_files = [
+    # load using theme instead of relying on nbsphinx extension requirejs loader
+    "require-2.3.6.min.js"
+]
 html_favicon = "_static/favicon.ico"
 html_theme = "pydata_sphinx_theme"
 # options for theme templates

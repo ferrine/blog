@@ -6,7 +6,9 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 html_static_path = ["_static"]
 html_css_files = [
-    "css/custom.css",
+    "css/light/default.css",
+    "css/dark/default.css",
+    "css/font/default.css",
 ]
 html_favicon = "_static/favicon.ico"
 html_theme = "pydata_sphinx_theme"

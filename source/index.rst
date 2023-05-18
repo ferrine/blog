@@ -1,14 +1,16 @@
-About me
-========
+Solving White-Box Problems
+==========================
 
 .. toctree::
    :hidden:
 
    pages/blog
 
+----
+
+
 Projects
 --------
-
 .. carousel::
    :data-bs-ride: carousel
 
@@ -47,13 +49,16 @@ Projects
 
       Bring your critical thinking to improve the hypothesis testing pipeline
 
+----
+
 Teaching
 --------
-
 .. figure:: /images/teaching.jpeg
+
+
+----
 
 
 Talks
 -----
-
 .. figure:: /images/conference.jpeg

@@ -38,4 +38,6 @@ extensions = [
     "ext.nbconvert",
     "ablog",
     "sphinx_reredirects",
+    "sphinx_carousel.carousel",
+    "sphinx_design",
 ]

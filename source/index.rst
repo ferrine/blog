@@ -10,6 +10,26 @@ About me
 Projects
 --------
 
+.. carousel::
+   :show_controls:
+
+   .. figure:: https://i.imgur.com/fmJnevTl.jpg
+      :target: cases/mmm.html
+
+      Marketing Mix Models
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+   .. figure:: https://i.imgur.com/fWyn9A2l.jpg
+      :target: cases/brain.html
+
+      Brain Activity
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
 Brain Activity
 ~~~~~~~~~~~~~~
 Developing drugs is a very tedious process that involves rigor testing on animals and on humans.

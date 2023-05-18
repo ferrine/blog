@@ -1,6 +1,12 @@
 [main]
 host = https://app.transifex.com
 
+[o:ferrine:p:ferrine-github-io:r:cases]
+file_filter  = source/locale//<lang>/LC_MESSAGES/cases.po
+source_file  = build/gettext/cases.pot
+type         = PO
+minimum_perc = 0
+
 [o:ferrine:p:ferrine-github-io:r:index]
 file_filter  = source/locale//<lang>/LC_MESSAGES/index.po
 source_file  = build/gettext/index.pot
@@ -22,6 +28,12 @@ minimum_perc = 0
 [o:ferrine:p:ferrine-github-io:r:sphinx]
 file_filter  = source/locale//<lang>/LC_MESSAGES/sphinx.po
 source_file  = build/gettext/sphinx.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:test]
+file_filter  = source/locale//<lang>/LC_MESSAGES/test.po
+source_file  = build/gettext/test.pot
 type         = PO
 minimum_perc = 0
 

@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Max Kochurov
+# This file is distributed under the same license as the In Search of the
+# Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: In Search of the Holy Posterior \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-18 21:52+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/test.rst:6
+msgid "Test CSS Layout"
+msgstr ""
+
+#: ../../source/test.rst:8
+msgid ""
+"This page demonstrates the basic directives for testing CSS layout in "
+"Sphinx reStructuredText."
+msgstr ""
+
+#: ../../source/test.rst:11
+msgid "Headings"
+msgstr ""
+
+#: ../../source/test.rst:23
+msgid "Paragraphs"
+msgstr ""
+
+#: ../../source/test.rst:25
+msgid ""
+"This is an example of a paragraph. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore "
+"et dolore magna aliqua."
+msgstr ""
+
+#: ../../source/test.rst:28
+msgid "Lists"
+msgstr ""
+
+#: ../../source/test.rst:30
+msgid "This is an example of an unordered list item."
+msgstr ""
+
+#: ../../source/test.rst:31
+msgid "Another unordered list item."
+msgstr ""
+
+#: ../../source/test.rst:33
+msgid "This is an example of an ordered list item."
+msgstr ""
+
+#: ../../source/test.rst:34
+msgid "Another ordered list item."
+msgstr ""
+
+#: ../../source/test.rst:37
+msgid "Code Blocks"
+msgstr ""
+
+#: ../../source/test.rst:39
+msgid "Here's a code block with Python syntax highlighting:"
+msgstr ""
+
+#: ../../source/test.rst:49
+msgid "Admonitions"
+msgstr ""
+
+#: ../../source/test.rst:53
+msgid ""
+"This is a note admonition. It should appear with a special styling to "
+"draw attention."
+msgstr ""
+
+#: ../../source/test.rst:57
+msgid ""
+"This is a warning admonition. It should appear with a distinct styling to"
+" indicate caution."
+msgstr ""
+
+#: ../../source/test.rst:60
+msgid "Images"
+msgstr ""
+
+#: ../../source/test.rst:-1
+msgid "Placeholder image"
+msgstr ""
+
+#: ../../source/test.rst:69
+msgid "Tables"
+msgstr ""
+
+#: ../../source/test.rst:71
+msgid "Example Table"
+msgstr ""
+
+#: ../../source/test.rst:75
+msgid "Header 1"
+msgstr ""
+
+#: ../../source/test.rst:76
+msgid "Header 2"
+msgstr ""
+
+#: ../../source/test.rst:77
+msgid "Header 3"
+msgstr ""
+
+#: ../../source/test.rst:78
+msgid "Row 1, Cell 1"
+msgstr ""
+
+#: ../../source/test.rst:79
+msgid "Row 1, Cell 2"
+msgstr ""
+
+#: ../../source/test.rst:80
+msgid "Row 1, Cell 3"
+msgstr ""
+
+#: ../../source/test.rst:81
+msgid "Row 2, Cell 1"
+msgstr ""
+
+#: ../../source/test.rst:82
+msgid "Row 2, Cell 2"
+msgstr ""
+
+#: ../../source/test.rst:83
+msgid "Row 2, Cell 3"
+msgstr ""
+
+#: ../../source/test.rst:86
+msgid "Links"
+msgstr ""
+
+#: ../../source/test.rst:88
+msgid "This is an example of an `external link <https://www.example.com>`_."
+msgstr ""
+
+#: ../../source/test.rst:90
+msgid "This is an example of an :ref:`internal link <test_css_layout>`."
+msgstr ""
+

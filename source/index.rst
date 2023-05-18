@@ -6,7 +6,6 @@ About me
 
    pages/blog
 
-
 Projects
 --------
 

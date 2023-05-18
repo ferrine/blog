@@ -1,3 +1,8 @@
+from sphinx.locale import get_translation
+
+
+_ = get_translation("sphinx")
+
 templates_path = ["_templates"]
 
 exclude_patterns = []
@@ -18,10 +23,14 @@ html_favicon = "_static/favicon.ico"
 html_theme = "pydata_sphinx_theme"
 # options for theme templates
 html_theme_options = {
-    "navbar_end": ["theme-switcher", "navbar-icon-links", "translations"],
+    "navbar_end": [
+        "theme-switcher",
+        "navbar-icon-links",
+    ],
     "footer_start": ["copyright"],
-    "footer_end": [],
+    "footer_end": ["translations"],
     "show_prev_next": False,
+    "search_bar_text": _("Search..."),
 }
 html_show_sourcelink = False
 html_sidebars = {"index": ["profile"]}

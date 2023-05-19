@@ -71,7 +71,7 @@ Projects
 Teaching
 --------
 
-.. container:: d-md-flex justify-content-around
+.. container:: d-md-flex
 
    .. container:: p-2 fb-2
 
@@ -95,7 +95,7 @@ Teaching
 Talks
 -----
 
-.. container:: d-md-flex justify-content-around
+.. container:: d-md-flex
 
    .. container:: p-2 fb-2
 

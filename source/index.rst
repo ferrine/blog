@@ -8,8 +8,6 @@ Solving White-Box Problems
 
 ----
 
-About
------
 
 .. container:: d-md-flex
 
@@ -141,6 +139,11 @@ How I work
          If we do not fit each other, be sure I do my best to advice
          you the next steps to the best of my knowledge.
 
+      .. button-link:: pages/book-a-call.html
+            :color: primary
+            :align: center
+
+            Book a Call
 
 ----
 

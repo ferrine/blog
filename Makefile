@@ -55,7 +55,7 @@ update-locale: $(TRANSLATIONS:%=%/update-locale)
 	sphinx-intl update-txconfig-resources  --pot-dir build/gettext/ --transifex-project-name $(TRANSIFEX_PROJECT) --transifex-organization-name $(TRANSIFEX_ORGANIZATION)
 
 %/html:
-	@$(SPHINXBUILD) -b html -D language=$(@D) "$(SOURCEDIR)" "$(BUILDDIR)/html/$(@D)" $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -b html -t $(@D) -D language=$(@D) "$(SOURCEDIR)" "$(BUILDDIR)/html/$(@D)" $(SPHINXOPTS) $(O)
 
 html: $(LOCALES:%=%/html)
 	echo '<meta http-equiv="refresh" content="0;url=en/index.html" />' > "$(BUILDDIR)/html/index.html"

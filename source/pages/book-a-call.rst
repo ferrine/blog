@@ -37,5 +37,5 @@ Book a Call
     .. raw:: html
 
         <div class="iframe-container">
-        <iframe src="https://koalendar.com/e/meet-with-maxim-kochurov-koaK4ZWq?embed=true" scrolling="no"></iframe>
+        <iframe src="https://koalendar.com/e/meet-with-maxim-kochurov-ru?embed=true" scrolling="no"></iframe>
         </div>

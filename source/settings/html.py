@@ -14,6 +14,7 @@ html_css_files = [
     "css/light/default.css",
     "css/dark/default.css",
     "css/font/default.css",
+    "css/custom.css",
 ]
 html_js_files = [
     # load using theme instead of relying on nbsphinx extension requirejs loader
@@ -33,7 +34,7 @@ html_theme_options = {
     "search_bar_text": _("Search..."),
 }
 html_show_sourcelink = False
-html_sidebars = {"index": ["profile"]}
+html_sidebars = {}
 # options for custom templates
 html_context = {
     # used in _templates/translations.html

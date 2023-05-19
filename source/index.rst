@@ -11,49 +11,82 @@ Solving White-Box Problems
 
 Projects
 --------
-.. carousel::
-   :data-bs-ride: carousel
 
-   .. figure:: /images/cases/marketing.jpeg
-      :target: cases/mmm.html
+.. container:: d-md-flex
 
-      Marketing Mix Models
+   .. container:: p-2 fb-2
 
-      Find the best allocation for your marketing budget
+      .. carousel::
+         :data-bs-ride: carousel
+         :data-bs-interval: 10000
 
-   .. figure:: /images/cases/brain.jpeg
-      :target: cases/brain.html
+         .. figure:: /images/cases/marketing.jpeg
+            :target: cases/mmm.html
 
-      Brain Activity
+            Marketing Mix Models
 
-      Explain brain activity using indirect measurements
+            Find the best allocation for your marketing budget
 
-   .. figure:: /images/cases/dna.jpeg
-      :target: cases/bioinfo.html
+         .. figure:: /images/cases/brain.jpeg
+            :target: cases/brain.html
 
-      Bioinformatics
+            Brain Activity
 
-      Use structural assumptions to their fullest potential
+            Explain brain activity using indirect measurements
 
-   .. figure:: /images/cases/chemistry.jpeg
-      :target: cases/chemistry.html
+         .. figure:: /images/cases/dna.jpeg
+            :target: cases/bioinfo.html
 
-      Chemistry
+            Bioinformatics
 
-      Iterate over complex chemical interactions to improve the whole manufacturing process
+            Use structural assumptions to their fullest potential
 
-   .. figure:: /images/cases/tasks.jpeg
-      :target: cases/ab.html
+         .. figure:: /images/cases/chemistry.jpeg
+            :target: cases/chemistry.html
 
-      A/B Testing
+            Chemistry
 
-      Bring your critical thinking to improve the hypothesis testing pipeline
+            Iterate over complex chemical interactions to improve the whole manufacturing process
+
+         .. figure:: /images/cases/tasks.jpeg
+            :target: cases/ab.html
+
+            A/B Testing
+
+            Bring your critical thinking to improve the hypothesis testing pipeline
+
+   .. container:: p-2 fb-2
+
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+      eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+      montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+      fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+      imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+      eleifend
 
 ----
 
 Teaching
 --------
-.. figure:: /images/teaching.jpeg
+
+.. container:: d-md-flex justify-content-around
+
+   .. container:: p-2 fb-2
+
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+      eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+      montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+      fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+      imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+      eleifend
+
+   .. container:: p-2 fb-2
+
+      .. figure:: /images/teaching.jpeg
 
 
 ----
@@ -61,4 +94,20 @@ Teaching
 
 Talks
 -----
-.. figure:: /images/conference.jpeg
+
+.. container:: d-md-flex justify-content-around
+
+   .. container:: p-2 fb-2
+
+      .. figure:: /images/conference.jpeg
+
+   .. container:: p-2 fb-2
+
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+      eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+      montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+      fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+      imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+      eleifend

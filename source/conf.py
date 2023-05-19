@@ -38,4 +38,5 @@ extensions = [
     "sphinx_reredirects",
     "sphinx_design",
     "ext.nbconvert",
+    "sphinx.ext.graphviz",
 ]

@@ -1,11 +1,16 @@
-misc: &misc
+misc:
   google:
     - google
     - https://google.com
   bayesgroup:
     - Bayes Group
     - https://bayesgroup.ru/
-
+  pymc-labs:
+    - PyMC Labs
+    - https://pymc-labs.io/
+  conformal-prediction:
+    - Conformal Predictions
+    - https://github.com/valeman/awesome-conformal-prediction
 talks:
   "2022":
     msu-practical-bayes:
@@ -23,3 +28,16 @@ wiki:
   hmm:
     - HMM
     - https://en.wikipedia.org/wiki/Hidden_Markov_model
+social:
+  github:
+    - Github
+    - https://github.com/ferrine/
+  twitter:
+    - Twitter
+    - https://twitter.com/ferrine96/
+  linkedin:
+    - LinkedIn
+    - https://www.linkedin.com/in/ferrine/
+  email:
+    - Email
+    - mailto:max.kochurov@pymc-labs.io

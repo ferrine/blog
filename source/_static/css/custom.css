@@ -5,3 +5,7 @@
 .fb-3 {
     flex-basis: 33%;
 }
+
+.center {
+    text-align: center;
+}

@@ -26,12 +26,37 @@ html_theme = "pydata_sphinx_theme"
 html_theme_options = {
     "navbar_end": [
         "theme-switcher",
-        "navbar-icon-links",
     ],
-    "footer_start": ["copyright"],
+    "footer_start": ["copyright", "icon-links"],
     "footer_end": ["translations"],
     "show_prev_next": False,
     "search_bar_text": _("Search..."),
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/ferrine/",
+            "icon": "fa-brands fa-square-github",
+            "type": "fontawesome",
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/ferrine/",
+            "icon": "fa-brands fa-linkedin-in",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Email",
+            "url": "mailto:max.kochurov@pymc-labs.io",
+            "icon": "fa-solid fa-envelope",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/ferrine96/",
+            "icon": "fa-brands fa-square-twitter",
+            "type": "fontawesome",
+        },
+    ],
 }
 html_show_sourcelink = False
 html_sidebars = {}

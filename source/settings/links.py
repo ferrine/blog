@@ -6,4 +6,5 @@ linkcheck_ignore = [
     "cases/mmm.html",
     "cases/brain.html",
     "pages/book-a-call.html",
+    "pages/learning.html",
 ]

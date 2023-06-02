@@ -16,6 +16,7 @@ nbsphinx = "*"
 pydata_sphinx_theme = "*"
 sphinx-design = "*"
 sphinx-carousel = "*"
+pandoc = "*"
 
 
 [build-system]

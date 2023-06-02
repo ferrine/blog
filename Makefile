@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
-SHELL		  = poetry -q run sh
+SHELL		  = poetry run sh -c
 .SHELLFLAGS	  =
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build

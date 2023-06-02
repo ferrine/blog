@@ -3,6 +3,8 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
+SHELL		  = poetry -q run sh
+.SHELLFLAGS	  =
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
@@ -16,7 +18,7 @@ TRANSIFEX_ORGANIZATION = ferrine
 EXTRA_POTS = ./scripts/extra-pot
 POTS = pydata_sphinx_theme:/locale/sphinx.pot ablog:/locales/sphinx.pot
 
-.PHONY: help Makefile env checklinks serve update-locale
+.PHONY: help Makefile gettext checklinks serve update-locale
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -27,10 +29,6 @@ help:
 
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-
-env:
-	micromamba create -f environment.yml -y
-	curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
 
 checklinks:
 	$(SPHINXBUILD) -b linkcheck $(SPHINXOPTS) "$(SOURCEDIR)" "$(LINKCHECKDIR)"

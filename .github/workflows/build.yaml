@@ -12,9 +12,6 @@ on:
 jobs:
   html:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -el {0}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -22,7 +19,7 @@ jobs:
           lfs: true
       - uses: abatilo/actions-poetry@v2
       - name: Build the Blog
-        run: poetry -q run make checklinks html
+        run: make checklinks html
       - name: Check Content Size
         run: du -h build/html
       - name: Store Build Content

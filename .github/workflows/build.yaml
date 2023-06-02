@@ -24,7 +24,10 @@ jobs:
       - name: Install Build Deps
         run: poetry install
       - name: Build the Blog
-        run: poetry run make checklinks html
+        run: |
+          echo $(which make)
+          echo $(which sphinx-build)
+        #run: make checklinks html
       - name: Store Build Content
         uses: actions/upload-artifact@v3
         with:

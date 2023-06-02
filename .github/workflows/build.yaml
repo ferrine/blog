@@ -22,7 +22,7 @@ jobs:
           lfs: true
       - uses: abatilo/actions-poetry@v2
       - name: Build the Blog
-        run: make checklinks html
+        run: poetry run make checklinks html
       - name: Check Content Size
         run: du -h build/html
       - name: Store Build Content

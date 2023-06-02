@@ -13,7 +13,7 @@ html_static_path = ["_static"]
 html_css_files = [
     "css/light/default.css",
     "css/dark/default.css",
-    "css/font/default.css",
+    "css/font/finlandica.css",
     "css/custom.css",
 ]
 html_js_files = [

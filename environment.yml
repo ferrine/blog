@@ -13,3 +13,4 @@ dependencies:
   - pip:
     - pydata_sphinx_theme
     - sphinx-design
+    - sphinx-carousel

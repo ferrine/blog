@@ -1,71 +1,196 @@
-About me
-========
+Solving White-Box Problems
+==========================
 
 .. toctree::
    :hidden:
 
    pages/blog
 
-
-Projects
---------
-
-Brain Activity
-~~~~~~~~~~~~~~
-Developing drugs is a very tedious process that involves rigor testing on animals and on humans.
-While treatment effect for most of the cases can be relatively easy quantified, brain activity is a challenge.
-Measuring qualitative activity of human brain is a very non trivial task.
-It is only possible to get indirect measurement of what is treated and patients participate in a game that involves certain brain activities.
-In PyMC Labs I helped to create the model and a packaged solution to estimate the latent property of brain activity.
-The Bayesian model allowed to compile indirect measurements to inform about drug efficiency.
+----
 
 
-AB Testing
-~~~~~~~~~~
-AB Testing is a very common hypothesis testing technique in many companies.
-Bayesian AB testing is not a new but rarely used approach to a classical problem.
-Unlike traditional, Frequentist, approach, it enables more than qualitative decisions.
-Bayesian AB Testing is about qualitative answers to the same questions.
-So instead of "is there an effect", you can say "what is the effect".
-While this sounds similar, the latter enables to go beyond and do decision making with money in mind.
-You can plug Bayesian posterior into a financial model that translates to money language.
-Find more from the :xref:`ODS workshop <talks:2022:data-elka>`.
+.. container:: d-md-flex
 
-Bioinformatics
-~~~~~~~~~~~~~~
-Molecules are everywhere.
-Sometimes you need to figure out what a specific molecule is.
-There are numerous approaches to infer the molecule structure.
-One of them deals with a sequential procedure which is observed at every step with a lot of noise.
-The beauty is that this approach is cheap and scalable.
-The approach involves inference on the unobserved part of the experiment which generates the noisy observation.
-After understanding the latent process model Bayesian inference allowed to overcome influence of noise.
-In the project I developed parameter recovery study to understand which parts of the process are possible to control and which are not.
+   .. container:: p-2 fb-2
 
-Media Mix Models
-~~~~~~~~~~~~~~~~
-Media Mix Models are analytical tools used to optimize marketing strategies by measuring the effectiveness of various marketing channels.
-They help in determining the best combination of channels to maximize ROI, drive customer engagement, and allocate budget effectively.
-Bayesian Inference offers several benefits in marketing analytics, particularly when assessing channel effectiveness:
-Bayesian models can incorporate prior knowledge and adapt to new data, making them suitable for analyzing complex and dynamic marketing environments.
-By accounting for uncertainty, Bayesian models provide more reliable and stable estimates, aiding in better-informed decision-making.
-Bayesian models can handle sparse or small datasets, enabling accurate analysis even with limited data.
-You can estimate individual channel impacts, allowing for tailored optimization of marketing efforts and budget allocation.
-As new data becomes available, Bayesian models can be updated easily, allowing marketers to stay current with evolving trends and make timely adjustments to their strategies.
+      .. raw:: html
+
+         <h3 style="text-align: center">Max Kochurov</h3>
+
+      .. container:: center
+
+         **Principal Data Scientist** @ :xref:`misc:pymc-labs`
+
+      My core principles are:
+
+      * **Be Focused.** I work exclusively with interpretable models and create transparent solutions.
+      * **Be Erudite.** I have wide machine learning expertise to know when you need Bayesian approach.
+      * **Be Oriented.** I focus on core needs first, that is where a good project starts.
+      * **Share knowledge.** I love to educate about the statistical model so you are familiar with it.
+      * **Be Helpful.** If you do not need Bayesian inference I can still help you to find a research direction.
+
+      .. button-link:: mailto:max.kochurov@pymc-labs.io
+         :color: primary
+         :align: center
+
+         Contact me
+
+   .. container:: p-2 fb-2
+
+      .. figure:: /images/profile_photo.jpeg
+
+----
+
+When Bayesian
+-------------
+
+.. container:: d-md-flex
+
+   .. container:: p-2 fb-2
+
+      .. card:: Is your problem **white box**?
+
+         If your problem is not white box it makes little sense to use Bayesian methods.
+         The approach relies on clear understanding and reasoning about the problem.
+
+      .. card:: How much do you know about the problem?
+
+         The more you understand about the model and process it describes the better is the solution.
+         No traditional approach takes this to the absolute and translates expert opinions to rigor definition.
+
+      .. card:: Do you understand causal relations of your problem?
+
+         Understanding relations is a half-way to build a Bayesian model.
+         Ignoring these relations leads to biased estimates and decisions.
+
+   .. container:: p-2 fb-2
+
+      .. card:: Do you need to interpret the solution?
+
+         Clear interpretation is the core principle in Bayesian modeling.
+         Every unknown parameter in the model is estimated using expert and data guidance.
+         Using Bayesian approach you make maximum use of human in the loop data driven business processes.
+
+      .. card:: Do you need just predictions or something more?
+
+         If predictions is all you care about, I suggest looking into :xref:`misc:conformal-prediction`.
+         It helps to take in account uncertainty for the prediction tasks.
+         If this does not help and you need uncertainty in model interpretation
+         for your decision process, Bayesian approach is for you.
 
 
-Chemistry
-~~~~~~~~~
-Chemistry is a very structured domain where there are either a lot of experimental data and knowledge available.
-Unfortunately, not all cases are such.
-There are real world scenarios where data is scarce and expensive.
-Predictions are not the holy grail when you want to optimize the production process.
-Characteristics of the process are the ones that are of the most interest.
-Bayesian approach allows to get insights from scarce data, and conclude on relations strength driving informed data driven decision making.
+How I work
+----------
 
+.. container:: d-md-flex
+
+   .. container:: p-2 fb-2
+
+      .. carousel::
+         :data-bs-ride: carousel
+         :data-bs-interval: 10000
+
+         .. figure:: /images/cases/marketing.jpeg
+            :target: cases/mmm.html
+
+            Marketing Mix Models
+
+            Find the best allocation for your marketing budget
+
+         .. figure:: /images/cases/brain.jpeg
+            :target: cases/brain.html
+
+            Brain Activity
+
+            Explain brain activity using indirect measurements
+
+         .. figure:: /images/cases/dna.jpeg
+            :target: cases/bioinfo.html
+
+            Bioinformatics
+
+            Use structural assumptions to their fullest potential
+
+         .. figure:: /images/cases/chemistry.jpeg
+            :target: cases/chemistry.html
+
+            Chemistry
+
+            Iterate over complex chemical interactions to improve the whole manufacturing process
+
+         .. figure:: /images/cases/tasks.jpeg
+            :target: cases/ab.html
+
+            A/B Testing
+
+            Bring your critical thinking to improve the hypothesis testing pipeline
+
+   .. container:: p-2 fb-2
+
+      Before any projects starts:
+
+      * We discuss what are the real needs for you
+      * We figure out if project worth the time investment or there is a simple workaround
+      * We investigate how to maximize the outcome of the collaboration, split the needs to options
+
+      .. admonition:: Worst Case
+
+         Not every project is about beautiful models.
+         If we do not fit each other, be sure I do my best to advice
+         you the next steps to the best of my knowledge.
+
+      .. button-link:: pages/book-a-call.html
+            :color: primary
+            :align: center
+
+            Book a Call
+
+----
 
 Teaching
 --------
 
-* 2022-\* Moscow State University :xref:`invited lecturer <talks:2022:msu-practical-bayes>`.
-* 2023 Free webinar series  :xref:`State of Bayes <talks:2023:state-of-bayes>`.
+.. container:: d-md-flex
+
+   .. container:: p-2 fb-2
+
+      Here are my materials that may interest you:
+
+      * I created modern Practical Bayes course for :xref:`MSU <talks:2022:msu-practical-bayes>`. It focuses on practical interpretable analytics and model analysis.
+      * The course is recorded on youtube in :xref:`State of Bayes <talks:2023:state-of-bayes>` playlist.
+
+      For more learning materials follow the link below:
+
+      .. button-link:: pages/learning.html
+            :color: primary
+            :align: center
+
+            Learn Bayes
+
+   .. container:: p-2 fb-2
+
+      .. figure:: /images/teaching.jpeg
+
+
+----
+
+
+Talks
+-----
+
+.. container:: d-md-flex
+
+   .. container:: p-2 fb-2
+
+      .. figure:: /images/conference.jpeg
+
+   .. container:: p-2 fb-2
+
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+      eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+      montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+      fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+      imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+      Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+      eleifend

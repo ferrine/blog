@@ -10,9 +10,7 @@ import os
 
 here = os.path.abspath(".")
 sys.path.append(here)
-from settings.html import *
-from settings.ablog import *
-from settings.nbsphinx import *
+from settings import *
 import yaml
 
 # References
@@ -34,8 +32,11 @@ gettext_compact = True  # optional.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "sphinx_carousel.carousel",
     "ext.xref",
-    "ext.nbconvert",
     "ablog",
     "sphinx_reredirects",
+    "sphinx_design",
+    "ext.nbconvert",
+    "sphinx.ext.graphviz",
 ]

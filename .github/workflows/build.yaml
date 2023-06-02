@@ -13,13 +13,16 @@ jobs:
   html:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: true
       - uses: abatilo/actions-poetry@v2
       - name: Build the Blog
-        run: poetry run make checklinks html
+        run: make checklinks html
       - name: Store Build Content
         uses: actions/upload-artifact@v3
         with:

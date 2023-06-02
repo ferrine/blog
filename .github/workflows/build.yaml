@@ -24,7 +24,7 @@ jobs:
       - name: Install Build Deps
         run: poetry install
       - name: Build the Blog
-        run: make checklinks html
+        run: poetry run make checklinks html
       - name: Store Build Content
         uses: actions/upload-artifact@v3
         with:

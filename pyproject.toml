@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "blog-poetry"
+version = "0.1.0"
+description = "Blog Env"
+authors = ["Max Kochurov <maxim.v.kochurov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+ablog = "*"
+sphinx = "*"
+sphinx-reredirects = "*"
+sphinx-intl = "*"
+pre-commit = "*"
+IPython = "*"
+nbsphinx = "*"
+pydata_sphinx_theme = "*"
+sphinx-design = "*"
+sphinx-carousel = "*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

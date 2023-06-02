@@ -20,13 +20,7 @@ jobs:
         with:
           submodules: true
           lfs: true
-      - name: Install Conda environment from environment.yml
-        uses: mamba-org/setup-micromamba@v1
-        with:
-          environment-file: environment.yml
-          cache-downloads: true
-      - name: Print Env Config
-        run: pip freeze
+      - uses: abatilo/actions-poetry@v2
       - name: Build the Blog
         run: make checklinks html
       - name: Check Content Size

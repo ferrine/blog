@@ -129,7 +129,7 @@ How I work
 
    .. container:: p-2 fb-2
 
-      Before any projects starts:
+      Before any project starts:
 
       * We discuss what are the real needs for you
       * We figure out if project worth the time investment or there is a simple workaround

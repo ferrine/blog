@@ -13,7 +13,11 @@ html_static_path = ["_static"]
 html_css_files = [
     "css/light/default.css",
     "css/dark/default.css",
-    "css/font/default.css",
+    "css/font/text/font.css",
+    "css/font/text/finlandica.css",
+    "css/font/text/noto-emoji.css",
+    "css/font/text/noto-serif.css",
+    "css/font/code/font.css",
     "css/custom.css",
 ]
 html_js_files = [

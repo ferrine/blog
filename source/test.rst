@@ -5,19 +5,27 @@
 Test CSS Layout
 ===============
 
+
 This page demonstrates the basic directives for testing CSS layout in Sphinx reStructuredText.
+
+
+
 
 Headings
 --------
 
-.. code:: rst
+* # with overline, for parts
+* * with overline, for chapters
+* =, for sections
+* -, for subsections
+* ^, for subsubsections
+* “, for paragraphs
 
-   This is an example of a Heading.
+Example
+^^^^^^^
 
-      Subheading
-      ----------
-
-      This is an example of a subheading.
+Example
+"""""""
 
 Paragraphs
 ----------

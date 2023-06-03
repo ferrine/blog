@@ -1,0 +1,33 @@
+<form id="contact-me-form">
+    <div class="form-group">
+    <input class="form-control" name="entry.359033630" type="email" placeholder="Email..." aria-describedby="emailHelp" required="true">
+    </div>
+    <div class="form-group">
+    <textarea class="form-control" name="entry.1992966050" type="text" placeholder="Problem description..." required="true" rows="3"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById('contact-me-form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('POST', "https://docs.google.com/forms/u/1/d/e/1FAIpQLScvzRj-nbI3w9bKqg_TR0sNf0GT96UHrG-U7SYHKSKwtnEFAA/formResponse", true);
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    console.log('Form submitted successfully');
+                } else {
+                    console.error('An error occurred while submitting the form');
+                }
+            };
+
+            xhr.send(formData);
+        });
+    });
+</script>

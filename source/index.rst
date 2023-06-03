@@ -35,13 +35,19 @@ Solving White-Box Problems
       .. dropdown:: Contact Me
          :color: primary
 
-         * Send email to max.kochurov@pymc-labs.io
+         .. card:: Send email
+            :text-align: center
 
-         * .. raw:: html
+            max.kochurov@pymc-labs.io
 
-            Write me in Telegram: <a href="https://t.me/ferres" target="_blank">
-            <i class="fab fa-telegram"></i>ferres
-            </a>
+         .. card:: Write me in Telegram
+            :text-align: center
+
+            .. raw:: html
+
+               <a href="https://t.me/ferres" target="_blank">
+               <i class="fab fa-telegram"></i>ferres
+               </a>
 
 
 

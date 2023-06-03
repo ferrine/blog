@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 21:52+0300\n"
+"POT-Creation-Date: 2023-06-03 18:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,72 +25,100 @@ msgstr ""
 msgid "Test CSS Layout"
 msgstr ""
 
-#: ../../source/test.rst:8
+#: ../../source/test.rst:9
 msgid ""
 "This page demonstrates the basic directives for testing CSS layout in "
 "Sphinx reStructuredText."
 msgstr ""
 
-#: ../../source/test.rst:11
+#: ../../source/test.rst:15
 msgid "Headings"
 msgstr ""
 
-#: ../../source/test.rst:23
+#: ../../source/test.rst:17
+msgid "# with overline, for parts"
+msgstr ""
+
+#: ../../source/test.rst:18
+msgid "with overline, for chapters"
+msgstr ""
+
+#: ../../source/test.rst:19
+msgid "=, for sections"
+msgstr ""
+
+#: ../../source/test.rst:20
+msgid "-, for subsections"
+msgstr ""
+
+#: ../../source/test.rst:21
+msgid "^, for subsubsections"
+msgstr ""
+
+#: ../../source/test.rst:22
+msgid "“, for paragraphs"
+msgstr ""
+
+#: ../../source/test.rst:25 ../../source/test.rst:28
+msgid "Example"
+msgstr ""
+
+#: ../../source/test.rst:31
 msgid "Paragraphs"
 msgstr ""
 
-#: ../../source/test.rst:25
+#: ../../source/test.rst:33
 msgid ""
 "This is an example of a paragraph. Lorem ipsum dolor sit amet, "
 "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore "
 "et dolore magna aliqua."
 msgstr ""
 
-#: ../../source/test.rst:28
+#: ../../source/test.rst:36
 msgid "Lists"
 msgstr ""
 
-#: ../../source/test.rst:30
+#: ../../source/test.rst:38
 msgid "This is an example of an unordered list item."
 msgstr ""
 
-#: ../../source/test.rst:31
+#: ../../source/test.rst:39
 msgid "Another unordered list item."
 msgstr ""
 
-#: ../../source/test.rst:33
+#: ../../source/test.rst:41
 msgid "This is an example of an ordered list item."
 msgstr ""
 
-#: ../../source/test.rst:34
+#: ../../source/test.rst:42
 msgid "Another ordered list item."
 msgstr ""
 
-#: ../../source/test.rst:37
+#: ../../source/test.rst:45
 msgid "Code Blocks"
 msgstr ""
 
-#: ../../source/test.rst:39
+#: ../../source/test.rst:47
 msgid "Here's a code block with Python syntax highlighting:"
 msgstr ""
 
-#: ../../source/test.rst:49
+#: ../../source/test.rst:57
 msgid "Admonitions"
 msgstr ""
 
-#: ../../source/test.rst:53
+#: ../../source/test.rst:61
 msgid ""
 "This is a note admonition. It should appear with a special styling to "
 "draw attention."
 msgstr ""
 
-#: ../../source/test.rst:57
+#: ../../source/test.rst:65
 msgid ""
 "This is a warning admonition. It should appear with a distinct styling to"
 " indicate caution."
 msgstr ""
 
-#: ../../source/test.rst:60
+#: ../../source/test.rst:68
 msgid "Images"
 msgstr ""
 
@@ -98,59 +126,59 @@ msgstr ""
 msgid "Placeholder image"
 msgstr ""
 
-#: ../../source/test.rst:69
+#: ../../source/test.rst:77
 msgid "Tables"
 msgstr ""
 
-#: ../../source/test.rst:71
+#: ../../source/test.rst:79
 msgid "Example Table"
 msgstr ""
 
-#: ../../source/test.rst:75
+#: ../../source/test.rst:83
 msgid "Header 1"
 msgstr ""
 
-#: ../../source/test.rst:76
+#: ../../source/test.rst:84
 msgid "Header 2"
 msgstr ""
 
-#: ../../source/test.rst:77
+#: ../../source/test.rst:85
 msgid "Header 3"
 msgstr ""
 
-#: ../../source/test.rst:78
+#: ../../source/test.rst:86
 msgid "Row 1, Cell 1"
 msgstr ""
 
-#: ../../source/test.rst:79
+#: ../../source/test.rst:87
 msgid "Row 1, Cell 2"
 msgstr ""
 
-#: ../../source/test.rst:80
+#: ../../source/test.rst:88
 msgid "Row 1, Cell 3"
 msgstr ""
 
-#: ../../source/test.rst:81
+#: ../../source/test.rst:89
 msgid "Row 2, Cell 1"
 msgstr ""
 
-#: ../../source/test.rst:82
+#: ../../source/test.rst:90
 msgid "Row 2, Cell 2"
 msgstr ""
 
-#: ../../source/test.rst:83
+#: ../../source/test.rst:91
 msgid "Row 2, Cell 3"
 msgstr ""
 
-#: ../../source/test.rst:86
+#: ../../source/test.rst:94
 msgid "Links"
 msgstr ""
 
-#: ../../source/test.rst:88
+#: ../../source/test.rst:96
 msgid "This is an example of an `external link <https://www.example.com>`_."
 msgstr ""
 
-#: ../../source/test.rst:90
+#: ../../source/test.rst:98
 msgid "This is an example of an :ref:`internal link <test_css_layout>`."
 msgstr ""
 

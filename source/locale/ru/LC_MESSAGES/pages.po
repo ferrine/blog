@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 09:16+0300\n"
+"POT-Creation-Date: 2023-06-02 12:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -23,5 +23,31 @@ msgstr ""
 
 #: ../../source/pages/blog.rst:2
 msgid "Blog"
+msgstr ""
+
+#: ../../source/pages/book-a-call.rst:4
+msgid "Book a Call"
+msgstr ""
+
+#: ../../source/pages/learning.rst:4
+msgid "Learning Materials"
+msgstr ""
+
+#: ../../source/pages/learning.rst:9
+msgid "Books"
+msgstr ""
+
+#: ../../source/pages/learning.rst:10
+msgid ""
+"Fist of all a lot of materials already exist on the internet and they are"
+" just amazing."
+msgstr ""
+
+#: ../../source/pages/learning.rst:12
+msgid "Learn PyMC with Books"
+msgstr ""
+
+#: ../../source/pages/learning.rst:16
+msgid "A collection of books is curated by PyMC Developers"
 msgstr ""
 

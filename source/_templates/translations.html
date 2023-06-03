@@ -1,10 +1,12 @@
 <div class="dropdown">
-    <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        {{ available_translations[language].split(" ")[0] }}
+    <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+        {{ available_translations[language] }}
     </a>
-    <ul class="dropdown-menu" style="min-width: 0;">
-        {% for language in available_translations %}
-            <li><a class="dropdown-item" href="{{pathto('../'+language+'/'+pagename)}}">{{ available_translations[language] }}</a></li>
+    <ul class="dropdown-menu dropdown-menu-right center" style="min-width: 100%">
+        {% for lang in available_translations %}
+            {% if lang != language %}
+            <li><a class="dropdown-item nav-link" href="{{pathto('../'+lang+'/'+pagename)}}">{{ available_translations[lang] }}</a></li>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>

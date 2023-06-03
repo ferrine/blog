@@ -28,11 +28,9 @@ html_favicon = "_static/favicon.ico"
 html_theme = "pydata_sphinx_theme"
 # options for theme templates
 html_theme_options = {
-    "navbar_end": [
-        "theme-switcher",
-    ],
-    "footer_start": ["copyright", "icon-links"],
-    "footer_end": ["translations"],
+    "navbar_end": ["theme-switcher", "translations"],
+    "footer_start": ["copyright"],
+    "footer_end": ["icon-links"],
     "show_prev_next": False,
     "search_bar_text": _("Search..."),
     "icon_links": [
@@ -67,5 +65,5 @@ html_sidebars = {}
 # options for custom templates
 html_context = {
     # used in _templates/translations.html
-    "available_translations": {"en": "🇬🇧", "ru": "🇷🇺"},
+    "available_translations": {"en": "EN", "ru": "RU"},
 }

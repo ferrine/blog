@@ -21,6 +21,8 @@ jobs:
         with:
           submodules: true
           lfs: true
+      - name: Install binary deps
+        run: sudo apt install pandoc graphviz
       - uses: abatilo/actions-poetry@v2
       - name: Install Build Deps
         run: poetry install

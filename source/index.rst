@@ -40,7 +40,7 @@ Solving White-Box Problems
 
             max.kochurov@pymc-labs.io
 
-         .. card:: Write me in Telegram
+         .. card:: Write in Telegram
             :text-align: center
 
             .. raw:: html

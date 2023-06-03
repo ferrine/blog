@@ -31,11 +31,19 @@ Solving White-Box Problems
       * **Share knowledge.** I love to educate about the statistical model so you are familiar with it.
       * **Be Helpful.** If you do not need Bayesian inference I can still help you to find a research direction.
 
-      .. button-link:: mailto:max.kochurov@pymc-labs.io
-         :color: primary
-         :align: center
 
-         Contact me
+      .. dropdown:: Contact Me
+         :color: primary
+
+         * Send email to max.kochurov@pymc-labs.io
+
+         * .. raw:: html
+
+            Write me in Telegram: <a href="https://t.me/ferres" target="_blank">
+            <i class="fab fa-telegram"></i>ferres
+            </a>
+
+
 
    .. container:: p-2 fb-2
 

@@ -2,8 +2,12 @@
     flex-basis: 50%;
 }
 
-.fb-3 {
-    flex-basis: 33%;
+.fb-4 {
+    flex-basis: 40%;
+}
+
+.fb-6 {
+    flex-basis: 60%;
 }
 
 .center {

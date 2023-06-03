@@ -13,7 +13,7 @@ Solving White-Box Problems
 
 .. container:: d-md-flex
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-6
 
       .. raw:: html
 
@@ -37,7 +37,7 @@ Solving White-Box Problems
 
          Contact me
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-4
 
       .. figure:: /images/profile_photo.jpeg
 
@@ -86,7 +86,7 @@ How I work
 
 .. container:: d-md-flex
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-4
 
       .. carousel::
          :data-bs-ride: carousel
@@ -127,7 +127,7 @@ How I work
 
             Bring your critical thinking to improve the hypothesis testing pipeline
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-6
 
       Before any projects starts:
 
@@ -154,7 +154,7 @@ Teaching
 
 .. container:: d-md-flex
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-6
 
       Here are my materials that may interest you:
 
@@ -169,7 +169,7 @@ Teaching
 
             Learn Bayes
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-4
 
       .. figure:: /images/teaching.jpeg
 
@@ -182,11 +182,11 @@ Talks
 
 .. container:: d-md-flex
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-4
 
       .. figure:: /images/conference.jpeg
 
-   .. container:: p-2 fb-2
+   .. container:: p-2 fb-6
 
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
       eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient

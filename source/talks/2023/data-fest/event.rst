@@ -1,7 +1,7 @@
 Data Fest - Reliable ML - Bayes in the Wild
 ===========================================
 
-.. post:: Jun 4, 2023
+.. post:: 2023-06-04
     :location: Moscow
     :category: Talk
     :tags: ods, reliable-ml

@@ -9,7 +9,6 @@ Solving White-Box Problems
    contacts
    teaching
    blog
-   talks
 
 ----
 
@@ -202,7 +201,7 @@ Talks
       - Presentation
       - Code
 
-      .. button-ref:: talks
+      .. button-link:: blog/category/talk.html
          :color: primary
          :align: center
 

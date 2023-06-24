@@ -1,8 +1,8 @@
-Data Elka - Reliable ML - Bayesian AB Testing
-=============================================
+Bayesian AB Testing
+===================
 
-.. post:: Dec 17, 2022
-    :location: Moscow
+.. post:: 2022-12-17
+    :location: Moscow, Data Elka, Reliable ML
     :category: Talk
     :tags: ods, reliable-ml
     :image: 1

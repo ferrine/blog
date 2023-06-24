@@ -1,8 +1,8 @@
-Analyst Days 16 - Bayesian AB Testing
-=====================================
+Bayesian AB Testing
+===================
 
-.. post:: April 21, 2023
-    :location: Moscow
+.. post:: 2023-04-21
+    :location: Moscow, Analyst Days 16
     :category: Talk
     :tags: ods, analyst-days
     :image: 1

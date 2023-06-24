@@ -5,4 +5,6 @@ linkcheck_ignore = [
     "cases/chemistry.html",
     "cases/mmm.html",
     "cases/brain.html",
+    "blog/category/talk.html",
+    "blog/category/post.html",
 ]

@@ -201,8 +201,20 @@ Talks
       - Presentation
       - Code
 
-      .. button-link:: blog/category/talk.html
-         :color: primary
-         :align: center
+      .. grid:: 1 1 2 2
 
-         See all Talks
+         .. grid-item::
+
+            .. button-link:: blog/category/talk.html
+               :color: primary
+               :align: center
+
+               See all Talks
+
+         .. grid-item::
+
+            .. button-link:: blog/category/post.html
+               :color: primary
+               :align: center
+
+               Browse Blog-posts

@@ -1,5 +1,5 @@
-Contact Me
-==========
+Contacts
+========
 
 .. grid:: 1 1 2 2
     :gutter: 4 4 4 4
@@ -22,4 +22,4 @@ Contact Me
     .. grid-item-card:: Book a Call :fa:`phone`
         :text-align: center
 
-        `See Schedule <book-a-call.html>`_
+        :doc:`See Schedule <pages/book-a-call>`

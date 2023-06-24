@@ -19,8 +19,8 @@ Fist of all a lot of materials already exist on the internet and they are just a
     A collection of books is curated by PyMC Developers
 
 
-Teaching
---------
+Events
+------
 I give lectures in university, webinar format and give corporate workshops.
 Feel free to reach me out if you want something customized.
 

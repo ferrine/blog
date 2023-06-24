@@ -6,7 +6,7 @@ Solving White-Box Problems
 .. toctree::
    :hidden:
 
-   pages/contacts
+   contacts
    teaching
    blog
    talks

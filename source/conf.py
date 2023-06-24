@@ -39,4 +39,5 @@ extensions = [
     "sphinx_design",
     "ext.nbconvert",
     "sphinx.ext.graphviz",
+    "sphinxcontrib.youtube",
 ]

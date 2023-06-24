@@ -1,8 +1,8 @@
-Blog
-====
+Talks
+=====
 
 .. postlist:: 10
-   :category: Post
+   :category: Talk
    :date: %Y-%m-%d
    :format: {date} - {title}
    :list-style: none

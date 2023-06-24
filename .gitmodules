@@ -1,0 +1,3 @@
+[submodule "jupyter-lab"]
+	path = jupyter-lab
+	url = git@github.com:ferrine/my-jupyterlab.git

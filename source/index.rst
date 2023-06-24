@@ -8,6 +8,7 @@ Solving White-Box Problems
 
    pages/blog
    pages/contacts
+   pages/teaching
    pages/talks
 
 ----

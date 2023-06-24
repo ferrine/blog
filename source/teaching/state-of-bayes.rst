@@ -1,23 +1,5 @@
-Learning Materials
-==================
-
-Books
------
-Fist of all a lot of materials already exist on the internet and they are just amazing.
-
-.. card:: Learn PyMC with Books
-    :img-top: /images/cover-books.jpg
-    :link: https://www.pymc.io/projects/docs/en/stable/learn/books.html
-
-    A collection of books is curated by PyMC Developers
-
-
-Curated Materials
------------------
-I give lectures in university, webinar format and give corporate workshops. I link these materials below:
-
 State of Bayes
-~~~~~~~~~~~~~~
+==============
 State of Bayes is a series of webinars about advances in practical methods and modeling intuition.
 The major focus of the webinar series will be on understanding concepts of advanced statistical
 models and introducing prior knowledge into the loop. This free course will be interesting for
@@ -27,7 +9,7 @@ Bayesian practitioners who want to deepen their understanding about Bayesian mod
 
 
 Materials
-`````````
+---------
 - :fa:`bars` :xref:`Full YouTube Playlist <talks:2023:state-of-bayes>`
 - :fab:`youtube` `Introduction <https://www.youtube.com/watch?v=X4y2UfU-2cs>`_
     - :download:`Presentation <https://disk.yandex.ru/i/S3sqn1CyIVwW9A>`

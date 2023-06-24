@@ -6,10 +6,10 @@ Solving White-Box Problems
 .. toctree::
    :hidden:
 
-   pages/blog
    pages/contacts
-   pages/teaching
-   pages/talks
+   teaching
+   blog
+   talks
 
 ----
 
@@ -147,11 +147,11 @@ How I work
          If we do not fit each other, be sure I do my best to advice
          you the next steps to the best of my knowledge.
 
-      .. button-link:: pages/book-a-call.html
-            :color: primary
-            :align: center
+      .. button-ref:: pages/book-a-call
+         :color: primary
+         :align: center
 
-            Book a Call
+         Book a Call
 
 ----
 
@@ -169,11 +169,11 @@ Teaching
 
       For more learning materials follow the link below:
 
-      .. button-link:: pages/learning.html
-            :color: primary
-            :align: center
+      .. button-ref:: teaching
+         :color: primary
+         :align: center
 
-            Learn Bayes
+         Learn Bayes
 
    .. container:: p-2 fb-4
 
@@ -202,7 +202,7 @@ Talks
       - Presentation
       - Code
 
-      .. button-link:: pages/talks.html
+      .. button-ref:: talks
          :color: primary
          :align: center
 

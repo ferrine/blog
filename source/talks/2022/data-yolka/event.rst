@@ -1,9 +1,10 @@
-Data Elka - Bayesian AB Testing
-===============================
+Data Elka - Reliable ML - Bayesian AB Testing
+=============================================
 
 .. post:: Dec 17, 2022
     :location: Moscow
     :category: Talk
+    :tags: ods, reliable-ml
     :image: 1
 
     I talk about the Bayesian approach to AB testing.
@@ -25,5 +26,6 @@ Video
 
 Materials
 ---------
- - :xref:`talks:2022:data-elka`
- - :download:`Presentation <https://disk.yandex.ru/i/W6YxDdeX78pe1w>`
+
+- :xref:`talks:2022:data-elka`
+- :download:`Presentation <https://disk.yandex.ru/i/W6YxDdeX78pe1w>`

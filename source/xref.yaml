@@ -23,7 +23,9 @@ talks:
     state-of-bayes:
       - State of Bayes
       - https://www.youtube.com/playlist?list=PL1iMFW7frOOsh5KOcfvKWM12bjh8zs9BQ
-
+    data-fest:
+      - Data Fest
+      - https://ods.ai/events/data_fest23_meetup04-06-2023
 wiki:
   hmm:
     - HMM

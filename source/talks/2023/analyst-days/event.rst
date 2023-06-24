@@ -4,7 +4,7 @@ Bayesian AB Testing
 .. post:: 2023-04-21
     :location: Moscow, Analyst Days 16
     :category: Talk
-    :tags: ods, analyst-days
+    :tags: ab-testing, beginner
     :image: 1
 
     I talk about how Bayesian AB testing can drive conclusions from data.

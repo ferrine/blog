@@ -1,10 +1,10 @@
-Data Fest - Reliable ML - Bayes in the Wild
-===========================================
+Bayes in the Wild
+=================
 
 .. post:: 2023-06-04
-    :location: Moscow
+    :location: Moscow, Reliable ML, Data Fest
     :category: Talk
-    :tags: ods, reliable-ml
+    :tags: high-level, beginner
     :image: 1
 
     I talk about the Bayesian approach to wide range of problems.

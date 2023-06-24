@@ -4,7 +4,7 @@ Bayesian AB Testing
 .. post:: 2022-12-17
     :location: Moscow, Data Elka, Reliable ML
     :category: Talk
-    :tags: ods, reliable-ml
+    :tags: ab-testing, beginner
     :image: 1
 
     I talk about the Bayesian approach to AB testing.

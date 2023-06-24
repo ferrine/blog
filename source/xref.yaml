@@ -30,14 +30,17 @@ wiki:
     - https://en.wikipedia.org/wiki/Hidden_Markov_model
 social:
   github:
-    - Github
+    - "@ferrine"
     - https://github.com/ferrine/
   twitter:
-    - Twitter
+    - "@ferrine96"
     - https://twitter.com/ferrine96/
   linkedin:
-    - LinkedIn
+    - /in/ferrine/
     - https://www.linkedin.com/in/ferrine/
   email:
-    - Email
+    - max.kochurov@pymc-labs.io
     - mailto:max.kochurov@pymc-labs.io
+  telegram:
+    - "@ferres"
+    - https://t.me/ferres

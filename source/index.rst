@@ -7,6 +7,7 @@ Solving White-Box Problems
    :hidden:
 
    pages/blog
+   pages/contacts
 
 ----
 
@@ -32,22 +33,11 @@ Solving White-Box Problems
       * **Be Helpful.** If you do not need Bayesian inference I can still help you to find a research direction.
 
 
-      .. dropdown:: Contact Me
-         :color: primary
+      .. button-link:: pages/contacts.html
+            :color: primary
+            :align: center
 
-         .. card:: Send email
-            :text-align: center
-
-            max.kochurov@pymc-labs.io
-
-         .. card:: Write in Telegram
-            :text-align: center
-
-            .. raw:: html
-
-               <a href="https://t.me/ferres" target="_blank">
-               <i class="fab fa-telegram"></i>ferres
-               </a>
+            Contact Me
 
 
 

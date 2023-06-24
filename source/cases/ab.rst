@@ -19,4 +19,4 @@ AB Testing
         So instead of "is there an effect", you can say "what is the effect".
         While this sounds similar, the latter enables to go beyond and do decision making with money in mind.
         You can plug Bayesian posterior into a financial model that translates to money language.
-        Find more from the :xref:`ODS workshop <talks:2022:data-elka>`.
+        Find more from the :doc:`ODS workshop </talks/2022/data-elka/event>`.

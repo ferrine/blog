@@ -34,11 +34,11 @@ Solving White-Box Problems
       * **Be Helpful.** If you do not need Bayesian inference I can still help you to find a research direction.
 
 
-      .. button-link:: pages/contacts.html
-            :color: primary
-            :align: center
+      .. button-ref:: contacts
+         :color: primary
+         :align: center
 
-            Contact Me
+         Contact Me
 
 
 

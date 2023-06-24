@@ -3,8 +3,6 @@
 Learning Materials
 ==================
 
-.. figure:: /images/teaching.jpeg
-
 Books
 -----
 Fist of all a lot of materials already exist on the internet and they are just amazing.

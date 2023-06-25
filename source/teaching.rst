@@ -19,8 +19,8 @@ Fist of all a lot of materials already exist on the internet and they are just a
     A collection of books is curated by PyMC Developers
 
 
-Events
-------
+Workshops
+---------
 I give lectures in university, webinar format and give corporate workshops.
 Feel free to reach me out if you want something customized.
 
@@ -43,3 +43,8 @@ Feel free to reach me out if you want something customized.
         +++
 
         :doc:`Online Materials <teaching/state-of-bayes>`
+
+.. button-ref:: contacts
+    :color: primary
+
+    Request a Workshop

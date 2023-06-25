@@ -35,7 +35,7 @@ Feel free to reach me out if you want something customized.
 
         :xref:`Announcement <talks:2022:msu-practical-bayes>`
 
-    .. grid-item-card:: PyMC labs State of Bayes
+    .. grid-item-card:: PyMC Labs State of Bayes
         :img-top: /images/pymc-labs-logo-round.png
 
         Webinar series on state of the art applied Bayesian statistics

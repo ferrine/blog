@@ -6,8 +6,9 @@ Solving White-Box Problems
 .. toctree::
    :hidden:
 
-   pages/blog
-   pages/contacts
+   contacts
+   teaching
+   blog
 
 ----
 
@@ -33,11 +34,11 @@ Solving White-Box Problems
       * **Be Helpful.** If you do not need Bayesian inference I can still help you to find a research direction.
 
 
-      .. button-link:: pages/contacts.html
-            :color: primary
-            :align: center
+      .. button-ref:: contacts
+         :color: primary
+         :align: center
 
-            Contact Me
+         Contact Me
 
 
 
@@ -145,11 +146,11 @@ How I work
          If we do not fit each other, be sure I do my best to advice
          you the next steps to the best of my knowledge.
 
-      .. button-link:: pages/book-a-call.html
-            :color: primary
-            :align: center
+      .. button-ref:: pages/book-a-call
+         :color: primary
+         :align: center
 
-            Book a Call
+         Book a Call
 
 ----
 
@@ -167,11 +168,11 @@ Teaching
 
       For more learning materials follow the link below:
 
-      .. button-link:: pages/learning.html
-            :color: primary
-            :align: center
+      .. button-ref:: teaching
+         :color: primary
+         :align: center
 
-            Learn Bayes
+         Learn Bayes
 
    .. container:: p-2 fb-4
 
@@ -192,11 +193,28 @@ Talks
 
    .. container:: p-2 fb-6
 
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-      eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-      montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-      eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-      fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-      imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-      Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-      eleifend
+      I regularly participate in conferences, give talks and share knowledge about Bayesian statistics
+
+      I link all the available materials:
+
+      - Video
+      - Presentation
+      - Code
+
+      .. grid:: 1 1 2 2
+
+         .. grid-item::
+
+            .. button-link:: blog/category/talk.html
+               :color: primary
+               :align: center
+
+               See all Talks
+
+         .. grid-item::
+
+            .. button-link:: blog/category/post.html
+               :color: primary
+               :align: center
+
+               Browse Blog-posts

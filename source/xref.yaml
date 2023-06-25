@@ -18,12 +18,17 @@ talks:
       - https://www.econ.msu.ru/students/mag/curricula/eco/andan/news/News.20220802192752_5070/
     data-elka:
       - Data Elka 2022
-      - https://ods.ai/events/data-elka-2022
+      - https://ods.ai/tracks/reliable_ml_ab_testing-causal_inference_meetup/blocks/5a4410df-297c-48a3-a74e-748b5d1236fa
   "2023":
     state-of-bayes:
       - State of Bayes
       - https://www.youtube.com/playlist?list=PL1iMFW7frOOsh5KOcfvKWM12bjh8zs9BQ
-
+    data-fest:
+      - Data Fest
+      - https://ods.ai/events/data_fest23_meetup04-06-2023
+    analyst-days-16:
+      - Analyst Days 16
+      - https://analystdays.ru/ru/talk/106175
 wiki:
   hmm:
     - HMM

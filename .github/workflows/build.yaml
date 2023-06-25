@@ -21,13 +21,16 @@ jobs:
           submodules: true
           lfs: true
       - name: Install Conda environment from environment.yml
-        uses: mamba-org/provision-with-micromamba@main
+        uses: mamba-org/setup-micromamba@v1
         with:
+          environment-file: environment.yml
           cache-downloads: true
       - name: Print Env Config
         run: pip freeze
       - name: Build the Blog
         run: make checklinks html
+      - name: Check Content Size
+        run: du -h build/html
       - name: Store Build Content
         uses: actions/upload-artifact@v3
         with:

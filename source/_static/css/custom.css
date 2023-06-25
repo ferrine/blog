@@ -13,3 +13,9 @@
 .center {
     text-align: center;
 }
+
+.no-scaled-link {
+    /* fix the plots for nb-convert, they experience weird rescaling */
+    width: 100% !important;
+    height: auto !important;
+}

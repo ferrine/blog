@@ -61,7 +61,22 @@ html_theme_options = {
     ],
 }
 html_show_sourcelink = False
-html_sidebars = {}
+blog_sidebars = [
+    "ablog/postcard.html",
+    "ablog/recentposts.html",
+    "ablog/tagcloud.html",
+    "ablog/categories.html",
+    "ablog/archives.html",
+]
+html_sidebars = {
+    "*": [],
+    "pages/**": [],
+    "teaching/**": [],
+    "blog/**": blog_sidebars,
+    "blog": blog_sidebars,
+    "posts/**": blog_sidebars,
+    "talks/**": blog_sidebars,
+}
 # options for custom templates
 html_context = {
     # used in _templates/translations.html

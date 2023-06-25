@@ -5,6 +5,7 @@ Bayesian AB Testing
     :location: Moscow, Data Elka, Reliable ML
     :category: Talk
     :tags: ab-testing, beginner
+    :language: Russian, English
     :image: 1
 
     I talk about the Bayesian approach to AB testing.

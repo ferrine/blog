@@ -5,6 +5,7 @@ Bayesian AB Testing
     :location: Moscow, Analyst Days 16
     :category: Talk
     :tags: ab-testing, beginner
+    :language: Russian
     :image: 1
 
     I talk about how Bayesian AB testing can drive conclusions from data.

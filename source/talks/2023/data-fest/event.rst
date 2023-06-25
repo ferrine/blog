@@ -4,6 +4,7 @@ Bayes in the Wild
 .. post:: 2023-06-04
     :location: Moscow, Reliable ML, Data Fest
     :category: Talk
+    :language: Russian, English
     :tags: high-level, beginner
     :image: 1
 

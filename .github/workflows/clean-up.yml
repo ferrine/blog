@@ -1,0 +1,26 @@
+name: Remove old artifacts
+
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      age:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Expiry'
+        # Default value if no value is explicitly provided
+        default: 'World'
+        # Input has to be provided for the workflow to run
+        required: true
+        # The data type of the input
+        type: string
+
+jobs:
+  remove-old-artifacts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Remove old artifacts
+      uses: c-hive/gha-remove-artifacts@v1
+      with:
+        age: ${{ inputs.age }}

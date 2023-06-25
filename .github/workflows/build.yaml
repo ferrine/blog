@@ -30,13 +30,11 @@ jobs:
         run: make checklinks html
       - name: Check Content Size
         run: du -h build/html
-      - name: Compress the Blog source
-        run: tar -C build/html -cvf build/html.tar.gz .
       - name: Store Build Content
         uses: actions/upload-artifact@v3
         with:
           name: website-content
-          path: build/html.tar.gz
+          path: build/html
 
   preview:
     runs-on: ubuntu-latest
@@ -45,10 +43,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: website-content
-      - name: Unpack Build Content
-        run: |
-          tar -xvf html.tar.gz
-          rm html.tar.gz
       - name: Deploy site preview to Netlify
         uses: nwtgck/actions-netlify@v2.0
         with:

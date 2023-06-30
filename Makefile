@@ -29,7 +29,7 @@ help:
 install:
 	poetry install
     # install pandoc binary using pypandoc
-	python -c 'import pypandoc, sys, os; pypandoc.download_pandoc(targetfolder=os.path.dirname(sys.executable))'
+	python -c 'import pypandoc, sys, os; pypandoc.download_pandoc(targetfolder=os.path.dirname(sys.executable), delete_installer=True)'
 
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

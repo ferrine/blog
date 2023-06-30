@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 21:52+0300\n"
+"POT-Creation-Date: 2023-06-30 17:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "AB Testing"
 msgstr ""
 
-#: ../../source/cases/ab.rst:8
+#: ../../source/cases/ab.rst:14
 msgid ""
 "AB Testing is a very common hypothesis testing technique in many "
 "companies. Bayesian AB testing is not a new but rarely used approach to a"
@@ -33,21 +33,21 @@ msgid ""
 " more than qualitative decisions."
 msgstr ""
 
-#: ../../source/cases/ab.rst:12
+#: ../../source/cases/ab.rst:18
 msgid ""
 "Bayesian AB Testing is about qualitative answers to the same questions. "
 "So instead of \"is there an effect\", you can say \"what is the effect\"."
 " While this sounds similar, the latter enables to go beyond and do "
 "decision making with money in mind. You can plug Bayesian posterior into "
 "a financial model that translates to money language. Find more from the "
-":xref:`ODS workshop <talks:2022:data-elka>`."
+":doc:`ODS workshop </talks/2022/data-elka/event>`."
 msgstr ""
 
 #: ../../source/cases/bioinfo.rst:4
 msgid "Bioinformatics"
 msgstr ""
 
-#: ../../source/cases/bioinfo.rst:8
+#: ../../source/cases/bioinfo.rst:14
 msgid ""
 "Molecules are everywhere. Sometimes you need to figure out what a "
 "specific molecule is. There are numerous approaches to infer the molecule"
@@ -56,7 +56,7 @@ msgid ""
 "approach is cheap and scalable."
 msgstr ""
 
-#: ../../source/cases/bioinfo.rst:14
+#: ../../source/cases/bioinfo.rst:20
 msgid ""
 "The approach involves inference on the unobserved part of the experiment "
 "which generates the noisy observation. After understanding the latent "
@@ -69,14 +69,14 @@ msgstr ""
 msgid "Brain Activity"
 msgstr ""
 
-#: ../../source/cases/brain.rst:8
+#: ../../source/cases/brain.rst:15
 msgid ""
 "Developing drugs is a very tedious process that involves rigor testing on"
 " animals and on humans. While treatment effect for most of the cases can "
 "be relatively easy quantified, brain activity is a challenge."
 msgstr ""
 
-#: ../../source/cases/brain.rst:11
+#: ../../source/cases/brain.rst:18
 msgid ""
 "Measuring qualitative activity of human brain is a very non trivial task."
 " It is only possible to get indirect measurement of what is treated and "
@@ -90,7 +90,7 @@ msgstr ""
 msgid "Chemistry"
 msgstr ""
 
-#: ../../source/cases/chemistry.rst:8
+#: ../../source/cases/chemistry.rst:14
 msgid ""
 "Chemistry is a very structured domain where there are either a lot of "
 "experimental data and knowledge available. Unfortunately, not all cases "
@@ -98,7 +98,7 @@ msgid ""
 "expensive."
 msgstr ""
 
-#: ../../source/cases/chemistry.rst:12
+#: ../../source/cases/chemistry.rst:18
 msgid ""
 "Predictions are not the holy grail when you want to optimize the "
 "production process. Characteristics of the process are the ones that are "
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Media Mix Models"
 msgstr ""
 
-#: ../../source/cases/mmm.rst:8
+#: ../../source/cases/mmm.rst:14
 msgid ""
 "Media Mix Models are analytical tools used to optimize marketing "
 "strategies by measuring the effectiveness of various marketing channels. "
@@ -123,7 +123,7 @@ msgid ""
 " complex and dynamic marketing environments."
 msgstr ""
 
-#: ../../source/cases/mmm.rst:13
+#: ../../source/cases/mmm.rst:19
 msgid ""
 "By accounting for uncertainty, Bayesian models provide more reliable and "
 "stable estimates, aiding in better-informed decision-making. Bayesian "
@@ -134,4 +134,19 @@ msgid ""
 " easily, allowing marketers to stay current with evolving trends and make"
 " timely adjustments to their strategies."
 msgstr ""
+
+#~ msgid ""
+#~ "Bayesian AB Testing is about qualitative"
+#~ " answers to the same questions. So"
+#~ " instead of \"is there an effect\","
+#~ " you can say \"what is the "
+#~ "effect\". While this sounds similar, the"
+#~ " latter enables to go beyond and "
+#~ "do decision making with money in "
+#~ "mind. You can plug Bayesian posterior"
+#~ " into a financial model that "
+#~ "translates to money language. Find more"
+#~ " from the :xref:`ODS workshop <talks:2022"
+#~ ":data-elka>`."
+#~ msgstr ""
 

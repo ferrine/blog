@@ -12,10 +12,10 @@ Solving White-Box Problems
 
 ----
 
+.. grid:: 1 1 2 2
 
-.. container:: d-md-flex
-
-   .. container:: p-2 fb-6
+   .. grid-item::
+      :columns: 12 12 7 7
 
       .. raw:: html
 
@@ -42,7 +42,8 @@ Solving White-Box Problems
 
 
 
-   .. container:: p-2 fb-4
+   .. grid-item::
+      :columns: 12 12 5 5
 
       .. figure:: /images/profile_photo.jpeg
 
@@ -51,9 +52,10 @@ Solving White-Box Problems
 When Bayesian
 -------------
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-   .. container:: p-2 fb-2
+   .. grid-item::
+      :columns: 12 12 6 6
 
       .. card:: Is your problem **white box**?
 
@@ -70,7 +72,8 @@ When Bayesian
          Understanding relations is a half-way to build a Bayesian model.
          Ignoring these relations leads to biased estimates and decisions.
 
-   .. container:: p-2 fb-2
+   .. grid-item::
+      :columns: 12 12 6 6
 
       .. card:: Do you need to interpret the solution?
 
@@ -89,9 +92,10 @@ When Bayesian
 How I work
 ----------
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-   .. container:: p-2 fb-4
+   .. grid-item::
+      :columns: 12 12 5 5
 
       .. carousel::
          :data-bs-ride: carousel
@@ -132,7 +136,8 @@ How I work
 
             Bring your critical thinking to improve the hypothesis testing pipeline
 
-   .. container:: p-2 fb-6
+   .. grid-item::
+      :columns: 12 12 7 7
 
       Before any project starts:
 
@@ -157,9 +162,10 @@ How I work
 Teaching
 --------
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-   .. container:: p-2 fb-6
+   .. grid-item::
+      :columns: 12 12 7 7
 
       Here are my materials that may interest you:
 
@@ -174,7 +180,8 @@ Teaching
 
          Learn Bayes
 
-   .. container:: p-2 fb-4
+   .. grid-item::
+      :columns: 12 12 5 5
 
       .. figure:: /images/teaching.jpeg
 
@@ -185,13 +192,15 @@ Teaching
 Talks
 -----
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-   .. container:: p-2 fb-4
+   .. grid-item::
+      :columns: 12 12 5 5
 
       .. figure:: /images/conference.jpeg
 
-   .. container:: p-2 fb-6
+   .. grid-item::
+      :columns: 12 12 7 7
 
       I regularly participate in conferences, give talks and share knowledge about Bayesian statistics
 

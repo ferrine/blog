@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.9
   - ablog
-  - sphinx
+  - sphinx<7
   - sphinx-reredirects
   - sphinx-intl
   - pre-commit
@@ -14,4 +14,4 @@ dependencies:
   - pip:
     - pydata_sphinx_theme
     - sphinx-design
-    - sphinx-carousel
+    - git+https://github.com/ferrine/sphinx-carousel.git@gettext-fix

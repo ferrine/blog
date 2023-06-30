@@ -24,7 +24,7 @@ jobs:
       - name: Install binary deps
         run: |
           sudo apt update
-          sudo apt install pandoc graphviz gettext
+          sudo apt install -y pandoc graphviz gettext
       - uses: abatilo/actions-poetry@v2
       - name: Install Build Deps
         run: poetry install

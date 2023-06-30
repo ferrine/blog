@@ -13,14 +13,14 @@ jobs:
   html:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
-          cache: "pip"
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: true
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: "pip"
       - name: Install binary deps
         uses: daaku/gh-action-apt-install@v4
         with:

@@ -16,6 +16,7 @@ nbsphinx = "*"
 pydata_sphinx_theme = "*"
 sphinx-design = "*"
 sphinxcontrib_youtube = "*"
+pypandoc = "*"
 sphinx-carousel = { git = "https://github.com/ferrine/sphinx-carousel.git", branch = "gettext-fix"}
 
 

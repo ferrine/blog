@@ -24,10 +24,13 @@ jobs:
       - name: Install binary deps
         uses: daaku/gh-action-apt-install@v4
         with:
-          packages: pandoc graphviz gettext
+          packages: graphviz gettext
       - uses: abatilo/actions-poetry@v2
       - name: Install Build Deps
-        run: poetry install
+        run: |
+          poetry install
+          # install pandoc binary using pypandoc
+          python -c 'import pypandoc, sys, os; pypandoc.download_pandoc(targetfolder=os.path.dirname(sys.executable))'
       - name: Build the Blog
         run: make checklinks html
       - name: Check Content Size

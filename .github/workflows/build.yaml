@@ -29,10 +29,9 @@ jobs:
       - name: Build the Blog
         run: |
           poetry run sphinx-build
-        #run: make checklinks html
+          run: make checklinks html
       - name: Check Content Size
         run: du -h build/html
-        run: make checklinks html
       - name: Store Build Content
         uses: actions/upload-artifact@v3
         with:

@@ -5,7 +5,7 @@ description = "Blog Env"
 authors = ["Max Kochurov <maxim.v.kochurov@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "~3.11"
+python = "~3.10"
 ablog = "*"
 sphinx = "*"
 sphinx-reredirects = "*"
@@ -15,7 +15,8 @@ IPython = "*"
 nbsphinx = "*"
 pydata_sphinx_theme = "*"
 sphinx-design = "*"
-sphinx-carousel = "*"
+sphinxcontrib_youtube = "*"
+sphinx-carousel = { git = "https://github.com/ferrine/sphinx-carousel.git", branch = "gettext-fix"}
 
 
 [build-system]

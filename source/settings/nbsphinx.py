@@ -3,3 +3,8 @@ nbsphinx_input_prompt = "%.0s"
 nbsphinx_output_prompt = "%.0s"
 nbsphinx_requirejs_path = ""
 nbsphinx_requirejs_options = {}
+nbsphinx_epilog = """
+---
+If you have new ideas after reading the notebook and want to discuss it more detailed, 
+you can always :doc:`reach me out </contacts>`
+"""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-03 18:25+0300\n"
+"POT-Creation-Date: 2023-06-30 17:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -180,5 +180,37 @@ msgstr ""
 
 #: ../../source/test.rst:98
 msgid "This is an example of an :ref:`internal link <test_css_layout>`."
+msgstr ""
+
+#: ../../source/test.rst:102
+msgid "Is your problem white box?"
+msgstr ""
+
+#: ../../source/test.rst:104
+msgid ""
+"If your problem is not white box it makes little sense to use Bayesian "
+"methods. The approach relies on clear understanding and reasoning about "
+"the problem."
+msgstr ""
+
+#: ../../source/test.rst:107
+msgid "How much do you know about the problem?"
+msgstr ""
+
+#: ../../source/test.rst:109
+msgid ""
+"The more you understand about the model and process it describes the "
+"better is the solution. No traditional approach takes this to the "
+"absolute and translates expert opinions to rigor definition."
+msgstr ""
+
+#: ../../source/test.rst:112
+msgid "Do you understand causal relations of your problem?"
+msgstr ""
+
+#: ../../source/test.rst:114
+msgid ""
+"Understanding relations is a half-way to build a Bayesian model. Ignoring"
+" these relations leads to biased estimates and decisions."
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-03 18:25+0300\n"
+"POT-Creation-Date: 2023-06-30 20:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,89 +25,89 @@ msgstr ""
 msgid "Solving White-Box Problems"
 msgstr ""
 
-#: ../../source/index.rst:24
+#: ../../source/index.rst:26
 msgid "**Principal Data Scientist** @ :xref:`misc:pymc-labs`"
 msgstr ""
 
-#: ../../source/index.rst:26
+#: ../../source/index.rst:28
 msgid "My core principles are:"
 msgstr ""
 
-#: ../../source/index.rst:28
+#: ../../source/index.rst:30
 msgid ""
 "**Be Focused.** I work exclusively with interpretable models and create "
 "transparent solutions."
 msgstr ""
 
-#: ../../source/index.rst:29
+#: ../../source/index.rst:31
 msgid ""
 "**Be Erudite.** I have wide machine learning expertise to know when you "
 "need Bayesian approach."
 msgstr ""
 
-#: ../../source/index.rst:30
+#: ../../source/index.rst:32
 msgid ""
 "**Be Oriented.** I focus on core needs first, that is where a good "
 "project starts."
 msgstr ""
 
-#: ../../source/index.rst:31
+#: ../../source/index.rst:33
 msgid ""
 "**Share knowledge.** I love to educate about the statistical model so you"
 " are familiar with it."
 msgstr ""
 
-#: ../../source/index.rst:32
+#: ../../source/index.rst:34
 msgid ""
 "**Be Helpful.** If you do not need Bayesian inference I can still help "
 "you to find a research direction."
 msgstr ""
 
-#: ../../source/index.rst:34
-msgid "Contact me"
-msgstr ""
-
-#: ../../source/index.rst:47
-msgid "When Bayesian"
+#: ../../source/index.rst:37
+msgid "Contact Me"
 msgstr ""
 
 #: ../../source/index.rst:53
+msgid "When Bayesian"
+msgstr ""
+
+#: ../../source/index.rst:60
 msgid "Is your problem white box?"
 msgstr ""
 
-#: ../../source/index.rst:55
+#: ../../source/index.rst:62
 msgid ""
 "If your problem is not white box it makes little sense to use Bayesian "
 "methods. The approach relies on clear understanding and reasoning about "
 "the problem."
 msgstr ""
 
-#: ../../source/index.rst:58
+#: ../../source/index.rst:65
 msgid "How much do you know about the problem?"
 msgstr ""
 
-#: ../../source/index.rst:60
+#: ../../source/index.rst:67
 msgid ""
 "The more you understand about the model and process it describes the "
 "better is the solution. No traditional approach takes this to the "
 "absolute and translates expert opinions to rigor definition."
 msgstr ""
 
-#: ../../source/index.rst:63
+#: ../../source/index.rst:70
 msgid "Do you understand causal relations of your problem?"
 msgstr ""
 
-#: ../../source/index.rst:65
+#: ../../source/index.rst:72
 msgid ""
 "Understanding relations is a half-way to build a Bayesian model. Ignoring"
 " these relations leads to biased estimates and decisions."
 msgstr ""
 
-#: ../../source/index.rst:70
+#: ../../source/index.rst:78
 msgid "Do you need to interpret the solution?"
 msgstr ""
 
-#: ../../source/index.rst:72
+#: ../../source/index.rst:80
 msgid ""
 "Clear interpretation is the core principle in Bayesian modeling. Every "
 "unknown parameter in the model is estimated using expert and data "
@@ -115,11 +115,11 @@ msgid ""
 "loop data driven business processes."
 msgstr ""
 
-#: ../../source/index.rst:76
+#: ../../source/index.rst:84
 msgid "Do you need just predictions or something more?"
 msgstr ""
 
-#: ../../source/index.rst:78
+#: ../../source/index.rst:86
 msgid ""
 "If predictions is all you care about, I suggest looking into :xref:`misc"
 ":conformal-prediction`. It helps to take in account uncertainty for the "
@@ -127,88 +127,148 @@ msgid ""
 " interpretation for your decision process, Bayesian approach is for you."
 msgstr ""
 
-#: ../../source/index.rst:85
+#: ../../source/index.rst:93
 msgid "How I work"
 msgstr ""
 
-#: ../../source/index.rst:132
+#: ../../source/index.rst:100
+msgid "Marketing Mix Models"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "Find the best allocation for your marketing budget"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "Brain Activity"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "Explain brain activity using indirect measurements"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "Bioinformatics"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "Use structural assumptions to their fullest potential"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "Chemistry"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid ""
+"Iterate over complex chemical interactions to improve the whole "
+"manufacturing process"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "A/B Testing"
+msgstr ""
+
+#: ../../source/index.rst:100
+msgid "Bring your critical thinking to improve the hypothesis testing pipeline"
+msgstr ""
+
+#: ../../source/index.rst:142
 msgid "Before any project starts:"
 msgstr ""
 
-#: ../../source/index.rst:134
+#: ../../source/index.rst:144
 msgid "We discuss what are the real needs for you"
 msgstr ""
 
-#: ../../source/index.rst:135
+#: ../../source/index.rst:145
 msgid ""
 "We figure out if project worth the time investment or there is a simple "
 "workaround"
 msgstr ""
 
-#: ../../source/index.rst:136
+#: ../../source/index.rst:146
 msgid ""
 "We investigate how to maximize the outcome of the collaboration, split "
 "the needs to options"
 msgstr ""
 
-#: ../../source/index.rst:138
+#: ../../source/index.rst:148
 msgid "Worst Case"
 msgstr ""
 
-#: ../../source/index.rst:140
+#: ../../source/index.rst:150
 msgid ""
 "Not every project is about beautiful models. If we do not fit each other,"
 " be sure I do my best to advice you the next steps to the best of my "
 "knowledge."
 msgstr ""
 
-#: ../../source/index.rst:144
+#: ../../source/index.rst:154
 msgid "Book a Call"
 msgstr ""
 
-#: ../../source/index.rst:153
+#: ../../source/index.rst:163
 msgid "Teaching"
 msgstr ""
 
-#: ../../source/index.rst:159
+#: ../../source/index.rst:170
 msgid "Here are my materials that may interest you:"
 msgstr ""
 
-#: ../../source/index.rst:161
+#: ../../source/index.rst:172
 msgid ""
 "I created modern Practical Bayes course for :xref:`MSU <talks:2022:msu-"
 "practical-bayes>`. It focuses on practical interpretable analytics and "
 "model analysis."
 msgstr ""
 
-#: ../../source/index.rst:162
+#: ../../source/index.rst:173
 msgid ""
 "The course is recorded on youtube in :xref:`State of Bayes <talks:2023"
 ":state-of-bayes>` playlist."
 msgstr ""
 
-#: ../../source/index.rst:164
+#: ../../source/index.rst:175
 msgid "For more learning materials follow the link below:"
 msgstr ""
 
-#: ../../source/index.rst:166
+#: ../../source/index.rst:177
 msgid "Learn Bayes"
 msgstr ""
 
-#: ../../source/index.rst:181
+#: ../../source/index.rst:193
 msgid "Talks"
 msgstr ""
 
-#: ../../source/index.rst:191
+#: ../../source/index.rst:205
 msgid ""
-"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
-"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis "
-"dis parturient montes, nascetur ridiculus mus. Donec quam felis, "
-"ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa "
-"quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, "
-"arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. "
-"Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras "
-"dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend"
+"I regularly participate in conferences, give talks and share knowledge "
+"about Bayesian statistics"
+msgstr ""
+
+#: ../../source/index.rst:207
+msgid "I link all the available materials:"
+msgstr ""
+
+#: ../../source/index.rst:209
+msgid "Video"
+msgstr ""
+
+#: ../../source/index.rst:210
+msgid "Presentation"
+msgstr ""
+
+#: ../../source/index.rst:211
+msgid "Code"
+msgstr ""
+
+#: ../../source/index.rst:217
+msgid "See all Talks"
+msgstr ""
+
+#: ../../source/index.rst:225
+msgid "Browse Blog-posts"
 msgstr ""
 
 #~ msgid "Updating Priors"
@@ -360,5 +420,26 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Projects"
+#~ msgstr ""
+
+#~ msgid "Contact me"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Lorem ipsum dolor sit amet, consectetuer"
+#~ " adipiscing elit. Aenean commodo ligula "
+#~ "eget dolor. Aenean massa. Cum sociis "
+#~ "natoque penatibus et magnis dis "
+#~ "parturient montes, nascetur ridiculus mus. "
+#~ "Donec quam felis, ultricies nec, "
+#~ "pellentesque eu, pretium quis, sem. "
+#~ "Nulla consequat massa quis enim. Donec"
+#~ " pede justo, fringilla vel, aliquet "
+#~ "nec, vulputate eget, arcu. In enim "
+#~ "justo, rhoncus ut, imperdiet a, "
+#~ "venenatis vitae, justo. Nullam dictum "
+#~ "felis eu pede mollis pretium. Integer"
+#~ " tincidunt. Cras dapibus. Vivamus elementum"
+#~ " semper nisi. Aenean vulputate eleifend"
 #~ msgstr ""
 

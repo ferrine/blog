@@ -21,28 +21,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/pages/book-a-call.rst:4
+#: ../../source/contacts.rst:2
+msgid "Contacts"
+msgstr ""
+
+#: ../../source/contacts.rst:7
+msgid "Send email"
+msgstr ""
+
+#: ../../source/contacts.rst:10
+msgid ":xref:`social:email`"
+msgstr ""
+
+#: ../../source/contacts.rst:12
+msgid "Write in Telegram"
+msgstr ""
+
+#: ../../source/contacts.rst:15
+msgid ":xref:`social:telegram`"
+msgstr ""
+
+#: ../../source/contacts.rst:17
+msgid "Reach on LinkedIn"
+msgstr ""
+
+#: ../../source/contacts.rst:20
+msgid ":xref:`social:linkedin`"
+msgstr ""
+
+#: ../../source/contacts.rst:22
 msgid "Book a Call"
 msgstr ""
 
-#~ msgid "Blog"
-#~ msgstr ""
-
-#~ msgid "Learning Materials"
-#~ msgstr ""
-
-#~ msgid "Books"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Fist of all a lot of materials "
-#~ "already exist on the internet and "
-#~ "they are just amazing."
-#~ msgstr ""
-
-#~ msgid "Learn PyMC with Books"
-#~ msgstr ""
-
-#~ msgid "A collection of books is curated by PyMC Developers"
-#~ msgstr ""
+#: ../../source/contacts.rst:25
+msgid ":doc:`See Schedule <pages/book-a-call>`"
+msgstr ""
 

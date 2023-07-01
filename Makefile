@@ -3,6 +3,8 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
+SHELL		  = poetry run sh -c
+.SHELLFLAGS	  =
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
@@ -16,21 +18,21 @@ TRANSIFEX_ORGANIZATION = ferrine
 EXTRA_POTS = ./scripts/extra-pot
 POTS = pydata_sphinx_theme:/locale/sphinx.pot ablog:/locales/sphinx.pot
 
-.PHONY: help Makefile env checklinks serve update-locale
+.PHONY: help Makefile gettext checklinks serve update-locale install-pandoc
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-# Catch-all target: route all unknown targets to Sphinx using the new
-# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+install-pandoc:
+    # install pandoc binary using pypandoc
+	python -c 'import pypandoc, sys, os, tempfile; pypandoc.download_pandoc( \
+		targetfolder=os.path.dirname(sys.executable), \
+		delete_installer=True, download_folder=tempfile.mkdtemp() \
+		)'
 
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-
-env:
-	micromamba create -f environment.yml -y
-	curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
 
 checklinks:
 	$(SPHINXBUILD) -b linkcheck $(SPHINXOPTS) "$(SOURCEDIR)" "$(LINKCHECKDIR)"
@@ -42,6 +44,7 @@ serve:
 
 gettext:
 	@echo collect project pot files
+	@touch $(BUILDDIR)/gettext/sphinx.pot
 	@$(SPHINXBUILD) -M gettext "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	@echo merge extra pot files to $(BUILDDIR)/gettext/sphinx.pot
 	@msgcat $(BUILDDIR)/gettext/sphinx.pot $(shell $(EXTRA_POTS) $(POTS)) > $(BUILDDIR)/gettext/sphinx-m.pot

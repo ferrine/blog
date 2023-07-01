@@ -12,21 +12,24 @@ on:
 jobs:
   html:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -el {0}
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: true
-      - name: Install Conda environment from environment.yml
-        uses: mamba-org/setup-micromamba@v1
+      - uses: actions/setup-python@v4
         with:
-          environment-file: environment.yml
-          cache-downloads: true
-      - name: Print Env Config
-        run: pip freeze
+          python-version: "3.10"
+          cache: "pip"
+      - name: Install binary deps
+        uses: daaku/gh-action-apt-install@v4
+        with:
+          packages: graphviz gettext
+      - uses: abatilo/actions-poetry@v2
+      - name: Install Build Deps
+        run: |
+          poetry install
+          make install-pandoc
       - name: Build the Blog
         run: make checklinks html
       - name: Check Content Size

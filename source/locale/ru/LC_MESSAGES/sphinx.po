@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 00:15+0300\n"
+"POT-Creation-Date: 2023-06-30 20:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -20,10 +20,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
-
-#: ../../source/_templates/profile.html:3
-msgid "Max Kochurov"
-msgstr ""
 
 #: src/pydata_sphinx_theme/theme/pydata_sphinx_theme/layout.html:50
 msgid "Skip to main content"
@@ -273,3 +269,7 @@ msgstr ""
 #: ablog/templates/ablog/recentposts.html:4 ablog/templates/recentposts.html:5
 msgid "Recent Posts"
 msgstr ""
+
+#~ msgid "Max Kochurov"
+#~ msgstr ""
+

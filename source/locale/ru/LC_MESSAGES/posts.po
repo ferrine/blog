@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-02 00:13+0300\n"
+"POT-Creation-Date: 2023-06-30 17:34+0000\n"
 "PO-Revision-Date: 2023-05-01 17:42+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -23,15 +23,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/posts/2022/loo-pit.ipynb:9
+#: ../../source/posts/2022/loo-pit/post.ipynb:9
 msgid "Interpreting LOO-PIT"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:23
-msgid "This is all of the excerpt for this post."
+#: ../../source/posts/2022/loo-pit/post.ipynb:25
+msgid ""
+"LOO-PIT is a useful concept to debug yout model after inference is done. "
+"You can see if you have outliers and figure them out. By taking in "
+"account the feedback, you can later improve your model with better error "
+"model."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:31
+#: ../../source/posts/2022/loo-pit/post.ipynb:29
+msgid ""
+"Let’s go into more details about why you ever need this plot, how to work"
+" with it and which actions to take after you see it. A case-study."
+msgstr ""
+
+#: ../../source/posts/2022/loo-pit/post.ipynb:37
+msgid "|loo-pit|"
+msgstr ""
+
+#: ../../source/posts/2022/loo-pit/post.ipynb:39
+msgid "loo-pit"
+msgstr ""
+
+#: ../../source/posts/2022/loo-pit/post.ipynb:50
 msgid ""
 "I got a question about interpreting plots you get from `Arviz <https"
 "://arviz-devs.github.io/>`__. This particular one was about LOO-PIT which"
@@ -39,51 +57,45 @@ msgid ""
 "devs.github.io/arviz/api/generated/arviz.plot_loo_pit.html>`__."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:33
-msgid ""
-"Let's go into more details about why you ever need this plot, how to work"
-" with it and which actions to take after you see it. A case study."
-msgstr ""
-
-#: ../../source/posts/2022/loo-pit.ipynb:45
+#: ../../source/posts/2022/loo-pit/post.ipynb:62
 msgid "Integral transform"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:56
+#: ../../source/posts/2022/loo-pit/post.ipynb:73
 msgid ""
-"First of all, we need a model to demonstrate the pathologies that can be "
+"First, we need a model to demonstrate the pathologies that can be "
 "diagnosed with the LOO-PIT. I will use linear regression with robust "
 "likelihood to show all possible cases that can be fixed just by looking "
 "at the plot."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:67
+#: ../../source/posts/2022/loo-pit/post.ipynb:84
 msgid ""
 "But wait, what is LOO-PIT you ask? Ok, let's give some theory before we "
 "start."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:69
+#: ../../source/posts/2022/loo-pit/post.ipynb:86
 msgid ""
 "LOO stands for Leave One Out validation. We usually want LOO to cross-"
 "validate our model. We train it on all but the one observation and then "
-"make predictions on the one that was the holdout. We do that for every "
+"make predictions on the one that was the holdout. The same for every "
 "single observation."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:70
+#: ../../source/posts/2022/loo-pit/post.ipynb:87
 msgid ""
 "PIT stands for Probability Integral Transformation. Briefly, it "
 "transforms any continuous distribution into a Uniform distribution."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:72
+#: ../../source/posts/2022/loo-pit/post.ipynb:89
 msgid ""
 "While it is relatively clear what is LOO, it is not super clear, what is "
 "PIT. Let's make some visualizations."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:93
+#: ../../source/posts/2022/loo-pit/post.ipynb:110
 msgid ""
 "\\begin{align}\n"
 "t &\\sim \\operatorname{StudentT}(0, 1)\\\\\n"
@@ -92,21 +104,21 @@ msgid ""
 "\\end{align}"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:134
+#: ../../source/posts/2022/loo-pit/post.ipynb:156
 msgid ""
 "We see that the cumulative transform does the job and transforms our "
 "StudentT random variables to the Uniform distribution. Similar ideas are "
 "used for LOO-PIT."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:136
+#: ../../source/posts/2022/loo-pit/post.ipynb:158
 msgid ""
 "`Compute <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py#L1674>`__"
 " pointwise likelihood for all the observations"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:137
+#: ../../source/posts/2022/loo-pit/post.ipynb:159
 msgid ""
 "`Calculate <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py#L770>`__"
@@ -114,7 +126,7 @@ msgid ""
 "<https://arxiv.org/abs/1507.02646>`__"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:138
+#: ../../source/posts/2022/loo-pit/post.ipynb:160
 msgid ""
 "`Approximate <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py#L1729>`__"
@@ -122,39 +134,39 @@ msgid ""
 "sample)"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:139
+#: ../../source/posts/2022/loo-pit/post.ipynb:161
 msgid ""
 "`Approximate <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/plots/loopitplot.py#L177>`__"
 " the ECDF function for visualization with KDE"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:141
+#: ../../source/posts/2022/loo-pit/post.ipynb:163
 msgid ""
 "If the likelihood is well specified, we'll see a uniform distribution of "
 "ECDF values, means, uniform KDE. Just like on the plot above"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:153
+#: ../../source/posts/2022/loo-pit/post.ipynb:175
 msgid "Case study"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:156
+#: ../../source/posts/2022/loo-pit/post.ipynb:178
 msgid "Generative model"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:158
+#: ../../source/posts/2022/loo-pit/post.ipynb:180
 msgid ""
 "Our data will be generated with student T likelihood. We can adjust the "
 "degrees of freedom in the model to take care of the noise magnitude. This"
 " example will also be a very good way to visualize pathologies"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:200
+#: ../../source/posts/2022/loo-pit/post.ipynb:222
 msgid "Generating example data"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:202
+#: ../../source/posts/2022/loo-pit/post.ipynb:224
 msgid ""
 "I do not think our data or model should be complicated. The whole point "
 "of the LOO-PIT is in defining likelihood, rarely model structure or "
@@ -162,43 +174,43 @@ msgid ""
 "regression."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:237
+#: ../../source/posts/2022/loo-pit/post.ipynb:264
 msgid "Bayesian detective"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:240
+#: ../../source/posts/2022/loo-pit/post.ipynb:267
 msgid "Normal likelihood"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:242
+#: ../../source/posts/2022/loo-pit/post.ipynb:269
 msgid ""
 "Most of the models start simple. The simple model in our case starts with"
 " a Normal likelihood."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:540
-#: ../../source/posts/2022/loo-pit.ipynb:999
+#: ../../source/posts/2022/loo-pit/post.ipynb:572
+#: ../../source/posts/2022/loo-pit/post.ipynb:1041
 msgid "Checks"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:542
+#: ../../source/posts/2022/loo-pit/post.ipynb:574
 msgid ""
 "You know nothing about the underlying true model, so I'll keep the "
 "intrigue about posterior vs true values to the end."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:544
+#: ../../source/posts/2022/loo-pit/post.ipynb:576
 msgid "Let's look at LOO-PIT"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:568
+#: ../../source/posts/2022/loo-pit/post.ipynb:605
 msgid ""
-"Disclaimer. I write these lines as I first see first write without "
+"Disclaimer. I write these lines as I would first see it, without "
 "conducting further analysis. This gives you a good thought process "
 "happening in my head."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:570
+#: ../../source/posts/2022/loo-pit/post.ipynb:607
 msgid ""
 "Oh, you might think! Something is going wrong. What do we read from the "
 "plot? Let's operate with facts: \\* We have to recall that what we plot "
@@ -208,25 +220,25 @@ msgid ""
 "inside the high-density region and not represented on the tails"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:572
+#: ../../source/posts/2022/loo-pit/post.ipynb:609
 msgid ""
 "*I know how I generated my data and, actually, expected a bit different "
 "picture. But let's see how it goes*"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:574
+#: ../../source/posts/2022/loo-pit/post.ipynb:611
 msgid "Let's check how does the posterior predictive looks like:"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:598
+#: ../../source/posts/2022/loo-pit/post.ipynb:640
 msgid ""
-"Oh yeah! We get some more intuition from this picture. Data has huge "
+"Oh, yeah! We get some more intuition from this picture. Data has huge "
 "tails, but narrow high-density regions. But for a more complicated "
 "distribution, could we have known that we have outliers without the "
 "picture? Yes"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:684
+#: ../../source/posts/2022/loo-pit/post.ipynb:726
 msgid ""
 "With Pareto k diagnostic values we see that we have two outliers. I would"
 " not say that two is good. Our example says that we have a very ill-"
@@ -235,43 +247,43 @@ msgid ""
 "outliers."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:686
+#: ../../source/posts/2022/loo-pit/post.ipynb:728
 msgid ""
 "But only combining LOO-PIT check and Pareto k values we can conclude that"
 " with symptoms we observe the disease are outliers."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:688
+#: ../../source/posts/2022/loo-pit/post.ipynb:730
 msgid "Could we do more plots? Yes"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:689
+#: ../../source/posts/2022/loo-pit/post.ipynb:731
 msgid "Would they add more value? Probably"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:690
+#: ../../source/posts/2022/loo-pit/post.ipynb:732
 msgid "How much? Not much"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:702
+#: ../../source/posts/2022/loo-pit/post.ipynb:744
 msgid "Robust likelihood"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:704
+#: ../../source/posts/2022/loo-pit/post.ipynb:746
 msgid ""
 "Let's go to the second specification of our model. This one will be "
 "robust, amazingly robust, we'll try to get as long tails as possible."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:726
+#: ../../source/posts/2022/loo-pit/post.ipynb:768
 msgid "And then use it in the model"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1010
+#: ../../source/posts/2022/loo-pit/post.ipynb:1052
 msgid "Let's check LOO-PIT again"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1034
+#: ../../source/posts/2022/loo-pit/post.ipynb:1084
 msgid ""
 "Ok, we now see two weird bumps in the LOO-PIT plot. What can we say about"
 " this? \\* Remember, these are CDF values of data \\* Yeah, CDF says that"
@@ -279,7 +291,7 @@ msgid ""
 "me clarify a tiny bit"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1058
+#: ../../source/posts/2022/loo-pit/post.ipynb:1113
 msgid ""
 "Data seems to be clearly concentrated a bit far from where it should be. "
 "We probably underestimated variance - we do not see enough data in the "
@@ -287,14 +299,14 @@ msgid ""
 "further."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1082
+#: ../../source/posts/2022/loo-pit/post.ipynb:1145
 msgid ""
 "Oh, what a bad model would you say, outliers are insane in the posterior "
 "predictive, we should have less of them. But wait, what about variance, "
 "not outliers"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1106
+#: ../../source/posts/2022/loo-pit/post.ipynb:1178
 msgid ""
 "Yes, the picture is now more accurate. In our passion to add outliers "
 "into the model, we missed the fact that we might actually add way too "
@@ -302,49 +314,66 @@ msgid ""
 "priority this time."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1108
-msgid "Take outs: reduce outliers, variance is not a priority"
+#: ../../source/posts/2022/loo-pit/post.ipynb:1180
+msgid "Take-outs: reduce outliers, variance is not a priority"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1120
+#: ../../source/posts/2022/loo-pit/post.ipynb:1192
 msgid "Student T likelihood"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1122
+#: ../../source/posts/2022/loo-pit/post.ipynb:1194
 msgid "**Did you know?**"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1124
-msgid ""
-":math:`\\nu` paprameter in StudentT controls *\"how heavy are the "
-"tails\"* \\* :math:`\\nu \\to 0` means crazy many outliers \\* "
-":math:`\\nu = 1` is Cauchy (See the likelihood above, gotcha) \\* "
-":math:`\\nu \\to \\infty` gives you normal distribution"
+#: ../../source/posts/2022/loo-pit/post.ipynb:1196
+msgid ":math:`\\nu` parameter in StudentT controls *\"how heavy are the tails\"*"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1126
+#: ../../source/posts/2022/loo-pit/post.ipynb:1198
+msgid ":math:`\\nu \\to 0` means crazy many outliers"
+msgstr ""
+
+#: ../../source/posts/2022/loo-pit/post.ipynb:1199
+msgid ":math:`\\nu = 1` is Cauchy (See the likelihood above, gotcha)"
+msgstr ""
+
+#: ../../source/posts/2022/loo-pit/post.ipynb:1200
+msgid ":math:`\\nu \\to \\infty` gives you normal distribution"
+msgstr ""
+
+#: ../../source/posts/2022/loo-pit/post.ipynb:1202
 msgid ""
 "With StudentT distribution we can control both variance and amount of "
-"overdispersion. How do we construct priors for parameters? \\* "
+"over-dispersion. How do we construct priors for parameters? \\* "
 ":math:`\\nu` - we just checked Cauchy distribution and saw that it "
 "generates tons of outliers, we need less, for sure. But not too much. We "
 "need zero avoiding prior with relatively large tails \\* :math:`\\sigma` "
 "- no specific values, we can just keep the old prior"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1164
+#: ../../source/posts/2022/loo-pit/post.ipynb:1204
+msgid ""
+"My take on :math:`\\nu` parameter. I informally think of it if I would "
+"expect :math:`1/\\nu` rate of outliers in my data. That is very aligned "
+"with :math:`\\nu \\to \\infty` converging to normal distribution. Though,"
+" this is just intuition, not mathematical interpretation. Use it as long "
+"as it applies to your case."
+msgstr ""
+
+#: ../../source/posts/2022/loo-pit/post.ipynb:1247
 msgid "This prior should work better"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1444
-msgid "What one looks much better. Let's compare our models"
+#: ../../source/posts/2022/loo-pit/post.ipynb:1540
+msgid "What one looks much better. Let's compare our models..."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1456
+#: ../../source/posts/2022/loo-pit/post.ipynb:1552
 msgid "Model Comparison"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1487
+#: ../../source/posts/2022/loo-pit/post.ipynb:1594
 msgid ""
 "We see a very interesting picture. My thinking was in favor to rank the "
 "normal model higher than the Cauchy one. But things are, actually, more "
@@ -354,87 +383,224 @@ msgid ""
 "consequences? Probably, let's see"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1499
+#: ../../source/posts/2022/loo-pit/post.ipynb:1606
 msgid "Cards revealed"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1501
+#: ../../source/posts/2022/loo-pit/post.ipynb:1608
 msgid ""
 "This all is not necessary at all unless we want to know something about "
 "our model and the system it describes. Our variables of interest are "
 ":math:`\\beta` and the intercept:"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1525
-msgid "We can also compare variance (scale parameters) that our models predict"
+#: ../../source/posts/2022/loo-pit/post.ipynb:1637
+msgid "We can also compare variance (scale parameters) that our models estimate"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1549
+#: ../../source/posts/2022/loo-pit/post.ipynb:1666
 msgid ""
-"Hah, they have nothing in common with the true sigma. Even the best "
-"StudentT model has nothing to do with true sigma"
+"Hah, most have nothing in common with the true sigma. Only StudentT "
+"managed to recover the true sigma."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1573
+#: ../../source/posts/2022/loo-pit/post.ipynb:1690
 msgid ""
 "Posterior for :math:`\\nu` is quite uncertain. Low values generate too "
-"much noise so sigma is less important. The uncertainty in :math:`\\nu` "
+"much noise, so sigma is less important. The uncertainty in :math:`\\nu` "
 "creates a lot of troubles in practice, you need to be really certain in "
 "your priors to make use of that. Let's have a look at the posterior "
 "predictive again"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1597
+#: ../../source/posts/2022/loo-pit/post.ipynb:1722
 msgid "We need to zoom in to see the difference"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1622
+#: ../../source/posts/2022/loo-pit/post.ipynb:1752
 msgid "But could I?.."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1633
-msgid "Maybe we could estimate sigma when we know :math:`\\nu`?"
+#: ../../source/posts/2022/loo-pit/post.ipynb:1763
+msgid "Maybe we could do any better when we know :math:`\\nu`?"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1884
+#: ../../source/posts/2022/loo-pit/post.ipynb:2104
 msgid ""
-"Noise parameters are always tricky, there is a tradeoff where there "
+"Noise parameters are always tricky, there is a trade-off where there "
 "something we can infer and what is left behind the scenes. Do not get "
-"trapped in estimating every nuance paprameter you ever introduce into the"
-" model. There will defenetely be something you've left behind, put not "
+"trapped in estimating every nuance parameter you ever introduce into the "
+"model. There will definitely be something you've left behind, put not "
 "informed enough priors and so on. > Actually this is exactly the case "
 "with sigma in this example. Half normal is not zero avoiding and the true"
 " model has :math:`\\sigma=3` that is away from zero."
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1896
+#: ../../source/posts/2022/loo-pit/post.ipynb:2116
 msgid "Conclusions"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1898
+#: ../../source/posts/2022/loo-pit/post.ipynb:2118
 msgid ""
-"LOO-PIT is a great plot that helps you to go look what is goin on with "
+"LOO-PIT is a great plot that helps you to go look what is going on with "
 "the model"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1900
+#: ../../source/posts/2022/loo-pit/post.ipynb:2120
 msgid "check tails and outliers"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1901
+#: ../../source/posts/2022/loo-pit/post.ipynb:2121
 msgid "check variance"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1903
+#: ../../source/posts/2022/loo-pit/post.ipynb:2123
 msgid ""
 "LOO-PIT combined with PPC plot and LOO-Pointwise can guide to a better "
 "likelihood"
 msgstr ""
 
-#: ../../source/posts/2022/loo-pit.ipynb:1904
+#: ../../source/posts/2022/loo-pit/post.ipynb:2124
 msgid ""
 "Sometimes the model gives you a good answer, but still can be improved "
 "with more informed priors, more domain knowledge. Nuance parameters are "
-"hard and you never know the right answer, that's fine"
+"hard, and you never know the right answer, that's fine"
 msgstr ""
+
+#~ msgid "This is all of the excerpt for this post."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Let's go into more details about "
+#~ "why you ever need this plot, how"
+#~ " to work with it and which "
+#~ "actions to take after you see it."
+#~ " A case study."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First of all, we need a model "
+#~ "to demonstrate the pathologies that can"
+#~ " be diagnosed with the LOO-PIT. "
+#~ "I will use linear regression with "
+#~ "robust likelihood to show all possible"
+#~ " cases that can be fixed just "
+#~ "by looking at the plot."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "LOO stands for Leave One Out "
+#~ "validation. We usually want LOO to "
+#~ "cross-validate our model. We train "
+#~ "it on all but the one observation"
+#~ " and then make predictions on the "
+#~ "one that was the holdout. We do"
+#~ " that for every single observation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Disclaimer. I write these lines as "
+#~ "I first see first write without "
+#~ "conducting further analysis. This gives "
+#~ "you a good thought process happening "
+#~ "in my head."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Oh yeah! We get some more "
+#~ "intuition from this picture. Data has"
+#~ " huge tails, but narrow high-density"
+#~ " regions. But for a more complicated"
+#~ " distribution, could we have known "
+#~ "that we have outliers without the "
+#~ "picture? Yes"
+#~ msgstr ""
+
+#~ msgid "Take outs: reduce outliers, variance is not a priority"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\nu` paprameter in StudentT controls"
+#~ " *\"how heavy are the tails\"* \\*"
+#~ " :math:`\\nu \\to 0` means crazy many"
+#~ " outliers \\* :math:`\\nu = 1` is "
+#~ "Cauchy (See the likelihood above, "
+#~ "gotcha) \\* :math:`\\nu \\to \\infty` "
+#~ "gives you normal distribution"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "With StudentT distribution we can "
+#~ "control both variance and amount of "
+#~ "overdispersion. How do we construct "
+#~ "priors for parameters? \\* :math:`\\nu` "
+#~ "- we just checked Cauchy distribution"
+#~ " and saw that it generates tons "
+#~ "of outliers, we need less, for "
+#~ "sure. But not too much. We need"
+#~ " zero avoiding prior with relatively "
+#~ "large tails \\* :math:`\\sigma` - no "
+#~ "specific values, we can just keep "
+#~ "the old prior"
+#~ msgstr ""
+
+#~ msgid "What one looks much better. Let's compare our models"
+#~ msgstr ""
+
+#~ msgid "We can also compare variance (scale parameters) that our models predict"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Hah, they have nothing in common "
+#~ "with the true sigma. Even the best"
+#~ " StudentT model has nothing to do "
+#~ "with true sigma"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Posterior for :math:`\\nu` is quite "
+#~ "uncertain. Low values generate too much"
+#~ " noise so sigma is less important."
+#~ " The uncertainty in :math:`\\nu` creates"
+#~ " a lot of troubles in practice, "
+#~ "you need to be really certain in"
+#~ " your priors to make use of "
+#~ "that. Let's have a look at the "
+#~ "posterior predictive again"
+#~ msgstr ""
+
+#~ msgid "Maybe we could estimate sigma when we know :math:`\\nu`?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Noise parameters are always tricky, "
+#~ "there is a tradeoff where there "
+#~ "something we can infer and what is"
+#~ " left behind the scenes. Do not "
+#~ "get trapped in estimating every nuance"
+#~ " paprameter you ever introduce into "
+#~ "the model. There will defenetely be "
+#~ "something you've left behind, put not"
+#~ " informed enough priors and so on."
+#~ " > Actually this is exactly the "
+#~ "case with sigma in this example. "
+#~ "Half normal is not zero avoiding "
+#~ "and the true model has :math:`\\sigma=3`"
+#~ " that is away from zero."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "LOO-PIT is a great plot that "
+#~ "helps you to go look what is "
+#~ "goin on with the model"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sometimes the model gives you a "
+#~ "good answer, but still can be "
+#~ "improved with more informed priors, more"
+#~ " domain knowledge. Nuance parameters are"
+#~ " hard and you never know the "
+#~ "right answer, that's fine"
+#~ msgstr ""
 

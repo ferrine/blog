@@ -21,28 +21,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/pages/book-a-call.rst:4
-msgid "Book a Call"
+#: ../../source/blog.rst:2
+msgid "Blog"
 msgstr ""
 
-#~ msgid "Blog"
-#~ msgstr ""
-
-#~ msgid "Learning Materials"
-#~ msgstr ""
-
-#~ msgid "Books"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Fist of all a lot of materials "
-#~ "already exist on the internet and "
-#~ "they are just amazing."
-#~ msgstr ""
-
-#~ msgid "Learn PyMC with Books"
-#~ msgstr ""
-
-#~ msgid "A collection of books is curated by PyMC Developers"
-#~ msgstr ""
+#: ../../source/blog.rst:3
+msgid "This is a placeholder to reference in toc"
+msgstr ""
 

@@ -27,7 +27,9 @@ jobs:
           packages: graphviz gettext
       - uses: abatilo/actions-poetry@v2
       - name: Install Build Deps
-        run: make install
+        run: |
+          poetry install
+          make install-pandoc
       - name: Build the Blog
         run: make checklinks html
       - name: Check Content Size

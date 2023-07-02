@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-30 17:34+0000\n"
+"POT-Creation-Date: 2023-07-02 13:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -26,7 +26,7 @@ msgid "Contacts"
 msgstr ""
 
 #: ../../source/contacts.rst:7
-msgid "Send email"
+msgid "Send am email"
 msgstr ""
 
 #: ../../source/contacts.rst:10
@@ -34,26 +34,33 @@ msgid ":xref:`social:email`"
 msgstr ""
 
 #: ../../source/contacts.rst:12
-msgid "Write in Telegram"
-msgstr ""
-
-#: ../../source/contacts.rst:15
-msgid ":xref:`social:telegram`"
-msgstr ""
-
-#: ../../source/contacts.rst:17
 msgid "Reach on LinkedIn"
 msgstr ""
 
-#: ../../source/contacts.rst:20
+#: ../../source/contacts.rst:15
 msgid ":xref:`social:linkedin`"
 msgstr ""
 
-#: ../../source/contacts.rst:22
-msgid "Book a Call"
+#: ../../source/contacts.rst:17
+msgid "Book a call"
 msgstr ""
 
-#: ../../source/contacts.rst:25
-msgid ":doc:`See Schedule <pages/book-a-call>`"
+#: ../../source/contacts.rst:20
+msgid ":doc:`See Schedule </pages/book-a-call>`"
 msgstr ""
+
+#~ msgid "Send email"
+#~ msgstr ""
+
+#~ msgid "Write in Telegram"
+#~ msgstr ""
+
+#~ msgid ":xref:`social:telegram`"
+#~ msgstr ""
+
+#~ msgid "Book a Call"
+#~ msgstr ""
+
+#~ msgid ":doc:`See Schedule <pages/book-a-call>`"
+#~ msgstr ""
 

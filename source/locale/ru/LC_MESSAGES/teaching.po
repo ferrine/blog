@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-30 17:34+0000\n"
+"POT-Creation-Date: 2023-07-02 22:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../source/teaching.rst:13
 msgid ""
-"Fist of all a lot of materials already exist on the internet and they are"
-" just amazing."
+"Fist of all a lot of materials already exist on the internet, and they "
+"are just amazing."
 msgstr ""
 
 #: ../../source/teaching.rst:15
@@ -170,4 +170,10 @@ msgstr ""
 #: ../../source/teaching/state-of-bayes.rst:27
 msgid "Gaussian Processes for Time Series"
 msgstr ""
+
+#~ msgid ""
+#~ "Fist of all a lot of materials "
+#~ "already exist on the internet and "
+#~ "they are just amazing."
+#~ msgstr ""
 

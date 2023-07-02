@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-30 20:36+0000\n"
+"POT-Creation-Date: 2023-07-02 22:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -53,14 +53,14 @@ msgstr ""
 
 #: ../../source/index.rst:33
 msgid ""
-"**Share knowledge.** I love to educate about the statistical model so you"
-" are familiar with it."
+"**Share knowledge.** I love to educate about the statistical model, so "
+"you are familiar with it."
 msgstr ""
 
 #: ../../source/index.rst:34
 msgid ""
 "**Be Helpful.** If you do not need Bayesian inference I can still help "
-"you to find a research direction."
+"you find a research direction."
 msgstr ""
 
 #: ../../source/index.rst:37
@@ -123,8 +123,9 @@ msgstr ""
 msgid ""
 "If predictions is all you care about, I suggest looking into :xref:`misc"
 ":conformal-prediction`. It helps to take in account uncertainty for the "
-"prediction tasks. If this does not help and you need uncertainty in model"
-" interpretation for your decision process, Bayesian approach is for you."
+"prediction tasks. If this does not help, and you need uncertainty in "
+"model interpretation for your decision process, Bayesian approach is for "
+"you."
 msgstr ""
 
 #: ../../source/index.rst:93
@@ -225,7 +226,7 @@ msgstr ""
 
 #: ../../source/index.rst:173
 msgid ""
-"The course is recorded on youtube in :xref:`State of Bayes <talks:2023"
+"The course is recorded on YouTube in :xref:`State of Bayes <talks:2023"
 ":state-of-bayes>` playlist."
 msgstr ""
 
@@ -441,5 +442,34 @@ msgstr ""
 #~ "felis eu pede mollis pretium. Integer"
 #~ " tincidunt. Cras dapibus. Vivamus elementum"
 #~ " semper nisi. Aenean vulputate eleifend"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Share knowledge.** I love to educate"
+#~ " about the statistical model so you"
+#~ " are familiar with it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Be Helpful.** If you do not need"
+#~ " Bayesian inference I can still help"
+#~ " you to find a research direction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If predictions is all you care "
+#~ "about, I suggest looking into "
+#~ ":xref:`misc:conformal-prediction`. It helps to"
+#~ " take in account uncertainty for the"
+#~ " prediction tasks. If this does not"
+#~ " help and you need uncertainty in "
+#~ "model interpretation for your decision "
+#~ "process, Bayesian approach is for you."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The course is recorded on youtube "
+#~ "in :xref:`State of Bayes <talks:2023:state-"
+#~ "of-bayes>` playlist."
 #~ msgstr ""
 

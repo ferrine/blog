@@ -30,8 +30,8 @@ Solving White-Box Problems
       * **Be Focused.** I work exclusively with interpretable models and create transparent solutions.
       * **Be Erudite.** I have wide machine learning expertise to know when you need Bayesian approach.
       * **Be Oriented.** I focus on core needs first, that is where a good project starts.
-      * **Share knowledge.** I love to educate about the statistical model so you are familiar with it.
-      * **Be Helpful.** If you do not need Bayesian inference I can still help you to find a research direction.
+      * **Share knowledge.** I love to educate about the statistical model, so you are familiar with it.
+      * **Be Helpful.** If you do not need Bayesian inference I can still help you find a research direction.
 
 
       .. button-ref:: contacts
@@ -85,7 +85,7 @@ When Bayesian
 
          If predictions is all you care about, I suggest looking into :xref:`misc:conformal-prediction`.
          It helps to take in account uncertainty for the prediction tasks.
-         If this does not help and you need uncertainty in model interpretation
+         If this does not help, and you need uncertainty in model interpretation
          for your decision process, Bayesian approach is for you.
 
 
@@ -170,7 +170,7 @@ Teaching
       Here are my materials that may interest you:
 
       * I created modern Practical Bayes course for :xref:`MSU <talks:2022:msu-practical-bayes>`. It focuses on practical interpretable analytics and model analysis.
-      * The course is recorded on youtube in :xref:`State of Bayes <talks:2023:state-of-bayes>` playlist.
+      * The course is recorded on YouTube in :xref:`State of Bayes <talks:2023:state-of-bayes>` playlist.
 
       For more learning materials follow the link below:
 

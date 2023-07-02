@@ -31,7 +31,6 @@ gettext_compact = True  # optional.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx_carousel.carousel",
     "ext.xref",
     "ablog",
     "sphinx_reredirects",
@@ -39,4 +38,5 @@ extensions = [
     "ext.nbconvert",
     "sphinx.ext.graphviz",
     "sphinxcontrib.youtube",
+    "sphinx_carousel.carousel",
 ]

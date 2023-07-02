@@ -1,0 +1,6 @@
+/* https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/styling.html */
+html {
+    /* These are adapted from https://systemfontstack.com/ */
+    --pst-font-family-monospace-system: "SFMono-Regular", Menlo, Consolas, Monaco,
+      Liberation Mono, Lucida Console, monospace;
+}

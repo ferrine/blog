@@ -62,3 +62,18 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: [html]
+    if: ${{ github.ref == 'refs/heads/main' }}
+    # Publish preview of the PR or the release if on master
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: website-content
+      - name: Deploy site production on Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .

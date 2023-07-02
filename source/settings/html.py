@@ -84,4 +84,6 @@ html_sidebars = {
 html_context = {
     # used in _templates/translations.html
     "available_translations": {"en": "EN", "ru": "RU"},
+    # extended in layout.html
+    "metrika_id": 94179175,
 }

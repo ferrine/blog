@@ -10,7 +10,7 @@ Teaching
 
 Books
 -----
-Fist of all a lot of materials already exist on the internet and they are just amazing.
+Fist of all a lot of materials already exist on the internet, and they are just amazing.
 
 .. card:: Learn PyMC with Books
     :img-top: /images/cover-books.jpg

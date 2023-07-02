@@ -21,6 +21,11 @@ html_css_files = [
     "css/custom.css",
 ]
 html_js_files = [
+    # load using theme
+    # instead of relying on nbsphinx extension requirejs and widjets js
+    # they had conflict with carousel
+    "require-2.3.6.min.js",
+    "embed-amd-1.0.1.min.js",
 ]
 html_favicon = "_static/favicon.ico"
 html_theme = "pydata_sphinx_theme"

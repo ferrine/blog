@@ -10,13 +10,15 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 LINKCHECKDIR  = build/linkcheck
-LOCALES = ru en
-TRANSLATIONS = ru
+LOCALES       = ru en
+TRANSLATIONS  = ru
 TRANSIFEX_PROJECT = ferrine-github-io
 TRANSIFEX_ORGANIZATION = ferrine
+METRIKA_ID	  = 94179175
 # literally no idea how to make this properly
 EXTRA_POTS = ./scripts/extra-pot
 POTS = pydata_sphinx_theme:/locale/sphinx.pot ablog:/locales/sphinx.pot
+export
 
 .PHONY: help Makefile gettext checklinks serve update-locale install-pandoc
 
@@ -61,4 +63,4 @@ update-locale: $(TRANSLATIONS:%=%/update-locale)
 	@$(SPHINXBUILD) -W -b html -t $(@D) -D language=$(@D) "$(SOURCEDIR)" "$(BUILDDIR)/html/$(@D)" $(SPHINXOPTS) $(O)
 
 html: $(LOCALES:%=%/html)
-	echo '<meta http-equiv="refresh" content="0;url=en/index.html" />' > "$(BUILDDIR)/html/index.html"
+	jinja2 source/_templates/redirect.html -D redirect_to=/en/index.html -D metrika_id=$(METRIKA_ID) > $(BUILDDIR)/html/index.html

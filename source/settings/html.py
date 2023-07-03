@@ -1,5 +1,5 @@
 from sphinx.locale import get_translation
-
+import os
 
 _ = get_translation("sphinx")
 
@@ -83,7 +83,9 @@ html_sidebars = {
 # options for custom templates
 html_context = {
     # used in _templates/translations.html
-    "available_translations": {"en": "EN", "ru": "RU"},
+    "available_translations": dict(
+        (locale, locale.upper()) for locale in os.environ["LOCALES"].split()
+    ),
     # extended in layout.html
-    "metrika_id": 94179175,
+    "metrika_id": os.environ["METRIKA_ID"],
 }

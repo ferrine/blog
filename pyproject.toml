@@ -18,6 +18,8 @@ sphinx-design = "*"
 sphinxcontrib_youtube = "*"
 pypandoc = "*"
 ipywidgets = "*"
+jinja2-cli = "*"
+python-dotenv = "*"
 sphinx-carousel = { git = "https://github.com/ferrine/sphinx-carousel.git", branch = "gettext-fix"}
 
 

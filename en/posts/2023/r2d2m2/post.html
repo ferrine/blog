@@ -411,7 +411,7 @@ document.write(`
   
   
   
-  <a href="../../../blog/tag/pymc.html">pymc</a>
+  <a href="../../../blog/tag/prior.html">prior</a>
   
   
   
@@ -423,7 +423,7 @@ document.write(`
   
   
   
-  <a href="../../../blog/tag/prior.html">prior</a>
+  <a href="../../../blog/tag/pymc.html">pymc</a>
   
   
   
@@ -1022,12 +1022,11 @@ Sampling: [R2, coef_raw, intercept, nu, obs, phi, sigma]
         <span class="c1"># it is concentrated around empirical variance</span>
         <span class="n">sigma</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">LogNormal</span><span class="p">(</span><span class="s2">&quot;sigma&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">std</span><span class="p">),</span> <span class="mf">0.1</span><span class="p">)</span>
         <span class="c1"># the global R2</span>
-        <span class="n">tau2</span> <span class="o">=</span> <span class="n">r2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">r2</span><span class="p">)</span>
         <span class="c1"># Local R2 / variable importance</span>
         <span class="n">phi</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Dirichlet</span><span class="p">(</span><span class="s2">&quot;phi&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">)</span>
         <span class="c1"># Centered parametrization</span>
         <span class="c1"># Note that we scale the parameters by output std</span>
-        <span class="n">beta</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Normal</span><span class="p">(</span><span class="s2">&quot;coef_raw&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">*</span> <span class="p">(</span><span class="n">phi</span> <span class="o">*</span> <span class="n">tau2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">)</span>
+        <span class="n">beta</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Normal</span><span class="p">(</span><span class="s2">&quot;coef_raw&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">sigma</span> <span class="o">*</span> <span class="p">(</span><span class="n">phi</span> <span class="o">*</span> <span class="n">r2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">)</span>
         <span class="n">beta</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Deterministic</span><span class="p">(</span><span class="s2">&quot;coef_norm&quot;</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">)</span>
         <span class="c1"># Parameters on the original data scale</span>
         <span class="n">pm</span><span class="o">.</span><span class="n">Deterministic</span><span class="p">(</span><span class="s2">&quot;coef&quot;</span><span class="p">,</span> <span class="n">beta</span> <span class="o">/</span> <span class="n">scaling</span><span class="p">,</span> <span class="n">dims</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">)</span>
@@ -1076,7 +1075,7 @@ Sampling: [R2, coef_raw, intercept, nu, obs, phi, sigma]
 <div class="output_area rendered_html docutils container">
 <div>
   <progress value='8000' class='' max='8000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  100.00% [8000/8000 01:50&lt;00:00  Chains in warmup: 0, Divergences: 0]
+  100.00% [8000/8000 01:54&lt;00:00  Chains in warmup: 0, Divergences: 0]
 </div></div>
 </div>
 <p>Yet, there is correlation in sigma and <span class="math notranslate nohighlight">\(R^2\)</span></p>
@@ -1111,6 +1110,9 @@ Sampling: [R2, coef_raw, intercept, nu, obs, phi, sigma]
 <li><p>Attaching residual sigma to the model and <span class="math notranslate nohighlight">\(R^2\)</span> parametrization</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sigma</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">LogNormal</span><span class="p">(</span><span class="s2">&quot;sigma&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">std</span><span class="p">),</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="c1"># (phi * tau2) ** 0.5</span>
+<span class="p">(</span><span class="n">phi</span> <span class="o">*</span> <span class="n">r2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span>
 <span class="o">...</span>
 <span class="n">resid_sigma</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">r2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">sigma</span>
 </pre></div>
@@ -1159,10 +1161,10 @@ Sampling: [R2, coef_raw, intercept, nu, obs, phi, sigma]
 <div class="output_area rendered_html docutils container">
 <div>
   <progress value='8000' class='' max='8000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  100.00% [8000/8000 03:28&lt;00:00  Chains in warmup: 0, Divergences: 51]
+  100.00% [8000/8000 03:39&lt;00:00  Chains in warmup: 0, Divergences: 1]
 </div></div>
 </div>
-<p>The amount of sparsity is incredible. Yet, there are divergences which are an adventure to investigate.</p>
+<p>The amount of sparsity is incredible. Yet, there are few divergences and I think it can be ignored there.</p>
 <p>As authors claim, there are instabilities with low <span class="math notranslate nohighlight">\(\alpha\)</span>, and general recommendation (personal experience) is to exclude non-informative variables and set variable importance <span class="math notranslate nohighlight">\(\alpha\)</span> &gt; 1</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
@@ -1186,7 +1188,7 @@ Sampling: [R2, coef_raw, intercept, nu, obs, phi, sigma]
 <h2>Conclusion<a class="headerlink" href="#Conclusion" title="Permalink to this heading">#</a></h2>
 <p>There are few practical advices to use R2D2M2 prior:</p>
 <ul class="simple">
-<li><p>Use the prior to weight variables that make sense. The sparsity inducing alpha leads to instabilities (which you may ignore).</p></li>
+<li><p>Use the prior to weight variables that make sense. The sparsity inducing alpha leads to some instabilities (which you may ignore).</p></li>
 <li><p>Not always centered parametrization was great in my applications. I recommend trying both.</p></li>
 <li><p>Coupling the error term sigma into the model leads to fewer instabilities and more interpretable sigma prior.</p></li>
 </ul>

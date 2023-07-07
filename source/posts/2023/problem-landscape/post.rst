@@ -10,8 +10,8 @@ On Problem Landscape and Conformal Prediction vs. Bayes Dilemma
 
 There are a lot of ongoing debates between the Bayesian approach and doing conformal prediction.
 And I think this debate should not exist at all.
-Conformal Prediction is a great approach, and it is more or less orthogonal to the Bayesian analysis.
-I'll try to explain my vision about how conformal Prediction relates to Bayesian analysis,
+Conformal prediction is a great approach, and it is more or less orthogonal to the Bayesian analysis.
+I'll try to explain my vision about how conformal prediction relates to Bayesian analysis,
 what they share in common and why they are still very different.
 
 Problems Landscape

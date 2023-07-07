@@ -25,3 +25,4 @@ Materials
     - :download:`Presentation <https://disk.yandex.ru/i/v_hhau2ZytU0YQ>`
     - :download:`Code <https://drive.google.com/file/d/1pCkOW-Q5r69GIDXgaiKfqzscQ8ymQmXb/view>`
 - Gaussian Processes for Time Series
+    - :download:`Presentation <https://disk.yandex.ru/d/jp9tm0htDm7auw>`

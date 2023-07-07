@@ -121,7 +121,7 @@ Just a step back, where we were looking at the image classification or segmentat
 There is little sense to introduce another layer of complexity to the problem if the sole purpose is to classify cats and dogs.
 
 Thus, the biggest difference from :ref:`Black Box <Black-Box>` models is the **requirement** on some sort of structure.
-The structure helps to either constrain set of algorithms together, make the model actionable for real applications.
+The structure helps to either constrain set of algorithms together or make the model actionable for real applications.
 
 .. note::
 

@@ -1,93 +1,116 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the In Search of the Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Maxim Kochurov, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
+"Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-14 13:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"PO-Revision-Date: 2023-07-14 12:01+0000\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:9
 msgid "Interpreting LOO-PIT"
-msgstr ""
+msgstr "Интерпретация LOO-PIT"
 
-#: ../../source/posts/2022/loo-pit/post.ipynb:-1
+#: ../../source/posts/2022/loo-pit/post.ipynb-1
 msgid "loo-pit"
-msgstr ""
+msgstr "loo-pit"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:43
 msgid ""
-"I got a question about interpreting plots you get from `Arviz <https"
-"://arviz-devs.github.io/>`__. This particular one was about LOO-PIT, "
+"I got a question about interpreting plots you get from `Arviz "
+"<https://arviz-devs.github.io/>`__. This particular one was about LOO-PIT, "
 "which you can find `here <https://arviz-"
 "devs.github.io/arviz/api/generated/arviz.plot_loo_pit.html>`__."
 msgstr ""
+"Мне задали вопрос об интерпретации графиков, полученных с `Arviz "
+"<https://arviz-devs.github.io/>. `__. Именно этот был про LOO-PIT, который "
+"можно найти `здесь <https://arviz-"
+"devs.github.io/arviz/api/generated/arviz.plot_loo_pit.html> `__."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:45
 msgid ""
-"LOO-PIT is a useful concept to debug your model after inference is done. "
-"You can see if you have outliers and figure them out. By taking in "
-"account the feedback, you can later improve your model with better error "
-"model."
+"LOO-PIT is a useful concept to debug your model after inference is done. You"
+" can see if you have outliers and figure them out. By taking in account the "
+"feedback, you can later improve your model with better error model."
 msgstr ""
+"LOO-PIT — полезная концепция для отладки вашей модели после того, как сделан"
+" вывод. Вы можете увидеть, есть ли у вас выбросы, и выяснить, что они из "
+"себя представляют. Принимая во внимание обратную связь, вы можете позже "
+"улучшить свою модель с помощью лучшей модели ошибок."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:47
 msgid ""
-"Let’s go into more details about why you ever need this plot, how to work"
-" with it, and which actions to take after you see it. A case-study."
+"Let’s go into more details about why you ever need this plot, how to work "
+"with it, and which actions to take after you see it. A case-study."
 msgstr ""
+"Давайте подробнее поговорим о том, зачем вам вообще нужен этот график, как с"
+" ним работать и какие действия предпринять после того, как вы его увидите. "
+"Учимся на примере."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:59
 msgid "Integral transform"
-msgstr ""
+msgstr "Интегральное преобразование"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:70
 msgid ""
-"First, we need a model to demonstrate the pathologies that can be "
-"diagnosed with the LOO-PIT. I will use linear regression with robust "
-"likelihood to show all possible cases that can be fixed just by looking "
-"at the plot."
+"First, we need a model to demonstrate the pathologies that can be diagnosed "
+"with the LOO-PIT. I will use linear regression with robust likelihood to "
+"show all possible cases that can be fixed just by looking at the plot."
 msgstr ""
+"Во-первых, нам нужна модель для демонстрации патологий, которые можно "
+"диагностировать с помощью LOO-PIT. Я буду использовать линейную регрессию с "
+"устойчивым к выбросам правдоподобием, чтобы показать все возможные случаи, "
+"которые можно исправить, просто взглянув на график."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:81
 msgid ""
 "But wait, what is LOO-PIT you ask? Ok, let's give some theory before we "
 "start."
 msgstr ""
+"Но подождите, что такое LOO-PIT, спросите вы? Хорошо, давайте немного "
+"теории, прежде чем мы начнем."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:83
 msgid ""
 "LOO stands for Leave One Out validation. We usually want LOO to cross-"
-"validate our model. We train it on all but the one observation and then "
-"make predictions on the one that was the holdout. The same for every "
-"single observation."
+"validate our model. We train it on all but the one observation and then make"
+" predictions on the one that was the holdout. The same for every single "
+"observation."
 msgstr ""
+"LOO расшифровывается как валидация Leave One Out. Обычно мы хотим, чтобы LOO"
+" выполняла перекрестную проверку нашей модели. Мы обучаем ее на всех "
+"наблюдениях, кроме одного, а затем делаем прогнозы на основании удержанного "
+"наблюдения. Повторяем то же самое для каждого отдельного наблюдения."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:84
 msgid ""
-"PIT stands for Probability Integral Transformation. Briefly, it "
-"transforms any continuous distribution into a Uniform distribution."
+"PIT stands for Probability Integral Transformation. Briefly, it transforms "
+"any continuous distribution into a Uniform distribution."
 msgstr ""
+"PIT означает интегральное преобразование вероятности. Вкратце, оно "
+"преобразует любое непрерывное распределение в равномерное распределение."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:86
 msgid ""
 "While it is relatively clear what is LOO, it is not super clear, what is "
 "PIT. Let's make some visualizations."
 msgstr ""
+"Хотя относительно ясно, что такое LOO, не очень ясно, что такое PIT. Давайте"
+" сделаем несколько визуализаций."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:107
 msgid ""
@@ -97,6 +120,11 @@ msgid ""
 "u &\\sim \\operatorname{Uniform}[0, 1]\n"
 "\\end{align}"
 msgstr ""
+"\\begin{align}\n"
+"t &\\sim \\operatorname{StudentT}(0, 1)\\\\\n"
+"u &= \\operatorname{StudentT}(0, 1)\\operatorname{.cdf}(t)\\\\\n"
+"u &\\sim \\operatorname{Uniform}[0, 1]\n"
+"\\end{align}"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:153
 msgid ""
@@ -104,6 +132,9 @@ msgid ""
 "StudentT random variables to the Uniform distribution. Similar ideas are "
 "used for LOO-PIT."
 msgstr ""
+"Мы видим, что кумулятивное преобразование выполняет свою работу и "
+"преобразует наши случайные величины StudentT в равномерное распределение. "
+"Аналогичные идеи используются для LOO-PIT."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:155
 msgid ""
@@ -111,22 +142,33 @@ msgid ""
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>`__"
 " (``#L1674``) pointwise likelihood for all the observations"
 msgstr ""
+"`Вычислить <https://github.com/arviz-"
+"devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>"
+" `__ (``#L1674``)точечную вероятность для всех наблюдений"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:156
 msgid ""
 "`Calculate <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>`__"
-" (``#L770``) LOO likelihood approximation using `pareto smoothed "
-"importance sampling <https://arxiv.org/abs/1507.02646>`__"
+" (``#L770``) LOO likelihood approximation using `pareto smoothed importance "
+"sampling <https://arxiv.org/abs/1507.02646>`__"
 msgstr ""
+"`Рассчитать <https://github.com/arviz-"
+"devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>"
+" `__ (``#L770``)LOO приближение вероятности с использованием `сглаженной по "
+"Парето выборки важности <https://arxiv.org/abs/1507.02646> `__"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:157
 msgid ""
 "`Approximate <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>`__"
-" (``#L1729``) ECDF (Empirical CDF) values of the posterior predictive "
-"(for each sample)"
+" (``#L1729``) ECDF (Empirical CDF) values of the posterior predictive (for "
+"each sample)"
 msgstr ""
+"`Аппроксимировать <https://github.com/arviz-"
+"devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>"
+" `__ (``#L1729``) выборочную функцию распределения (Empirical CDF) значения "
+"апостериорного прогноза (для каждой выборки)"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:158
 msgid ""
@@ -134,323 +176,414 @@ msgid ""
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/plots/loopitplot.py>`__"
 " (``#L177``) the ECDF function for visualization with KDE"
 msgstr ""
+"`Аппроксимировать <https://github.com/arviz-"
+"devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/plots/loopitplot.py>"
+" `__ (``#L177``) функцию ECDF для визуализации в KDE"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:160
 msgid ""
 "If the likelihood is well specified, we'll see a uniform distribution of "
 "ECDF values, means, uniform KDE. Just like on the plot above"
 msgstr ""
+"Если вероятность хорошо задана, мы увидим равномерное распределение значений"
+" ECDF, т. е. равномерный KDE. Так же, как на графике выше"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:172
 msgid "Case study"
-msgstr ""
+msgstr "Работаем с примером"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:175
 msgid "Generative model"
-msgstr ""
+msgstr "Генеративная модель"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:177
 msgid ""
 "Our data will be generated with student T likelihood. We can adjust the "
-"degrees of freedom in the model to take care of the noise magnitude. This"
-" example will also be a very good way to visualize pathologies"
+"degrees of freedom in the model to take care of the noise magnitude. This "
+"example will also be a very good way to visualize pathologies"
 msgstr ""
+"Наши данные будут сгенерированы с правдоподобием Стьюдента. Мы можем "
+"настроить степени свободы в модели, чтобы позаботиться о величине шума. Этот"
+" пример также будет очень хорошим способом визуализации патологий."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:219
 msgid "Generating example data"
-msgstr ""
+msgstr "Генерация примера данных"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:221
 msgid ""
-"I do not think our data or model should be complicated. The whole point "
-"of the LOO-PIT is in defining likelihood, rarely model structure or "
+"I do not think our data or model should be complicated. The whole point of "
+"the LOO-PIT is in defining likelihood, rarely model structure or "
 "flexibility. We can easily illustrate this with a univariate linear "
 "regression."
 msgstr ""
+"Я не думаю, что наши данные или модель должны быть сложными. Весь смысл LOO-"
+"PIT заключается в определении вероятности. Она редко моделирует структуру "
+"или гибкость. Мы можем легко проиллюстрировать это с помощью одномерной "
+"линейной регрессии."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:261
 msgid "Bayesian detective"
-msgstr ""
+msgstr "Байесовский детектив"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:264
 msgid "Normal likelihood"
-msgstr ""
+msgstr "Нормальное правдоподобие"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:266
 msgid ""
-"Most of the models start simple. The simple model in our case starts with"
-" a Normal likelihood."
+"Most of the models start simple. The simple model in our case starts with a "
+"Normal likelihood."
 msgstr ""
+"Большинство моделей начинаются с простого. Простая модель в нашем случае "
+"начинается с нормального правдоподобия."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:569
 #: ../../source/posts/2022/loo-pit/post.ipynb:1042
 msgid "Checks"
-msgstr ""
+msgstr "Проверки "
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:571
 msgid ""
-"You know nothing about the underlying true model, so I'll keep the "
-"intrigue about posterior vs true values to the end."
+"You know nothing about the underlying true model, so I'll keep the intrigue "
+"about posterior vs true values to the end."
 msgstr ""
+"Вы ничего не знаете о лежащей в основе истинной модели, поэтому я сохраню "
+"интригу об апостериорных и истинных значениях до конца."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:573
 msgid "Let's look at LOO-PIT"
-msgstr ""
+msgstr "Давайте посмотрим на LOO-PIT"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:602
 msgid ""
-"Disclaimer. I write these lines as I would first see it, without "
-"conducting further analysis. This gives you a good thought process "
-"happening in my head."
+"Disclaimer. I write these lines as I would first see it, without conducting "
+"further analysis. This gives you a good thought process happening in my "
+"head."
 msgstr ""
+"Отказ от ответственности. Я пишу эти строки так, как увидел бы их сначала, "
+"не проводя дальнейшего анализа. Это показывает вам хороший мыслительный "
+"процесс, происходящий в моей голове."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:604
 msgid ""
 "Oh, you might think! Something is going wrong. What do we read from the "
 "plot? Let's operate with facts:"
 msgstr ""
+"О, можно подумать! Что-то идет не так. Что мы видим из графика? Оперируем "
+"фактами:"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:606
 msgid ""
-"We have to recall that what we plot here is CDF of the posterior applied "
-"to the observed data"
+"We have to recall that what we plot here is CDF of the posterior applied to "
+"the observed data"
 msgstr ""
+"Мы должны помнить, что то, что мы строим здесь, является CDF апостериорной "
+"функции, примененной к наблюдаемым данным."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:607
 msgid ""
 "Since we specified normal distribution in likelihood our CDF has similar "
 "properties (no outliers)"
 msgstr ""
+"Поскольку мы указали нормальное распределение по вероятности, наш CDF имеет "
+"аналогичные свойства (без выбросов)."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:608
 msgid ""
-"Looks like our data is mostly concentrated inside the high-density region"
-" and not represented on the tails"
+"Looks like our data is mostly concentrated inside the high-density region "
+"and not represented on the tails"
 msgstr ""
+"Похоже, наши данные в основном сосредоточены внутри области высокой "
+"плотности и не представлены на хвостах."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:610
 msgid ""
 "*I know how I generated my data and, actually, expected a bit different "
 "picture. But let's see how it goes*"
 msgstr ""
+"*Я знаю, как я генерировал свои данные и, на самом деле, ожидал немного "
+"другой картины. Но посмотрим, как пойдет *"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:612
 msgid "Let's check how does the posterior predictive looks like:"
-msgstr ""
+msgstr "Давайте проверим, как выглядит апостериорный прогноз:"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:641
 msgid ""
-"Oh, yeah! We get some more intuition from this picture. Data has huge "
-"tails, but narrow high-density regions. But for a more complicated "
-"distribution, could we have known that we have outliers without the "
-"picture? Yes"
+"Oh, yeah! We get some more intuition from this picture. Data has huge tails,"
+" but narrow high-density regions. But for a more complicated distribution, "
+"could we have known that we have outliers without the picture? Yes"
 msgstr ""
+"Ах, да! Мы получаем больше интуиции от этой картины. Данные имеют огромные "
+"хвосты, но узкие области высокой плотности. Но для более сложного "
+"распределения могли ли мы знать, что у нас есть выбросы без изображения? Да"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:727
 msgid ""
-"With Pareto k diagnostic values we see that we have two outliers. I would"
-" not say that two is good. Our example says that we have a very ill-"
-"defined model. But only by combining the LOO-PIT check and Pareto k "
-"values we can conclude that with symptoms we observe the disease are "
-"outliers."
+"With Pareto k diagnostic values we see that we have two outliers. I would "
+"not say that two is good. Our example says that we have a very ill-defined "
+"model. But only by combining the LOO-PIT check and Pareto k values we can "
+"conclude that with symptoms we observe the disease are outliers."
 msgstr ""
+"С диагностическими значениями Парето k мы видим, что у нас есть два выброса."
+" Я бы не сказал, что два — это хорошо. Наш пример говорит, что у нас очень "
+"плохо определена модель. Но только объединив проверку LOO-PIT и значения "
+"Парето k, мы можем сделать вывод, что болезнь, симптомы которой мы "
+"наблюдаем, — это выбросы."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:729
 msgid ""
-"But only combining LOO-PIT check and Pareto k values we can conclude that"
-" with symptoms we observe the disease are outliers."
+"But only combining LOO-PIT check and Pareto k values we can conclude that "
+"with symptoms we observe the disease are outliers."
 msgstr ""
+"Но только объединив проверку LOO-PIT и значения Парето k, мы можем сделать "
+"вывод, что болезнь, симптомы которой мы наблюдаем, — это выбросы."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:731
 msgid "Could we do more plots? Yes"
-msgstr ""
+msgstr "Можем ли мы сделать больше графиков? Да"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:732
 msgid "Would they add more value? Probably"
-msgstr ""
+msgstr "Добавят ли они больше ценности? Вероятно"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:733
 msgid "How much? Not much"
-msgstr ""
+msgstr "Сколько? Немного"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:745
 msgid "Robust likelihood"
-msgstr ""
+msgstr "Робастное правдоподобие"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:747
 msgid ""
-"Let's go to the second specification of our model. This one will be "
-"robust, amazingly robust, we'll try to get as long tails as possible."
+"Let's go to the second specification of our model. This one will be robust, "
+"amazingly robust, we'll try to get as long tails as possible."
 msgstr ""
+"Перейдем ко второй спецификации нашей модели. Она будет надежной, "
+"удивительно надежной, мы постараемся получить как можно более длинные "
+"хвосты."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:769
 msgid "And then use it in the model"
-msgstr ""
+msgstr "А затем используем ее в модели"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1053
 msgid "Let's check LOO-PIT again"
-msgstr ""
+msgstr "Давайте еще раз проверим LOO-PIT"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1085
 msgid ""
-"Ok, we now see two weird bumps in the LOO-PIT plot. What can we say about"
-" this?"
+"Ok, we now see two weird bumps in the LOO-PIT plot. What can we say about "
+"this?"
 msgstr ""
+"Хорошо, теперь мы видим две странные неровности на графике LOO-PIT. Что мы "
+"можем сказать об этом?"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1087
 msgid "Remember, these are CDF values of data"
-msgstr ""
+msgstr "Помните, что это значения CDF данных"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1088
 msgid ""
-"Yeah, CDF says that in high-density region we have less observations than"
-" on tails"
+"Yeah, CDF says that in high-density region we have less observations than on"
+" tails"
 msgstr ""
+"Ага, CDF говорит, что в области высокой плотности у нас меньше наблюдений, "
+"чем на хвостах"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1089
 msgid "Let me clarify a tiny bit"
-msgstr ""
+msgstr "Позвольте мне немного пояснить"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1118
 msgid ""
-"Data seems to be clearly concentrated a bit far from where it should be. "
-"We probably underestimated variance - we do not see enough data in the "
-"small green region. Let's check the PPC plot to visualize the intuition "
-"further."
+"Data seems to be clearly concentrated a bit far from where it should be. We "
+"probably underestimated variance - we do not see enough data in the small "
+"green region. Let's check the PPC plot to visualize the intuition further."
 msgstr ""
+"Данные кажутся явно сконцентрированными немного далеко от того места, где "
+"они должны быть. Вероятно, мы недооценили дисперсию — мы не видим достаточно"
+" данных в небольшой зеленой области. Давайте проверим график PPC, чтобы "
+"лучше визуализировать интуицию."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1150
 msgid ""
 "Oh, what a bad model would you say, outliers are insane in the posterior "
-"predictive, we should have less of them. But wait, what about variance, "
-"not outliers"
+"predictive, we should have less of them. But wait, what about variance, not "
+"outliers"
 msgstr ""
+"О, какая плохая модель, вы бы сказали, выбросы безумны в апостериорном "
+"прогнозировании, у нас их должно быть меньше. Но подождите, а как насчет "
+"дисперсии, а не выбросов?"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1183
 msgid ""
-"Yes, the picture is now more accurate. In our passion to add outliers "
-"into the model, we missed the fact that we might actually add way too "
-"many of them. Variance also seems to be high, but that seems not a "
-"priority this time."
+"Yes, the picture is now more accurate. In our passion to add outliers into "
+"the model, we missed the fact that we might actually add way too many of "
+"them. Variance also seems to be high, but that seems not a priority this "
+"time."
 msgstr ""
+"Да, картина стала более точной. В нашей страсти к добавлению выбросов в "
+"модель мы упустили тот факт, что на самом деле мы можем добавить их слишком "
+"много. Дисперсия также кажется высокой, но на этот раз это не является "
+"приоритетом."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1185
 msgid "Take-outs: reduce outliers, variance is not a priority"
 msgstr ""
+"Выводы: уменьшите выбросы, дисперсия не является большой проблемой сейчас"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1197
 msgid "Student T likelihood"
-msgstr ""
+msgstr "Правдоподобие Стьюдента"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1199
 msgid "**Did you know?**"
-msgstr ""
+msgstr "**Вы знали?**"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1201
 msgid ":math:`\\nu` parameter in StudentT controls *\"how heavy are the tails\"*"
 msgstr ""
+"Параметр :math:`\\nu` в StudentT управляет тем, *\"насколько тяжелы "
+"хвосты\"*"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1203
 msgid ":math:`\\nu \\to 0` means crazy many outliers"
-msgstr ""
+msgstr ":math:`\\nu \\to 0` означает безумное количество выбросов"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1204
 msgid ":math:`\\nu = 1` is Cauchy (See the likelihood above, gotcha)"
-msgstr ""
+msgstr ":math:`\\nu = 1` — Коши (см. вероятность выше)"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1205
 msgid ":math:`\\nu \\to \\infty` gives you normal distribution"
-msgstr ""
+msgstr ":math:`\\nu \\to \\infty` дает нормальное распределение"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1207
 msgid ""
-"With StudentT distribution we can control both variance and amount of "
-"over-dispersion. How do we construct priors for parameters?"
+"With StudentT distribution we can control both variance and amount of over-"
+"dispersion. How do we construct priors for parameters?"
 msgstr ""
+"С помощью распределения StudentT мы можем контролировать как дисперсию, так "
+"и степень чрезмерной дисперсии. Как мы строим априорные значения для "
+"параметров?"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1209
 msgid ""
-":math:`\\nu` - we just checked Cauchy distribution and saw that it "
-"generates tons of outliers, we need less, for sure. But not too much. We "
-"need zero avoiding prior with relatively large tails"
+":math:`\\nu` - we just checked Cauchy distribution and saw that it generates"
+" tons of outliers, we need less, for sure. But not too much. We need zero "
+"avoiding prior with relatively large tails"
 msgstr ""
+":math:`\\nu` - мы только что проверили распределение Коши и увидели, что оно"
+" генерирует массу выбросов, нам точно нужно меньше. Но не слишком много. Нам"
+" нужно, чтобы ноль не был в области наиболее вероятной области с "
+"относительно большими хвостами"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1210
 msgid ":math:`\\sigma` - no specific values, we can just keep the old prior"
 msgstr ""
+":math:`\\sigma` - никаких конкретных значений, мы можем просто оставить "
+"старую априорную"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1214
 msgid ""
 "My take on :math:`\\nu` parameter. I informally think of it if I would "
-"expect :math:`1/\\nu` rate of outliers in my data. That is very aligned "
-"with :math:`\\nu \\to \\infty` converging to normal distribution. Though,"
-" this is just intuition, not mathematical interpretation. Use it as long "
-"as it applies to your case."
+"expect :math:`1/\\nu` rate of outliers in my data. That is very aligned with"
+" :math:`\\nu \\to \\infty` converging to normal distribution. Though, this "
+"is just intuition, not mathematical interpretation. Use it as long as it "
+"applies to your case."
 msgstr ""
+"Мой взгляд на параметр :math:`\\nu`. Я неофициально думаю об этом, если бы "
+"ожидал :math:`1/\\nu` количество выбросов в моих данных. Это очень "
+"согласуется с тем, что :math:`\\nu \\to \\infty` сходится к нормальному "
+"распределению. Хотя это всего лишь интуиция, а не математическая "
+"интерпретация. Используйте его до тех пор, пока он применим к вашему делу."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1257
 msgid "This prior should work better"
-msgstr ""
+msgstr "Этот приор должен работать лучше"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1550
 msgid "What one looks much better. Let's compare our models..."
-msgstr ""
+msgstr "Что выглядит намного лучше. Давайте сравним наши модели..."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1562
 msgid "Model Comparison"
-msgstr ""
+msgstr "Сравнение моделей"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1604
 msgid ""
 "We see a very interesting picture. My thinking was in favor to rank the "
 "normal model higher than the Cauchy one. But things are, actually, more "
-"complicated than initially perceived. Normal distribution did not take "
-"into account outliers and suffered hard. Cauchy was more forgiving to "
-"outliers, but as we've seen, more forgiving than necessary. Does it have "
-"consequences? Probably, let's see"
+"complicated than initially perceived. Normal distribution did not take into "
+"account outliers and suffered hard. Cauchy was more forgiving to outliers, "
+"but as we've seen, more forgiving than necessary. Does it have consequences?"
+" Probably, let's see"
 msgstr ""
+"Мы видим очень интересную картину. Мое мнение было в пользу того, чтобы "
+"поставить нормальную модель выше, чем модель Коши. Но на самом деле все "
+"сложнее, чем кажется на первый взгляд. Нормальное распределение не учитывало"
+" выбросы и сильно пострадало. Коши был более снисходителен к отклонениям, "
+"но, как мы видели, снисходительнее, чем необходимо. Имеет ли это "
+"последствия? Наверное, посмотрим"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1616
 msgid "Cards revealed"
-msgstr ""
+msgstr "Как же все на самом деле"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1618
 msgid ""
-"This all is not necessary at all unless we want to know something about "
-"our model and the system it describes. Our variables of interest are "
+"This all is not necessary at all unless we want to know something about our "
+"model and the system it describes. Our variables of interest are "
 ":math:`\\beta` and the intercept:"
 msgstr ""
+"Во всем этом нет необходимости, если только мы не хотим знать что-то о нашей"
+" модели и описываемой ею системе. Нас интересуют переменные :math:`\\beta` и"
+" перехват:"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1647
-msgid "We can also compare variance (scale parameters) that our models estimate"
+msgid ""
+"We can also compare variance (scale parameters) that our models estimate"
 msgstr ""
+"Мы также можем сравнить дисперсию (параметры масштаба), которую оценивают "
+"наши модели."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1676
 msgid ""
-"Hah, most have nothing in common with the true sigma. Only StudentT "
-"managed to recover the true sigma."
+"Hah, most have nothing in common with the true sigma. Only StudentT managed "
+"to recover the true sigma."
 msgstr ""
+"Хах, большинство не имеет ничего общего с истинной сигмой. Только StudentT "
+"удалось восстановить истинную сигму."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1700
 msgid ""
-"Posterior for :math:`\\nu` is quite uncertain. Low values generate too "
-"much noise, so sigma is less important. The uncertainty in :math:`\\nu` "
-"creates a lot of troubles in practice, you need to be really certain in "
-"your priors to make use of that. Let's have a look at the posterior "
-"predictive again"
+"Posterior for :math:`\\nu` is quite uncertain. Low values generate too much "
+"noise, so sigma is less important. The uncertainty in :math:`\\nu` creates a"
+" lot of troubles in practice, you need to be really certain in your priors "
+"to make use of that. Let's have a look at the posterior predictive again"
 msgstr ""
+"Апостериорное значение для :math:`\\nu` весьма неопределенно. Низкие "
+"значения генерируют слишком много шума, поэтому сигма менее важна. "
+"Неопределенность в :math:`\\nu` создает много проблем на практике, вам нужно"
+" быть действительно уверенным в своих априорных предположениях, чтобы "
+"использовать это. Давайте снова посмотрим на апостериорное предсказание"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1732
 msgid "We need to zoom in to see the difference"
-msgstr ""
+msgstr "Нам нужно увеличить масштаб, чтобы увидеть разницу"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1762
 msgid "But could I?.."
-msgstr ""
+msgstr "Но что если?.."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:1773
 msgid "Maybe we could do any better when we know :math:`\\nu`?"
 msgstr ""
+"Может быть, мы могли бы добиться большего успеха, если бы знали "
+":math:`\\nu`?"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:2114
 msgid ""
@@ -458,58 +591,75 @@ msgid ""
 "something we can infer and what is left behind the scenes. Do not get "
 "trapped in estimating every nuance parameter you ever introduce into the "
 "model. There will definitely be something you've left behind, put not "
-"informed enough priors and so on. > Actually this is exactly the case "
-"with sigma in this example. Half normal is not zero avoiding and the true"
-" model has :math:`\\sigma=3` that is away from zero."
+"informed enough priors and so on. > Actually this is exactly the case with "
+"sigma in this example. Half normal is not zero avoiding and the true model "
+"has :math:`\\sigma=3` that is away from zero."
 msgstr ""
+"Параметры шума всегда сложны, есть компромисс между тем, что мы можем "
+"сделать вывод, и тем, что остается за кадром. Не попадайте в ловушку оценки "
+"каждого нюанса параметра, который вы когда-либо вводили в модель. "
+"Обязательно будет что-то, что вы оставили позади, поставили недостаточно "
+"информированные приоры и так далее. > Собственно именно так и обстоит дело с"
+" сигмой в данном примере. Половина нормы — это не отклонение от нуля, и "
+"истинная модель имеет :math:`\\sigma=3`, которая отличается от нуля."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:2126
 msgid "Conclusions"
-msgstr ""
+msgstr "Выводы"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:2128
 msgid ""
-"LOO-PIT is a great plot that helps you to go look what is going on with "
-"the model"
+"LOO-PIT is a great plot that helps you to go look what is going on with the "
+"model"
 msgstr ""
+"LOO-PIT — отличный график, который поможет вам посмотреть, что происходит с "
+"моделью."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:2130
 msgid "check tails and outliers"
-msgstr ""
+msgstr "проверить хвосты и выбросы"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:2131
 msgid "check variance"
-msgstr ""
+msgstr "проверить дисперсию"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:2133
 msgid ""
 "LOO-PIT combined with PPC plot and LOO-Pointwise can guide to a better "
 "likelihood"
 msgstr ""
+"LOO-PIT в сочетании с графиком PPC и LOO-Pointwise может привести к лучшему "
+"правдоподобию"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:2134
 msgid ""
-"Sometimes the model gives you a good answer, but still can be improved "
-"with more informed priors, more domain knowledge. Nuance parameters are "
-"hard, and you never know the right answer, that's fine"
+"Sometimes the model gives you a good answer, but still can be improved with "
+"more informed priors, more domain knowledge. Nuance parameters are hard, and"
+" you never know the right answer, that's fine"
 msgstr ""
+"Иногда модель дает вам хороший ответ, но ее все же можно улучшить с помощью "
+"более информированных априорных распределений, большего знания предметной "
+"области. Гиперпараметры сложны, и вы никогда не знаете правильный ответ, и "
+"это нормально"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:4
 msgid ""
-"If you have new ideas after reading the notebook, want to discuss it in "
-"more details or want to work with me, you can always :doc:`reach me out "
+"If you have new ideas after reading the notebook, want to discuss it in more"
+" details or want to work with me, you can always :doc:`reach me out "
 "</contacts>`."
 msgstr ""
+"Если после прочтения блокнота у вас появились новые идеи, вы хотите обсудить"
+" их более подробно или хотите поработать со мной, вы всегда можете "
+":doc:`связаться со мной </contacts> `."
 
-#: ../../source/posts/2022/loo-pit/post.ipynb
+#: ../../source/posts/2022/loo-pit/post.ipynb:0
 msgid "Resources"
-msgstr ""
+msgstr "Ресурсы"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:11
 msgid "Download the :download:`post.ipynb`"
-msgstr ""
+msgstr "Скачать :download:`post.ipynb`"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:12
 msgid "Download the :download:`environment.yml`"
-msgstr ""
-
+msgstr "Скачать :download:`environment.yml`"

@@ -397,12 +397,6 @@ document.write(`
     </span>
   
   
-  <a href="../../../blog/tag/arviz.html">arviz</a>
-  
-  
-  
-  
-  
   <a href="../../../blog/tag/pymc.html">pymc</a>
   
   
@@ -410,6 +404,12 @@ document.write(`
   
   
   <a href="../../../blog/tag/statistics.html">statistics</a>
+  
+  
+  
+  
+  
+  <a href="../../../blog/tag/arviz.html">arviz</a>
   
   
   
@@ -843,7 +843,12 @@ Sampling: [y_obs]
 <blockquote>
 <div><p>Disclaimer. I write these lines as I would first see it, without conducting further analysis. This gives you a good thought process happening in my head.</p>
 </div></blockquote>
-<p>Oh, you might think! Something is going wrong. What do we read from the plot? Let’s operate with facts: * We have to recall that what we plot here is CDF of the posterior applied to the observed data * Since we specified normal distribution in likelihood our CDF has similar properties (no outliers) * Looks like our data is mostly concentrated inside the high-density region and not represented on the tails</p>
+<p>Oh, you might think! Something is going wrong. What do we read from the plot? Let’s operate with facts:</p>
+<ul class="simple">
+<li><p>We have to recall that what we plot here is CDF of the posterior applied to the observed data</p></li>
+<li><p>Since we specified normal distribution in likelihood our CDF has similar properties (no outliers)</p></li>
+<li><p>Looks like our data is mostly concentrated inside the high-density region and not represented on the tails</p></li>
+</ul>
 <p><em>I know how I generated my data and, actually, expected a bit different picture. But let’s see how it goes</em></p>
 <p>Let’s check how does the posterior predictive looks like:</p>
 <div class="nboutput nblast docutils container">
@@ -1016,7 +1021,12 @@ Sampling: [y_obs]
 <img alt="../../../_images/posts_2022_loo-pit_post_36_0.png" class="no-scaled-link" src="../../../_images/posts_2022_loo-pit_post_36_0.png" style="width: 731px; height: 491px;" />
 </div>
 </div>
-<p>Ok, we now see two weird bumps in the LOO-PIT plot. What can we say about this? * Remember, these are CDF values of data * Yeah, CDF says that in high-density region we have less observations than on tails * Let me clarify a tiny bit</p>
+<p>Ok, we now see two weird bumps in the LOO-PIT plot. What can we say about this?</p>
+<ul class="simple">
+<li><p>Remember, these are CDF values of data</p></li>
+<li><p>Yeah, CDF says that in high-density region we have less observations than on tails</p></li>
+<li><p>Let me clarify a tiny bit</p></li>
+</ul>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
@@ -1074,7 +1084,11 @@ Sampling: [y_obs]
 <li><p><span class="math notranslate nohighlight">\(\nu \to \infty\)</span> gives you normal distribution</p></li>
 </ul>
 </div></blockquote>
-<p>With StudentT distribution we can control both variance and amount of over-dispersion. How do we construct priors for parameters? * <span class="math notranslate nohighlight">\(\nu\)</span> - we just checked Cauchy distribution and saw that it generates tons of outliers, we need less, for sure. But not too much. We need zero avoiding prior with relatively large tails * <span class="math notranslate nohighlight">\(\sigma\)</span> - no specific values, we can just keep the old prior</p>
+<p>With StudentT distribution we can control both variance and amount of over-dispersion. How do we construct priors for parameters?</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\nu\)</span> - we just checked Cauchy distribution and saw that it generates tons of outliers, we need less, for sure. But not too much. We need zero avoiding prior with relatively large tails</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma\)</span> - no specific values, we can just keep the old prior</p></li>
+</ul>
 <blockquote>
 <div><p>My take on <span class="math notranslate nohighlight">\(\nu\)</span> parameter. I informally think of it if I would expect <span class="math notranslate nohighlight">\(1/\nu\)</span> rate of outliers in my data. That is very aligned with <span class="math notranslate nohighlight">\(\nu \to \infty\)</span> converging to normal distribution. Though, this is just intuition, not mathematical interpretation. Use it as long as it applies to your case.</p>
 </div></blockquote>

@@ -34,7 +34,7 @@ Solving White-Box Problems
       * **Be Helpful.** If you do not need Bayesian inference I can still help you find a research direction.
 
 
-      .. button-ref:: contacts
+      .. button-link:: contacts.html
          :color: primary
          :align: center
 
@@ -151,7 +151,7 @@ How I work
          If we do not fit each other, be sure I do my best to advice
          you the next steps to the best of my knowledge.
 
-      .. button-ref:: pages/book-a-call
+      .. button-link:: pages/book-a-call.html
          :color: primary
          :align: center
 
@@ -174,7 +174,7 @@ Teaching
 
       For more learning materials follow the link below:
 
-      .. button-ref:: teaching
+      .. button-link:: teaching.html
          :color: primary
          :align: center
 

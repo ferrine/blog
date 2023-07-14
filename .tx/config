@@ -7,9 +7,33 @@ source_file  = build/gettext/blog.pot
 type         = PO
 minimum_perc = 0
 
-[o:ferrine:p:ferrine-github-io:r:cases]
-file_filter  = source/locale//<lang>/LC_MESSAGES/cases.po
-source_file  = build/gettext/cases.pot
+[o:ferrine:p:ferrine-github-io:r:cases--ab]
+file_filter  = source/locale//<lang>/LC_MESSAGES/cases/ab.po
+source_file  = build/gettext/cases/ab.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:cases--bioinfo]
+file_filter  = source/locale//<lang>/LC_MESSAGES/cases/bioinfo.po
+source_file  = build/gettext/cases/bioinfo.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:cases--brain]
+file_filter  = source/locale//<lang>/LC_MESSAGES/cases/brain.po
+source_file  = build/gettext/cases/brain.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:cases--chemistry]
+file_filter  = source/locale//<lang>/LC_MESSAGES/cases/chemistry.po
+source_file  = build/gettext/cases/chemistry.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:cases--mmm]
+file_filter  = source/locale//<lang>/LC_MESSAGES/cases/mmm.po
+source_file  = build/gettext/cases/mmm.pot
 type         = PO
 minimum_perc = 0
 
@@ -25,15 +49,27 @@ source_file  = build/gettext/index.pot
 type         = PO
 minimum_perc = 0
 
-[o:ferrine:p:ferrine-github-io:r:pages]
-file_filter  = source/locale//<lang>/LC_MESSAGES/pages.po
-source_file  = build/gettext/pages.pot
+[o:ferrine:p:ferrine-github-io:r:pages--book-a-call]
+file_filter  = source/locale//<lang>/LC_MESSAGES/pages/book-a-call.po
+source_file  = build/gettext/pages/book-a-call.pot
 type         = PO
 minimum_perc = 0
 
-[o:ferrine:p:ferrine-github-io:r:posts]
-file_filter  = source/locale//<lang>/LC_MESSAGES/posts.po
-source_file  = build/gettext/posts.pot
+[o:ferrine:p:ferrine-github-io:r:posts--2022--labs-ab-histogram--post]
+file_filter  = source/locale//<lang>/LC_MESSAGES/posts/2022/labs-ab-histogram/post.po
+source_file  = build/gettext/posts/2022/labs-ab-histogram/post.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:posts--2022--loo-pit--post]
+file_filter  = source/locale//<lang>/LC_MESSAGES/posts/2022/loo-pit/post.po
+source_file  = build/gettext/posts/2022/loo-pit/post.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:posts--2023--r2d2m2--post]
+file_filter  = source/locale//<lang>/LC_MESSAGES/posts/2023/r2d2m2/post.po
+source_file  = build/gettext/posts/2023/r2d2m2/post.pot
 type         = PO
 minimum_perc = 0
 
@@ -43,15 +79,33 @@ source_file  = build/gettext/sphinx.pot
 type         = PO
 minimum_perc = 0
 
-[o:ferrine:p:ferrine-github-io:r:talks]
-file_filter  = source/locale//<lang>/LC_MESSAGES/talks.po
-source_file  = build/gettext/talks.pot
+[o:ferrine:p:ferrine-github-io:r:talks--2022--data-elka--event]
+file_filter  = source/locale//<lang>/LC_MESSAGES/talks/2022/data-elka/event.po
+source_file  = build/gettext/talks/2022/data-elka/event.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:talks--2023--analyst-days--event]
+file_filter  = source/locale//<lang>/LC_MESSAGES/talks/2023/analyst-days/event.po
+source_file  = build/gettext/talks/2023/analyst-days/event.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:talks--2023--data-fest--event]
+file_filter  = source/locale//<lang>/LC_MESSAGES/talks/2023/data-fest/event.po
+source_file  = build/gettext/talks/2023/data-fest/event.pot
 type         = PO
 minimum_perc = 0
 
 [o:ferrine:p:ferrine-github-io:r:teaching]
 file_filter  = source/locale//<lang>/LC_MESSAGES/teaching.po
 source_file  = build/gettext/teaching.pot
+type         = PO
+minimum_perc = 0
+
+[o:ferrine:p:ferrine-github-io:r:teaching--state-of-bayes]
+file_filter  = source/locale//<lang>/LC_MESSAGES/teaching/state-of-bayes.po
+source_file  = build/gettext/teaching/state-of-bayes.pot
 type         = PO
 minimum_perc = 0
 

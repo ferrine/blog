@@ -25,7 +25,7 @@ author = "Max Kochurov"
 # Translation
 
 locale_dirs = ["locale/"]  # path is example but recommended.
-gettext_compact = True  # optional.
+gettext_compact = False  # optional.
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

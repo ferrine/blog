@@ -1,179 +1,197 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the In Search of the Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Daria Galimzianova, 2023
+# Maxim Kochurov, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
+"Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-02 22:47+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"PO-Revision-Date: 2023-06-25 18:45+0000\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../source/teaching.rst:2
 msgid "Teaching"
-msgstr ""
+msgstr "Преподавание"
 
 #: ../../source/teaching.rst:12
 msgid "Books"
-msgstr ""
+msgstr "Книги"
 
 #: ../../source/teaching.rst:13
 msgid ""
-"Fist of all a lot of materials already exist on the internet, and they "
-"are just amazing."
+"Fist of all a lot of materials already exist on the internet, and they are "
+"just amazing."
 msgstr ""
+"Во-первых, в интернете уже есть много материалов, и они просто потрясающие."
 
 #: ../../source/teaching.rst:15
 msgid "Learn PyMC with Books"
-msgstr ""
+msgstr "Изучайте PyMC по учебникам"
 
 #: ../../source/teaching.rst:19
 msgid "A collection of books is curated by PyMC Developers"
-msgstr ""
+msgstr "Коллекция книг курируется разработчиками PyMC."
 
 #: ../../source/teaching.rst:23
 msgid "Workshops"
-msgstr ""
+msgstr "Мастер-классы"
 
 #: ../../source/teaching.rst:24
 msgid ""
-"I give lectures in university, webinar format and give corporate "
-"workshops. Feel free to reach me out if you want something customized."
+"I give lectures in university, webinar format and give corporate workshops. "
+"Feel free to reach me out if you want something customized."
 msgstr ""
+"Читаю лекции в университете в формате вебинаров и корпоративные мастер-"
+"классы. Не стесняйтесь связаться со мной, если вы хотите что-то "
+"индивидуальное."
 
 #: ../../source/teaching.rst:29
 msgid "MSU Practical Bayes"
-msgstr ""
+msgstr "Прикладные Байесовские методы в МГУ"
 
 #: ../../source/teaching.rst:32
 msgid "Modern practical course on Bayesian statistics"
-msgstr ""
+msgstr "Современный практический курс по байесовской статистике"
 
 #: ../../source/teaching.rst:36
 msgid ":xref:`Announcement <talks:2022:msu-practical-bayes>`"
-msgstr ""
+msgstr ":xref:`Объявление <talks:2022:msu-practical-bayes> `"
 
 #: ../../source/teaching.rst:38
 msgid "PyMC Labs State of Bayes"
-msgstr ""
+msgstr "PyMC Labs State of Bayes"
 
 #: ../../source/teaching.rst:41
 msgid "Webinar series on state of the art applied Bayesian statistics"
-msgstr ""
+msgstr "Серия вебинаров по передовой прикладной байесовской статистике"
 
 #: ../../source/teaching.rst:45
 msgid ":doc:`Online Materials <teaching/state-of-bayes>`"
-msgstr ""
+msgstr ":doc:`Онлайн-материалы <teaching/state-of-bayes> `"
 
 #: ../../source/teaching.rst:47
 msgid "Request a Workshop"
-msgstr ""
+msgstr "Запросить мастер-класс"
 
 #: ../../source/teaching/state-of-bayes.rst:2
 msgid "State of Bayes"
-msgstr ""
+msgstr "State of Bayes"
 
 #: ../../source/teaching/state-of-bayes.rst:3
 msgid ""
-"State of Bayes is a series of webinars about advances in practical "
-"methods and modeling intuition. The major focus of the webinar series "
-"will be on understanding concepts of advanced statistical models and "
-"introducing prior knowledge into the loop. This free course will be "
-"interesting for Bayesian practitioners who want to deepen their "
-"understanding about Bayesian modeling."
+"State of Bayes is a series of webinars about advances in practical methods "
+"and modeling intuition. The major focus of the webinar series will be on "
+"understanding concepts of advanced statistical models and introducing prior "
+"knowledge into the loop. This free course will be interesting for Bayesian "
+"practitioners who want to deepen their understanding about Bayesian "
+"modeling."
 msgstr ""
+"State of Bayes — это серия вебинаров о достижениях в практических методах и "
+"моделировании интуиции. Основное внимание в серии вебинаров будет уделено "
+"пониманию концепций передовых статистических моделей и внедрению в цикл "
+"предварительных знаний. Этот бесплатный курс будет интересен практикующим "
+"байесовскую статистику на работе, которые хотят углубить свое понимание "
+"байесовского моделирования."
 
 #: ../../source/teaching/state-of-bayes.rst:12
 msgid "Materials"
-msgstr ""
+msgstr "Материалы"
 
 #: ../../source/teaching/state-of-bayes.rst:13
 msgid ":fa:`bars` :xref:`Full YouTube Playlist <talks:2023:state-of-bayes>`"
 msgstr ""
+":fa:`bars` :xref:`Полный плейлист YouTube <talks:2023:state-of-bayes> `"
 
 #: ../../source/teaching/state-of-bayes.rst:14
 msgid ""
-":fab:`youtube` `Introduction <https://www.youtube.com/watch?v=X4y2UfU-"
-"2cs>`_"
+":fab:`youtube` `Introduction <https://www.youtube.com/watch?v=X4y2UfU-2cs>`_"
 msgstr ""
+":fab:`youtube` `Введение <https://www.youtube.com/watch?v=X4y2UfU-2cs> `_"
 
 #: ../../source/teaching/state-of-bayes.rst:15
 msgid ":download:`Presentation <https://disk.yandex.ru/i/S3sqn1CyIVwW9A>`"
-msgstr ""
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/S3sqn1CyIVwW9A> `"
 
 #: ../../source/teaching/state-of-bayes.rst:16
 msgid ""
 ":fab:`youtube` `Bayesian Thinking "
 "<https://www.youtube.com/watch?v=L9XMT08_KgY>`_"
 msgstr ""
+":fab:`youtube` Байесовское мышление "
+"<https://www.youtube.com/watch?v=L9XMT08_KgY> `_"
 
 #: ../../source/teaching/state-of-bayes.rst:17
 msgid ":download:`Presentation <https://disk.yandex.ru/i/-ID8GxjQcQCSsQ>`"
-msgstr ""
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/-ID8GxjQcQCSsQ> `"
 
 #: ../../source/teaching/state-of-bayes.rst:18
 msgid ""
 ":fab:`youtube` `Hierarchical Modeling "
 "<https://www.youtube.com/watch?v=pnJgDSdgqVg>`_"
 msgstr ""
+":fab:`youtube` `Иерархическое моделирование "
+"<https://www.youtube.com/watch?v=pnJgDSdgqVg> `_"
 
 #: ../../source/teaching/state-of-bayes.rst:19
 msgid ":download:`Presentation <https://disk.yandex.ru/i/T-ugd8oS-B3joA>`"
-msgstr ""
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/T-ugd8oS-B3joA> `"
 
 #: ../../source/teaching/state-of-bayes.rst:20
 msgid ""
 ":fab:`youtube` `Interpretable Linear Regression "
 "<https://www.youtube.com/watch?v=fpS0NjqNHn8>`_"
 msgstr ""
+":fab:`youtube` `Интерпретируемая линейная регрессия "
+"<https://www.youtube.com/watch?v=fpS0NjqNHn8> `_"
 
 #: ../../source/teaching/state-of-bayes.rst:21
 msgid ":download:`Presentation <https://disk.yandex.ru/i/j-Yoe29iJAW0ZA>`"
-msgstr ""
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/j-Yoe29iJAW0ZA> `"
 
 #: ../../source/teaching/state-of-bayes.rst:22
-msgid ":fab:`youtube` `AB Testing <https://www.youtube.com/watch?v=QllfKQH-yQ4>`_"
+msgid ""
+":fab:`youtube` `AB Testing <https://www.youtube.com/watch?v=QllfKQH-yQ4>`_"
 msgstr ""
+":fab:`youtube` `А/Б-тестирование <https://www.youtube.com/watch?v=QllfKQH-"
+"yQ4> `_"
 
 #: ../../source/teaching/state-of-bayes.rst:23
 msgid ":download:`Presentation <https://disk.yandex.ru/i/3hXlNyvyCXgprw>`"
-msgstr ""
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/3hXlNyvyCXgprw> `"
 
 #: ../../source/teaching/state-of-bayes.rst:25
 msgid ""
 ":fab:`youtube` `Gaussian Processes "
 "<https://www.youtube.com/watch?v=KJEoKsGJKEg>`_"
 msgstr ""
+":fab:`youtube` `Гауссовские процессы "
+"<https://www.youtube.com/watch?v=KJEoKsGJKEg> `_"
 
 #: ../../source/teaching/state-of-bayes.rst:25
 msgid ":download:`Presentation <https://disk.yandex.ru/i/v_hhau2ZytU0YQ>`"
-msgstr ""
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/v_hhau2ZytU0YQ> `"
 
 #: ../../source/teaching/state-of-bayes.rst:26
 msgid ""
-":download:`Code <https://drive.google.com/file/d/1pCkOW-"
-"Q5r69GIDXgaiKfqzscQ8ymQmXb/view>`"
+":download:`Code "
+"<https://drive.google.com/file/d/1pCkOW-Q5r69GIDXgaiKfqzscQ8ymQmXb/view>`"
 msgstr ""
+":download:`Код "
+"<https://drive.google.com/file/d/1pCkOW-Q5r69GIDXgaiKfqzscQ8ymQmXb/view> `"
 
 #: ../../source/teaching/state-of-bayes.rst:27
 msgid "Gaussian Processes for Time Series"
-msgstr ""
-
-#~ msgid ""
-#~ "Fist of all a lot of materials "
-#~ "already exist on the internet and "
-#~ "they are just amazing."
-#~ msgstr ""
-
+msgstr "Гауссовские процессы для временных рядов"

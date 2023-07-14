@@ -21,11 +21,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/blog.rst:2
-msgid "Blog"
+#: ../../source/talks/2023/data-fest/event.rst:2
+msgid "Bayes in the Wild"
 msgstr ""
 
-#: ../../source/blog.rst:3
-msgid "This is a placeholder to reference in toc"
+#: ../../source/talks/2023/data-fest/event.rst:11
+msgid ""
+"I talk about the Bayesian approach to wide range of problems. Show how it"
+" is related to traditional methods in ML and what tasks benefit from an "
+"alternative view."
+msgstr ""
+
+#: ../../source/talks/2023/data-fest/event.rst:19
+msgid "Video"
+msgstr ""
+
+#: ../../source/talks/2023/data-fest/event.rst:21
+msgid "Not ready"
+msgstr ""
+
+#: ../../source/talks/2023/data-fest/event.rst:24
+msgid "Materials"
+msgstr ""
+
+#: ../../source/talks/2023/data-fest/event.rst:26
+msgid ":xref:`talks:2023:data-fest`"
+msgstr ""
+
+#: ../../source/talks/2023/data-fest/event.rst:27
+msgid ":download:`Presentation <https://disk.yandex.ru/i/eiExGvv7wEtgbw>`"
 msgstr ""
 

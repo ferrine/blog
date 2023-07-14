@@ -1,318 +1,274 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Daria Galimzianova, 2023
-# Maxim Kochurov, 2023
-# 
+# This file is distributed under the same license as the In Search of the
+# Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior\n"
+"Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-02 22:47+0000\n"
-"PO-Revision-Date: 2023-06-02 09:07+0000\n"
-"Last-Translator: Maxim Kochurov, 2023\n"
-"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/index.rst:4
 msgid "Solving White-Box Problems"
-msgstr "Решения для Интерпретируемых Задач"
+msgstr ""
 
 #: ../../source/index.rst:26
 msgid "**Principal Data Scientist** @ :xref:`misc:pymc-labs`"
-msgstr "**Principal Data Scientist** @ :xref:`misc:pymc-labs`"
+msgstr ""
 
 #: ../../source/index.rst:28
 msgid "My core principles are:"
-msgstr "Мои основные принципы:"
+msgstr ""
 
 #: ../../source/index.rst:30
 msgid ""
 "**Be Focused.** I work exclusively with interpretable models and create "
 "transparent solutions."
 msgstr ""
-"**Держать фокус.** Я работаю исключительно с интерпретируемыми моделями и "
-"создаю прозрачные решения."
 
 #: ../../source/index.rst:31
 msgid ""
-"**Be Erudite.** I have wide machine learning expertise to know when you need"
-" Bayesian approach."
+"**Be Erudite.** I have wide machine learning expertise to know when you "
+"need Bayesian approach."
 msgstr ""
-"**Быть эрудированным.** У меня большой опыт в области машинного обучения, "
-"чтобы знать, когда вам нужен байесовский подход."
 
 #: ../../source/index.rst:32
 msgid ""
-"**Be Oriented.** I focus on core needs first, that is where a good project "
-"starts."
+"**Be Oriented.** I focus on core needs first, that is where a good "
+"project starts."
 msgstr ""
-"**Приверженность результату.** Сначала я сосредотачиваюсь на основных "
-"потребностях. С этого и начинается хороший проект."
 
 #: ../../source/index.rst:33
 msgid ""
-"**Share knowledge.** I love to educate about the statistical model, so you "
-"are familiar with it."
+"**Share knowledge.** I love to educate about the statistical model, so "
+"you are familiar with it."
 msgstr ""
-"**Делиться знаниями.** Я с удовольствием рассказываю о статистической "
-"модели, чтобы вы знали как ей пользоваться."
 
 #: ../../source/index.rst:34
 msgid ""
-"**Be Helpful.** If you do not need Bayesian inference I can still help you "
-"find a research direction."
+"**Be Helpful.** If you do not need Bayesian inference I can still help "
+"you find a research direction."
 msgstr ""
-"**Быть полезным.** Если вам не нужен байесовский вывод, я все равно могу "
-"помочь вам найти направление исследований."
 
 #: ../../source/index.rst:37
 msgid "Contact Me"
-msgstr "Связаться со мной"
+msgstr ""
 
 #: ../../source/index.rst:53
 msgid "When Bayesian"
-msgstr "Когда байесовский подход"
+msgstr ""
 
 #: ../../source/index.rst:60
 msgid "Is your problem white box?"
-msgstr "Ваша проблема — это белый ящик?"
+msgstr ""
 
 #: ../../source/index.rst:62
 msgid ""
 "If your problem is not white box it makes little sense to use Bayesian "
-"methods. The approach relies on clear understanding and reasoning about the "
-"problem."
+"methods. The approach relies on clear understanding and reasoning about "
+"the problem."
 msgstr ""
-"Если ваша проблема — не белый ящик, нет смысла использовать байесовские "
-"методы. Подход основан на четком понимании и рассуждениях о проблеме."
 
 #: ../../source/index.rst:65
 msgid "How much do you know about the problem?"
-msgstr "Как много вы знаете о проблеме?"
+msgstr ""
 
 #: ../../source/index.rst:67
 msgid ""
-"The more you understand about the model and process it describes the better "
-"is the solution. No traditional approach takes this to the absolute and "
-"translates expert opinions to rigor definition."
+"The more you understand about the model and process it describes the "
+"better is the solution. No traditional approach takes this to the "
+"absolute and translates expert opinions to rigor definition."
 msgstr ""
-"Чем больше вы понимаете модель и процесс, который она описывает, тем лучше "
-"решение. Никакой традиционный подход не учитывает это и не переводит мнения "
-"экспертов в интерпретируемые ограничения."
 
 #: ../../source/index.rst:70
 msgid "Do you understand causal relations of your problem?"
-msgstr "Вы понимаете причинно-следственные связи вашей задачи?"
+msgstr ""
 
 #: ../../source/index.rst:72
 msgid ""
-"Understanding relations is a half-way to build a Bayesian model. Ignoring "
-"these relations leads to biased estimates and decisions."
+"Understanding relations is a half-way to build a Bayesian model. Ignoring"
+" these relations leads to biased estimates and decisions."
 msgstr ""
-"Понимание взаимосвязей — это половина пути к построению байесовской модели. "
-"Игнорирование этих связей приводит к необъективным оценкам и неэффективным "
-"решениям."
 
 #: ../../source/index.rst:78
 msgid "Do you need to interpret the solution?"
-msgstr "Вам нужно интерпретировать решение?"
+msgstr ""
 
 #: ../../source/index.rst:80
 msgid ""
 "Clear interpretation is the core principle in Bayesian modeling. Every "
-"unknown parameter in the model is estimated using expert and data guidance. "
-"Using Bayesian approach you make maximum use of human in the loop data "
-"driven business processes."
+"unknown parameter in the model is estimated using expert and data "
+"guidance. Using Bayesian approach you make maximum use of human in the "
+"loop data driven business processes."
 msgstr ""
-"Четкая интерпретация является основным принципом байесовского моделирования."
-" Каждый неизвестный параметр в модели оценивается с использованием "
-"рекомендаций экспертов и данных. Используя байесовский подход, вы "
-"максимально используете человека в бизнес-процессах опираясь на данные."
 
 #: ../../source/index.rst:84
 msgid "Do you need just predictions or something more?"
-msgstr "Вам нужны только прогнозы или что-то большее?"
+msgstr ""
 
 #: ../../source/index.rst:86
 msgid ""
-"If predictions is all you care about, I suggest looking into "
-":xref:`misc:conformal-prediction`. It helps to take in account uncertainty "
-"for the prediction tasks. If this does not help, and you need uncertainty in"
-" model interpretation for your decision process, Bayesian approach is for "
+"If predictions is all you care about, I suggest looking into :xref:`misc"
+":conformal-prediction`. It helps to take in account uncertainty for the "
+"prediction tasks. If this does not help, and you need uncertainty in "
+"model interpretation for your decision process, Bayesian approach is for "
 "you."
 msgstr ""
-"Если вас интересуют только прогнозы, я предлагаю изучить "
-":xref:`misc:conformal-prediction`. Это помогает учитывать неопределенность "
-"для задач прогнозирования. Если это не помогает, и вам нужна "
-"неопределенность в интерпретации модели для вашего процесса принятия "
-"решений, байесовский подход для вас."
 
 #: ../../source/index.rst:93
 msgid "How I work"
-msgstr "Как я работаю"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid "Marketing Mix Models"
-msgstr "Маркетинговые модели"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid "Find the best allocation for your marketing budget"
-msgstr "Оптимизация вашего маркетингового бюджета"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid "Brain Activity"
-msgstr "Анализ поведенческой активности"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid "Explain brain activity using indirect measurements"
-msgstr "Объяснение активности мозга с использованием косвенных измерений"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid "Bioinformatics"
-msgstr "Биоинформатика"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid "Use structural assumptions to their fullest potential"
-msgstr "Использование структурных допущений в полной мере"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid "Chemistry"
-msgstr "Химия"
+msgstr ""
 
 #: ../../source/index.rst:100
 msgid ""
 "Iterate over complex chemical interactions to improve the whole "
 "manufacturing process"
 msgstr ""
-"Моделирование сложных химических взаимодействий, чтобы улучшить весь "
-"производственный процесс"
 
 #: ../../source/index.rst:100
 msgid "A/B Testing"
-msgstr "A/Б-тестирование"
+msgstr ""
 
 #: ../../source/index.rst:100
-msgid ""
-"Bring your critical thinking to improve the hypothesis testing pipeline"
+msgid "Bring your critical thinking to improve the hypothesis testing pipeline"
 msgstr ""
-"Использование своего критическое мышления, чтобы улучшить проверку гипотез"
 
 #: ../../source/index.rst:142
 msgid "Before any project starts:"
-msgstr "Перед началом любого проекта:"
+msgstr ""
 
 #: ../../source/index.rst:144
 msgid "We discuss what are the real needs for you"
-msgstr "Мы обсуждаем, что вам действительно нужно"
+msgstr ""
 
 #: ../../source/index.rst:145
 msgid ""
 "We figure out if project worth the time investment or there is a simple "
 "workaround"
 msgstr ""
-"Мы выясняем, стоит ли проект вложений времени или есть простой обходной путь"
 
 #: ../../source/index.rst:146
 msgid ""
-"We investigate how to maximize the outcome of the collaboration, split the "
-"needs to options"
+"We investigate how to maximize the outcome of the collaboration, split "
+"the needs to options"
 msgstr ""
-"Мы изучаем, как максимизировать результат сотрудничества, переводим "
-"потребности на варианты решения"
 
 #: ../../source/index.rst:148
 msgid "Worst Case"
-msgstr "Худший случай"
+msgstr ""
 
 #: ../../source/index.rst:150
 msgid ""
-"Not every project is about beautiful models. If we do not fit each other, be"
-" sure I do my best to advice you the next steps to the best of my knowledge."
+"Not every project is about beautiful models. If we do not fit each other,"
+" be sure I do my best to advice you the next steps to the best of my "
+"knowledge."
 msgstr ""
-"Не каждый проект посвящен красивым моделям. Если мы не подходим друг другу, "
-"будьте уверены, я сделаю все возможное, чтобы посоветовать вам следующие "
-"шаги насколько это возможно."
 
 #: ../../source/index.rst:154
 msgid "Book a Call"
-msgstr "Заказать звонок"
+msgstr ""
 
 #: ../../source/index.rst:163
 msgid "Teaching"
-msgstr "Преподавание"
+msgstr ""
 
 #: ../../source/index.rst:170
 msgid "Here are my materials that may interest you:"
-msgstr "Вот мои материалы, которые могут вас заинтересовать:"
+msgstr ""
 
 #: ../../source/index.rst:172
 msgid ""
 "I created modern Practical Bayes course for :xref:`MSU <talks:2022:msu-"
-"practical-bayes>`. It focuses on practical interpretable analytics and model"
-" analysis."
+"practical-bayes>`. It focuses on practical interpretable analytics and "
+"model analysis."
 msgstr ""
-"Я создал современный практический курс Байеса для :xref:`МГУ "
-"<talks:2022:msu-practical-bayes> `. Основное внимание уделяется практической"
-" интерпретируемой аналитике и анализу моделей."
 
 #: ../../source/index.rst:173
 msgid ""
-"The course is recorded on YouTube in :xref:`State of Bayes "
-"<talks:2023:state-of-bayes>` playlist."
+"The course is recorded on YouTube in :xref:`State of Bayes <talks:2023"
+":state-of-bayes>` playlist."
 msgstr ""
-"Курс записан на YouTube в плейлист :xref:`State of Bayes <talks:2023:state-"
-"of-bayes>. `."
 
 #: ../../source/index.rst:175
 msgid "For more learning materials follow the link below:"
 msgstr ""
-"Для получения дополнительных учебных материалов перейдите по ссылке ниже:"
 
 #: ../../source/index.rst:177
 msgid "Learn Bayes"
-msgstr "Изучаем Байеса"
+msgstr ""
 
 #: ../../source/index.rst:193
 msgid "Talks"
-msgstr "Выступления"
+msgstr ""
 
 #: ../../source/index.rst:205
 msgid ""
-"I regularly participate in conferences, give talks and share knowledge about"
-" Bayesian statistics"
+"I regularly participate in conferences, give talks and share knowledge "
+"about Bayesian statistics"
 msgstr ""
-"Я регулярно участвую в конференциях, выступаю с докладами и делюсь знаниями "
-"о байесовской статистике."
 
 #: ../../source/index.rst:207
 msgid "I link all the available materials:"
-msgstr "Прикрепляю все доступные материалы:"
+msgstr ""
 
 #: ../../source/index.rst:209
 msgid "Video"
-msgstr "Видео"
+msgstr ""
 
 #: ../../source/index.rst:210
 msgid "Presentation"
-msgstr "Презентация"
+msgstr ""
 
 #: ../../source/index.rst:211
 msgid "Code"
-msgstr "Код"
+msgstr ""
 
 #: ../../source/index.rst:217
 msgid "See all Talks"
-msgstr "Просмотреть все выступления"
+msgstr ""
 
 #: ../../source/index.rst:225
 msgid "Browse Blog-posts"
-msgstr "Просмотр всех постов"
+msgstr ""
+

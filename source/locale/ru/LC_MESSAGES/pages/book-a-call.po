@@ -21,11 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/blog.rst:2
-msgid "Blog"
-msgstr ""
-
-#: ../../source/blog.rst:3
-msgid "This is a placeholder to reference in toc"
+#: ../../source/pages/book-a-call.rst:4
+msgid "Book a Call"
 msgstr ""
 

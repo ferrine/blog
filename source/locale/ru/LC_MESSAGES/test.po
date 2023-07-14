@@ -1,195 +1,216 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Maxim Kochurov, 2023
-# 
+# This file is distributed under the same license as the In Search of the
+# Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior\n"
+"Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-26 11:37+0300\n"
-"PO-Revision-Date: 2023-06-02 09:07+0000\n"
-"Last-Translator: Maxim Kochurov, 2023\n"
-"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../source/test.rst:6
 msgid "Test CSS Layout"
-msgstr "Протестируйте макет CSS"
+msgstr ""
 
 #: ../../source/test.rst:9
 msgid ""
-"This page demonstrates the basic directives for testing CSS layout in Sphinx"
-" reStructuredText."
+"This page demonstrates the basic directives for testing CSS layout in "
+"Sphinx reStructuredText."
 msgstr ""
-"На этой странице демонстрируются основные директивы для тестирования макета "
-"CSS в Sphinx reStructuredText."
 
 #: ../../source/test.rst:15
 msgid "Headings"
-msgstr "Заголовки"
+msgstr ""
 
 #: ../../source/test.rst:17
 msgid "# with overline, for parts"
-msgstr "# С разделителем"
+msgstr ""
 
 #: ../../source/test.rst:18
 msgid "with overline, for chapters"
-msgstr "с подчеркиванием, для глав"
+msgstr ""
 
 #: ../../source/test.rst:19
 msgid "=, for sections"
-msgstr "=, для секций"
+msgstr ""
 
 #: ../../source/test.rst:20
 msgid "-, for subsections"
-msgstr "-, для подразделов"
+msgstr ""
 
 #: ../../source/test.rst:21
 msgid "^, for subsubsections"
-msgstr "^, для подразделов"
+msgstr ""
 
 #: ../../source/test.rst:22
 msgid "“, for paragraphs"
-msgstr "\", для абзацев"
+msgstr ""
 
 #: ../../source/test.rst:25 ../../source/test.rst:28
 msgid "Example"
-msgstr "Пример"
+msgstr ""
 
 #: ../../source/test.rst:31
 msgid "Paragraphs"
-msgstr "Пункты"
+msgstr ""
 
 #: ../../source/test.rst:33
 msgid ""
-"This is an example of a paragraph. Lorem ipsum dolor sit amet, consectetur "
-"adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna "
-"aliqua."
+"This is an example of a paragraph. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore "
+"et dolore magna aliqua."
 msgstr ""
-"Это пример абзаца. Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
-"sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua."
 
 #: ../../source/test.rst:36
 msgid "Lists"
-msgstr "Списки"
+msgstr ""
 
 #: ../../source/test.rst:38
 msgid "This is an example of an unordered list item."
-msgstr "Это пример элемента неупорядоченного списка."
+msgstr ""
 
 #: ../../source/test.rst:39
 msgid "Another unordered list item."
-msgstr "Еще один элемент ненумерованного списка."
+msgstr ""
 
 #: ../../source/test.rst:41
 msgid "This is an example of an ordered list item."
-msgstr "Это пример элемента упорядоченного списка."
+msgstr ""
 
 #: ../../source/test.rst:42
 msgid "Another ordered list item."
-msgstr "Еще один элемент упорядоченного списка."
+msgstr ""
 
 #: ../../source/test.rst:45
 msgid "Code Blocks"
-msgstr "Блоки кода"
+msgstr ""
 
 #: ../../source/test.rst:47
 msgid "Here's a code block with Python syntax highlighting:"
-msgstr "Вот блок кода с подсветкой синтаксиса Python:"
+msgstr ""
 
 #: ../../source/test.rst:57
 msgid "Admonitions"
-msgstr "Предостережения"
+msgstr ""
 
 #: ../../source/test.rst:61
 msgid ""
-"This is a note admonition. It should appear with a special styling to draw "
-"attention."
+"This is a note admonition. It should appear with a special styling to "
+"draw attention."
 msgstr ""
-"Это заметка-предостережение. Он должен выглядеть со специальным стилем, "
-"чтобы привлечь внимание."
 
 #: ../../source/test.rst:65
 msgid ""
-"This is a warning admonition. It should appear with a distinct styling to "
-"indicate caution."
+"This is a warning admonition. It should appear with a distinct styling to"
+" indicate caution."
 msgstr ""
-"Это предостережение. Он должен выглядеть с четким стилем, чтобы указать на "
-"осторожность."
 
 #: ../../source/test.rst:68
 msgid "Images"
-msgstr "Изображений"
+msgstr ""
 
-#: ../../source/test.rst-1
+#: ../../source/test.rst:-1
 msgid "Placeholder image"
-msgstr "Изображение-заполнитель"
+msgstr ""
 
 #: ../../source/test.rst:77
 msgid "Tables"
-msgstr "Столы"
+msgstr ""
 
 #: ../../source/test.rst:79
 msgid "Example Table"
-msgstr "Пример таблицы"
+msgstr ""
 
 #: ../../source/test.rst:83
 msgid "Header 1"
-msgstr "Заголовок 1"
+msgstr ""
 
 #: ../../source/test.rst:84
 msgid "Header 2"
-msgstr "Заголовок 2"
+msgstr ""
 
 #: ../../source/test.rst:85
 msgid "Header 3"
-msgstr "Заголовок 3"
+msgstr ""
 
 #: ../../source/test.rst:86
 msgid "Row 1, Cell 1"
-msgstr "Ряд 1, ячейка 1"
+msgstr ""
 
 #: ../../source/test.rst:87
 msgid "Row 1, Cell 2"
-msgstr "Ряд 1, ячейка 2"
+msgstr ""
 
 #: ../../source/test.rst:88
 msgid "Row 1, Cell 3"
-msgstr "Ряд 1, ячейка 3"
+msgstr ""
 
 #: ../../source/test.rst:89
 msgid "Row 2, Cell 1"
-msgstr "Ряд 2, ячейка 1"
+msgstr ""
 
 #: ../../source/test.rst:90
 msgid "Row 2, Cell 2"
-msgstr "Ряд 2, ячейка 2"
+msgstr ""
 
 #: ../../source/test.rst:91
 msgid "Row 2, Cell 3"
-msgstr "Ряд 2, ячейка 3"
+msgstr ""
 
 #: ../../source/test.rst:94
 msgid "Links"
-msgstr "Ссылки"
+msgstr ""
 
 #: ../../source/test.rst:96
 msgid "This is an example of an `external link <https://www.example.com>`_."
-msgstr "Это пример внешней ссылки <https://www.example.com>. `_."
+msgstr ""
 
 #: ../../source/test.rst:98
 msgid "This is an example of an :ref:`internal link <test_css_layout>`."
-msgstr "Это пример :ref:`внутренней ссылки <test_css_layout> `."
+msgstr ""
 
 #: ../../source/test.rst:102
-msgid "Carousel"
-msgstr "Карусель"
+msgid "Is your problem white box?"
+msgstr ""
+
+#: ../../source/test.rst:104
+msgid ""
+"If your problem is not white box it makes little sense to use Bayesian "
+"methods. The approach relies on clear understanding and reasoning about "
+"the problem."
+msgstr ""
+
+#: ../../source/test.rst:107
+msgid "How much do you know about the problem?"
+msgstr ""
+
+#: ../../source/test.rst:109
+msgid ""
+"The more you understand about the model and process it describes the "
+"better is the solution. No traditional approach takes this to the "
+"absolute and translates expert opinions to rigor definition."
+msgstr ""
+
+#: ../../source/test.rst:112
+msgid "Do you understand causal relations of your problem?"
+msgstr ""
+
+#: ../../source/test.rst:114
+msgid ""
+"Understanding relations is a half-way to build a Bayesian model. Ignoring"
+" these relations leads to biased estimates and decisions."
+msgstr ""
+

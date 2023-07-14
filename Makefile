@@ -46,6 +46,7 @@ serve:
 
 gettext:
 	@echo collect project pot files
+	@mkdir -p $(BUILDDIR)/gettext/
 	@touch $(BUILDDIR)/gettext/sphinx.pot
 	@$(SPHINXBUILD) -M gettext "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	@echo merge extra pot files to $(BUILDDIR)/gettext/sphinx.pot

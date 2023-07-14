@@ -256,8 +256,13 @@ approach to take to solve a concrete problem.
 
 .. note::
 
-    Conformal prediction is a method to quantify uncertainty of an arbitrary model prediction.
-    You can treat it as an additional output that estimates standard deviation of the prediction.
+    * Conformal prediction
+        is a method to quantify uncertainty of an arbitrary model prediction.
+        You can treat it as an additional output that estimates standard deviation of the prediction.
+    * Bayesian uncertainty
+        is a measure of unknown about the model and the parameter space and encoded in a *prior distribution*.
+        Bayesian inference uses data and *likelihood distribution* to reduce the amount of uncertainty.
+        The combined expert and data knowledge is the *posterior distribution*.
 
 - So why conformal prediction is opposed to Bayesian approach?
     Well, both deal with uncertainty.

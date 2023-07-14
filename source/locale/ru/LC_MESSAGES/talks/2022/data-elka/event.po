@@ -55,4 +55,4 @@ msgstr ":xref:`talks:2022:data-elka`"
 
 #: ../../source/talks/2022/data-elka/event.rst:32
 msgid ":download:`Presentation <https://disk.yandex.ru/i/W6YxDdeX78pe1w>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/W6YxDdeX78pe1w> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/W6YxDdeX78pe1w>`"

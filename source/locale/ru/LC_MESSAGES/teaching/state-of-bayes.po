@@ -48,17 +48,17 @@ msgstr "Материалы"
 #: ../../source/teaching/state-of-bayes.rst:13
 msgid ":fa:`bars` :xref:`Full YouTube Playlist <talks:2023:state-of-bayes>`"
 msgstr ""
-":fa:`bars` :xref:`Полный плейлист YouTube <talks:2023:state-of-bayes> `"
+":fa:`bars` :xref:`Полный плейлист YouTube <talks:2023:state-of-bayes>`"
 
 #: ../../source/teaching/state-of-bayes.rst:14
 msgid ""
 ":fab:`youtube` `Introduction <https://www.youtube.com/watch?v=X4y2UfU-2cs>`_"
 msgstr ""
-":fab:`youtube` `Введение <https://www.youtube.com/watch?v=X4y2UfU-2cs> `_"
+":fab:`youtube` `Введение <https://www.youtube.com/watch?v=X4y2UfU-2cs>`_"
 
 #: ../../source/teaching/state-of-bayes.rst:15
 msgid ":download:`Presentation <https://disk.yandex.ru/i/S3sqn1CyIVwW9A>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/S3sqn1CyIVwW9A> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/S3sqn1CyIVwW9A>`"
 
 #: ../../source/teaching/state-of-bayes.rst:16
 msgid ""
@@ -66,11 +66,11 @@ msgid ""
 "<https://www.youtube.com/watch?v=L9XMT08_KgY>`_"
 msgstr ""
 ":fab:`youtube` Байесовское мышление "
-"<https://www.youtube.com/watch?v=L9XMT08_KgY> `_"
+"<https://www.youtube.com/watch?v=L9XMT08_KgY>`_"
 
 #: ../../source/teaching/state-of-bayes.rst:17
 msgid ":download:`Presentation <https://disk.yandex.ru/i/-ID8GxjQcQCSsQ>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/-ID8GxjQcQCSsQ> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/-ID8GxjQcQCSsQ>`"
 
 #: ../../source/teaching/state-of-bayes.rst:18
 msgid ""
@@ -78,11 +78,11 @@ msgid ""
 "<https://www.youtube.com/watch?v=pnJgDSdgqVg>`_"
 msgstr ""
 ":fab:`youtube` `Иерархическое моделирование "
-"<https://www.youtube.com/watch?v=pnJgDSdgqVg> `_"
+"<https://www.youtube.com/watch?v=pnJgDSdgqVg>`_"
 
 #: ../../source/teaching/state-of-bayes.rst:19
 msgid ":download:`Presentation <https://disk.yandex.ru/i/T-ugd8oS-B3joA>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/T-ugd8oS-B3joA> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/T-ugd8oS-B3joA>`"
 
 #: ../../source/teaching/state-of-bayes.rst:20
 msgid ""
@@ -90,22 +90,22 @@ msgid ""
 "<https://www.youtube.com/watch?v=fpS0NjqNHn8>`_"
 msgstr ""
 ":fab:`youtube` `Интерпретируемая линейная регрессия "
-"<https://www.youtube.com/watch?v=fpS0NjqNHn8> `_"
+"<https://www.youtube.com/watch?v=fpS0NjqNHn8>`_"
 
 #: ../../source/teaching/state-of-bayes.rst:21
 msgid ":download:`Presentation <https://disk.yandex.ru/i/j-Yoe29iJAW0ZA>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/j-Yoe29iJAW0ZA> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/j-Yoe29iJAW0ZA>`"
 
 #: ../../source/teaching/state-of-bayes.rst:22
 msgid ""
 ":fab:`youtube` `AB Testing <https://www.youtube.com/watch?v=QllfKQH-yQ4>`_"
 msgstr ""
 ":fab:`youtube` `А/Б-тестирование <https://www.youtube.com/watch?v=QllfKQH-"
-"yQ4> `_"
+"yQ4>`_"
 
 #: ../../source/teaching/state-of-bayes.rst:23
 msgid ":download:`Presentation <https://disk.yandex.ru/i/3hXlNyvyCXgprw>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/3hXlNyvyCXgprw> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/3hXlNyvyCXgprw>`"
 
 #: ../../source/teaching/state-of-bayes.rst:25
 msgid ""
@@ -113,11 +113,11 @@ msgid ""
 "<https://www.youtube.com/watch?v=KJEoKsGJKEg>`_"
 msgstr ""
 ":fab:`youtube` `Гауссовские процессы "
-"<https://www.youtube.com/watch?v=KJEoKsGJKEg> `_"
+"<https://www.youtube.com/watch?v=KJEoKsGJKEg>`_"
 
 #: ../../source/teaching/state-of-bayes.rst:25
 msgid ":download:`Presentation <https://disk.yandex.ru/i/v_hhau2ZytU0YQ>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/v_hhau2ZytU0YQ> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/v_hhau2ZytU0YQ>`"
 
 #: ../../source/teaching/state-of-bayes.rst:26
 msgid ""
@@ -125,7 +125,7 @@ msgid ""
 "<https://drive.google.com/file/d/1pCkOW-Q5r69GIDXgaiKfqzscQ8ymQmXb/view>`"
 msgstr ""
 ":download:`Код "
-"<https://drive.google.com/file/d/1pCkOW-Q5r69GIDXgaiKfqzscQ8ymQmXb/view> `"
+"<https://drive.google.com/file/d/1pCkOW-Q5r69GIDXgaiKfqzscQ8ymQmXb/view>`"
 
 #: ../../source/teaching/state-of-bayes.rst:28
 msgid ""
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../../source/teaching/state-of-bayes.rst:28
 msgid ":download:`Presentation <https://disk.yandex.ru/d/jp9tm0htDm7auw>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/d/jp9tm0htDm7auw> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/d/jp9tm0htDm7auw>`"
 
 #: ../../source/teaching/state-of-bayes.rst:29
 msgid ""
@@ -145,4 +145,4 @@ msgid ""
 "<https://gist.github.com/ferrine/b8dd4d28e5eb81dbd9000274196628bd>`"
 msgstr ""
 ":download:`Код "
-"<https://gist.github.com/ferrine/b8dd4d28e5eb81dbd9000274196628bd> `"
+"<https://gist.github.com/ferrine/b8dd4d28e5eb81dbd9000274196628bd>`"

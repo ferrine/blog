@@ -24,4 +24,6 @@ Materials
 - :fab:`youtube` `Gaussian Processes <https://www.youtube.com/watch?v=KJEoKsGJKEg>`_
     - :download:`Presentation <https://disk.yandex.ru/i/v_hhau2ZytU0YQ>`
     - :download:`Code <https://drive.google.com/file/d/1pCkOW-Q5r69GIDXgaiKfqzscQ8ymQmXb/view>`
-- Gaussian Processes for Time Series
+- :fab:`youtube` `Gaussian Processes for Time Series <https://www.youtube.com/watch?v=GLbuVeqoagk>`
+    - :download:`Presentation <https://disk.yandex.ru/d/jp9tm0htDm7auw>`
+    - :download:`Code <https://gist.github.com/ferrine/b8dd4d28e5eb81dbd9000274196628bd>`

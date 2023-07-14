@@ -44,7 +44,7 @@ Feel free to reach me out if you want something customized.
 
         :doc:`Online Materials <teaching/state-of-bayes>`
 
-.. button-ref:: contacts
+.. button-link:: contacts.html
     :color: primary
 
     Request a Workshop

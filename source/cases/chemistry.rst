@@ -3,13 +3,15 @@
 Chemistry
 =========
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-    .. container:: p-2 fb-4
+    .. grid-item::
+        :columns: 12 12 5 5
 
         .. figure:: /images/cases/chemistry.jpeg
 
-    .. container:: p-2 fb-6
+    .. grid-item::
+        :columns: 12 12 7 7
 
         Chemistry is a very structured domain where there are either a lot of experimental data and knowledge available.
         Unfortunately, not all cases are such.

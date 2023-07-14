@@ -4,13 +4,15 @@ Brain Activity
 ==============
 
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-    .. container:: p-2 fb-4
+    .. grid-item::
+        :columns: 12 12 5 5
 
         .. figure:: /images/cases/brain.jpeg
 
-    .. container:: p-2 fb-6
+    .. grid-item::
+        :columns: 12 12 7 7
 
         Developing drugs is a very tedious process that involves rigor testing on animals and on humans.
         While treatment effect for most of the cases can be relatively easy quantified, brain activity is a challenge.

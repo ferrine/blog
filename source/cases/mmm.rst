@@ -3,13 +3,15 @@
 Media Mix Models
 ================
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-    .. container:: p-2 fb-4
+    .. grid-item::
+        :columns: 12 12 5 54
 
         .. figure:: /images/cases/marketing.jpeg
 
-    .. container:: p-2 fb-6
+    .. grid-item::
+        :columns: 12 12 7 7
 
         Media Mix Models are analytical tools used to optimize marketing strategies by measuring the effectiveness of various marketing channels.
         They help in determining the best combination of channels to maximize ROI, drive customer engagement, and allocate budget effectively.

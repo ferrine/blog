@@ -18,7 +18,7 @@ talks:
       - https://www.econ.msu.ru/students/mag/curricula/eco/andan/news/News.20220802192752_5070/
     data-elka:
       - Data Elka 2022
-      - https://ods.ai/tracks/reliable_ml_ab_testing-causal_inference_meetup/blocks/5a4410df-297c-48a3-a74e-748b5d1236fa
+      - https://ods.ai/tracks/reliable_ml_ab_testing-causal_inference_meetup
   "2023":
     state-of-bayes:
       - State of Bayes

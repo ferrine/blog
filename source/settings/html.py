@@ -89,3 +89,7 @@ html_context = {
     # extended in layout.html
     "metrika_id": os.environ["METRIKA_ID"],
 }
+
+rst_epilog = """
+.. footbibliography::
+"""

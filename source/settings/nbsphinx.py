@@ -13,9 +13,8 @@ If you have new ideas after reading the notebook,
 want to discuss it in more details or want to work with me,
 you can always :doc:`reach me out </contacts>`.
 
-.. dropdown:: Resources
-    :animate: fade-in-slide-down
+-----
 
-    * Download the :download:`post.ipynb`
-    * Download the :download:`environment.yml`
+* Download the :download:`post.ipynb`
+* Download the :download:`environment.yml`
 """

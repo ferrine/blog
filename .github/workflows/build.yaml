@@ -19,7 +19,7 @@ jobs:
           python-version: "3.10"
           cache: "pip"
       - uses: pre-commit/action@v3.0.0
-  html:
+  links:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -39,8 +39,30 @@ jobs:
         run: |
           poetry install
           make install-pandoc
+      - name: Check Links
+        run: make checklinks
+  html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          lfs: true
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+          cache: "pip"
+      - name: Install binary deps
+        uses: daaku/gh-action-apt-install@v4
+        with:
+          packages: gettext
+      - uses: abatilo/actions-poetry@v2
+      - name: Install Build Deps
+        run: |
+          poetry install
+          make install-pandoc
       - name: Build the Blog
-        run: make checklinks html
+        run: make html
       - name: Check Content Size
         run: du -h build/html
       - name: Store Build Content

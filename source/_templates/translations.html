@@ -2,6 +2,7 @@
     <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
         {{ available_translations[language] }}
     </a>
+    {% if available_translations | length > 1 %}
     <ul class="dropdown-menu dropdown-menu-right center" style="min-width: 100%">
         {% for lang in available_translations %}
             {% if lang != language %}
@@ -9,4 +10,5 @@
             {% endif %}
         {% endfor %}
     </ul>
+    {% endif %}
 </div>

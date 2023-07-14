@@ -1,6 +1,0 @@
-name: 2022-loo-pit-environment
-channels:
-  - conda-forge
-dependencies:
-  - pymc>=5.5
-  - arviz

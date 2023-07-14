@@ -1,9 +1,0 @@
-name: 2023-r2d2m2-environment
-channels:
-  - conda-forge
-dependencies:
-  - pymc>=5.5
-  - scikit-learn
-  - formulae
-  - nutpie
-  - numpy==1.24

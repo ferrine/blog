@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Max Kochurov
+# This file is distributed under the same license as the In Search of the
+# Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: In Search of the Holy Posterior \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-14 12:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/cases/ab.rst:4
+msgid "AB Testing"
+msgstr ""
+
+#: ../../source/cases/ab.rst:16
+msgid ""
+"AB Testing is a very common hypothesis testing technique in many "
+"companies. Bayesian AB testing is not a new but rarely used approach to a"
+" classical problem. Unlike traditional, Frequentist, approach, it enables"
+" more than qualitative decisions."
+msgstr ""
+
+#: ../../source/cases/ab.rst:20
+msgid ""
+"Bayesian AB Testing is about qualitative answers to the same questions. "
+"So instead of \"is there an effect\", you can say \"what is the effect\"."
+" While this sounds similar, the latter enables to go beyond and do "
+"decision-making with money in mind. You can plug Bayesian posterior into "
+"a financial model that translates to money language. Find more from the "
+":doc:`ODS workshop </talks/2022/data-elka/event>`."
+msgstr ""
+
+#: ../../source/cases/bioinfo.rst:4
+msgid "Bioinformatics"
+msgstr ""
+
+#: ../../source/cases/bioinfo.rst:16
+msgid ""
+"Molecules are everywhere. Sometimes you need to figure out what a "
+"specific molecule is. There are numerous approaches to infer the molecule"
+" structure. One of them deals with a sequential procedure which is "
+"observed at every step with a lot of noise. The beauty is that this "
+"approach is cheap and scalable."
+msgstr ""
+
+#: ../../source/cases/bioinfo.rst:22
+msgid ""
+"The approach involves inference on the unobserved part of the experiment "
+"which generates the noisy observation. After understanding the latent "
+"process model Bayesian inference allowed to overcome influence of noise. "
+"In the project I developed parameter recovery study to understand which "
+"parts of the process are possible to control and which are not."
+msgstr ""
+
+#: ../../source/cases/brain.rst:4
+msgid "Brain Activity"
+msgstr ""
+
+#: ../../source/cases/brain.rst:17
+msgid ""
+"Developing drugs is a very tedious process that involves rigor testing on"
+" animals and on humans. While treatment effect for most of the cases can "
+"be relatively easy quantified, brain activity is a challenge."
+msgstr ""
+
+#: ../../source/cases/brain.rst:20
+msgid ""
+"Measuring qualitative activity of human brain is a very non trivial task."
+" It is only possible to get indirect measurement of what is treated and "
+"patients participate in a game that involves certain brain activities. In"
+" PyMC Labs I helped to create the model and a packaged solution to "
+"estimate the latent property of brain activity. The Bayesian model "
+"allowed to compile indirect measurements to inform about drug efficiency."
+msgstr ""
+
+#: ../../source/cases/chemistry.rst:4
+msgid "Chemistry"
+msgstr ""
+
+#: ../../source/cases/chemistry.rst:16
+msgid ""
+"Chemistry is a very structured domain where there are either a lot of "
+"experimental data and knowledge available. Unfortunately, not all cases "
+"are such. There are real world scenarios where data is scarce and "
+"expensive."
+msgstr ""
+
+#: ../../source/cases/chemistry.rst:20
+msgid ""
+"Predictions are not the holy grail when you want to optimize the "
+"production process. Characteristics of the process are the ones that are "
+"of the most interest. Bayesian approach allows to get insights from "
+"scarce data, and conclude on relations strength driving informed data "
+"driven decision making."
+msgstr ""
+
+#: ../../source/cases/mmm.rst:4
+msgid "Media Mix Models"
+msgstr ""
+
+#: ../../source/cases/mmm.rst:16
+msgid ""
+"Media Mix Models are analytical tools used to optimize marketing "
+"strategies by measuring the effectiveness of various marketing channels. "
+"They help in determining the best combination of channels to maximize "
+"ROI, drive customer engagement, and allocate budget effectively. Bayesian"
+" Inference offers several benefits in marketing analytics, particularly "
+"when assessing channel effectiveness: Bayesian models can incorporate "
+"prior knowledge and adapt to new data, making them suitable for analyzing"
+" complex and dynamic marketing environments."
+msgstr ""
+
+#: ../../source/cases/mmm.rst:21
+msgid ""
+"By accounting for uncertainty, Bayesian models provide more reliable and "
+"stable estimates, aiding in better-informed decision-making. Bayesian "
+"models can handle sparse or small datasets, enabling accurate analysis "
+"even with limited data. You can estimate individual channel impacts, "
+"allowing for tailored optimization of marketing efforts and budget "
+"allocation. As new data becomes available, Bayesian models can be updated"
+" easily, allowing marketers to stay current with evolving trends and make"
+" timely adjustments to their strategies."
+msgstr ""
+

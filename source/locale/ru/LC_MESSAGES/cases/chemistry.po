@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"POT-Creation-Date: 2023-07-14 12:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Chemistry"
 msgstr ""
 
-#: ../../source/cases/chemistry.rst:14
+#: ../../source/cases/chemistry.rst:16
 msgid ""
 "Chemistry is a very structured domain where there are either a lot of "
 "experimental data and knowledge available. Unfortunately, not all cases "
@@ -33,7 +33,7 @@ msgid ""
 "expensive."
 msgstr ""
 
-#: ../../source/cases/chemistry.rst:18
+#: ../../source/cases/chemistry.rst:20
 msgid ""
 "Predictions are not the holy grail when you want to optimize the "
 "production process. Characteristics of the process are the ones that are "

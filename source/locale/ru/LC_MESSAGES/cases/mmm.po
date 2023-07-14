@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"POT-Creation-Date: 2023-07-14 12:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Media Mix Models"
 msgstr ""
 
-#: ../../source/cases/mmm.rst:14
+#: ../../source/cases/mmm.rst:16
 msgid ""
 "Media Mix Models are analytical tools used to optimize marketing "
 "strategies by measuring the effectiveness of various marketing channels. "
@@ -37,7 +37,7 @@ msgid ""
 " complex and dynamic marketing environments."
 msgstr ""
 
-#: ../../source/cases/mmm.rst:19
+#: ../../source/cases/mmm.rst:21
 msgid ""
 "By accounting for uncertainty, Bayesian models provide more reliable and "
 "stable estimates, aiding in better-informed decision-making. Bayesian "

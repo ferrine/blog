@@ -412,13 +412,13 @@ document.write(`
   
   
   
-  <a href="../../../blog/tag/statistics.html">statistics</a>
-  
-  
-  
-  
-  
   <a href="../../../blog/tag/pymc.html">pymc</a>
+  
+  
+  
+  
+  
+  <a href="../../../blog/tag/statistics.html">statistics</a>
   
   
   
@@ -671,10 +671,10 @@ u &amp;\sim \operatorname{Uniform}[0, 1]
 </div>
 <p>We see that the cumulative transform does the job and transforms our StudentT random variables to the Uniform distribution. Similar ideas are used for LOO-PIT.</p>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py#L1674">Compute</a> pointwise likelihood for all the observations</p></li>
-<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py#L770">Calculate</a> LOO likelihood approximation using <a class="reference external" href="https://arxiv.org/abs/1507.02646">pareto smoothed importance sampling</a></p></li>
-<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py#L1729">Approximate</a> ECDF (Empirical CDF) values of the posterior predictive (for each sample)</p></li>
-<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/plots/loopitplot.py#L177">Approximate</a> the ECDF function for visualization with KDE</p></li>
+<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py">Compute</a> (<code class="docutils literal notranslate"><span class="pre">#L1674</span></code>) pointwise likelihood for all the observations</p></li>
+<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py">Calculate</a> (<code class="docutils literal notranslate"><span class="pre">#L770</span></code>) LOO likelihood approximation using <a class="reference external" href="https://arxiv.org/abs/1507.02646">pareto smoothed importance sampling</a></p></li>
+<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py">Approximate</a> (<code class="docutils literal notranslate"><span class="pre">#L1729</span></code>) ECDF (Empirical CDF) values of the posterior predictive (for each sample)</p></li>
+<li><p><a class="reference external" href="https://github.com/arviz-devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/plots/loopitplot.py">Approximate</a> (<code class="docutils literal notranslate"><span class="pre">#L177</span></code>) the ECDF function for visualization with KDE</p></li>
 </ol>
 <p>If the likelihood is well specified, we’ll see a uniform distribution of ECDF values, means, uniform KDE. Just like on the plot above</p>
 </section>

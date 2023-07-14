@@ -254,6 +254,11 @@ Time to discuss the conformal prediction :footcite:`balasubramanian2014conformal
 includes the Grey Area of structured Models. The classification helps very much to decide on what
 approach to take to solve a concrete problem.
 
+.. note::
+
+    Conformal prediction is a method to quantify uncertainty of an arbitrary model prediction.
+    You can treat it as an additional output that estimates standard deviation of the prediction.
+
 - So why conformal prediction is opposed to Bayesian approach?
     Well, both deal with uncertainty.
 - What should one use to calculate uncertainty?

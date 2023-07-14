@@ -3,13 +3,15 @@
 AB Testing
 ==========
 
-.. container:: d-md-flex
+.. grid:: 1 1 2 2
 
-    .. container:: p-2 fb-4
+    .. grid-item::
+        :columns: 12 12 5 5
 
         .. figure:: /images/cases/tasks.jpeg
 
-    .. container:: p-2 fb-6
+    .. grid-item::
+        :columns: 12 12 7 7
 
         AB Testing is a very common hypothesis testing technique in many companies.
         Bayesian AB testing is not a new but rarely used approach to a classical problem.

@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Daria Galimzianova, 2023
+# Maxim Kochurov, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-02 13:29+0000\n"
+"POT-Creation-Date: 2023-07-14 13:01+0000\n"
 "PO-Revision-Date: 2023-06-25 18:45+0000\n"
-"Last-Translator: Daria Galimzianova, 2023\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,4 +48,4 @@ msgstr "Заказать звонок"
 
 #: ../../source/contacts.rst:20
 msgid ":doc:`See Schedule </pages/book-a-call>`"
-msgstr ":doc:`Посмотреть расписание </pages/book-a-call> `"
+msgstr ":doc:`Посмотреть расписание </pages/book-a-call>`"

@@ -261,7 +261,7 @@ msgid ""
 " analysis."
 msgstr ""
 "Я создал современный практический курс Байеса для :xref:`МГУ "
-"<talks:2022:msu-practical-bayes> `. Основное внимание уделяется практической"
+"<talks:2022:msu-practical-bayes>`. Основное внимание уделяется практической"
 " интерпретируемой аналитике и анализу моделей."
 
 #: ../../source/index.rst:173
@@ -270,7 +270,7 @@ msgid ""
 "<talks:2023:state-of-bayes>` playlist."
 msgstr ""
 "Курс записан на YouTube в плейлист :xref:`State of Bayes <talks:2023:state-"
-"of-bayes>. `."
+"of-bayes>`."
 
 #: ../../source/index.rst:175
 msgid "For more learning materials follow the link below:"

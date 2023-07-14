@@ -37,9 +37,9 @@ msgid ""
 "devs.github.io/arviz/api/generated/arviz.plot_loo_pit.html>`__."
 msgstr ""
 "Мне задали вопрос об интерпретации графиков, полученных с `Arviz "
-"<https://arviz-devs.github.io/>. `__. Именно этот был про LOO-PIT, который "
+"<https://arviz-devs.github.io/>`__. Именно этот был про LOO-PIT, который "
 "можно найти `здесь <https://arviz-"
-"devs.github.io/arviz/api/generated/arviz.plot_loo_pit.html> `__."
+"devs.github.io/arviz/api/generated/arviz.plot_loo_pit.html>`__."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:45
 msgid ""
@@ -144,7 +144,7 @@ msgid ""
 msgstr ""
 "`Вычислить <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>"
-" `__ (``#L1674``)точечную вероятность для всех наблюдений"
+"`__ (``#L1674``)точечную вероятность для всех наблюдений"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:156
 msgid ""
@@ -155,8 +155,8 @@ msgid ""
 msgstr ""
 "`Рассчитать <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>"
-" `__ (``#L770``)LOO приближение вероятности с использованием `сглаженной по "
-"Парето выборки важности <https://arxiv.org/abs/1507.02646> `__"
+"`__ (``#L770``)LOO приближение вероятности с использованием `сглаженной по "
+"Парето выборки важности <https://arxiv.org/abs/1507.02646>`__"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:157
 msgid ""
@@ -167,7 +167,7 @@ msgid ""
 msgstr ""
 "`Аппроксимировать <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/stats/stats.py>"
-" `__ (``#L1729``) выборочную функцию распределения (Empirical CDF) значения "
+"`__ (``#L1729``) выборочную функцию распределения (Empirical CDF) значения "
 "апостериорного прогноза (для каждой выборки)"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:158
@@ -178,7 +178,7 @@ msgid ""
 msgstr ""
 "`Аппроксимировать <https://github.com/arviz-"
 "devs/arviz/blob/9d0746972c9bcb1a3063c0ca00ff08a0b0c093ee/arviz/plots/loopitplot.py>"
-" `__ (``#L177``) функцию ECDF для визуализации в KDE"
+"`__ (``#L177``) функцию ECDF для визуализации в KDE"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:160
 msgid ""
@@ -303,7 +303,7 @@ msgid ""
 "picture. But let's see how it goes*"
 msgstr ""
 "*Я знаю, как я генерировал свои данные и, на самом деле, ожидал немного "
-"другой картины. Но посмотрим, как пойдет *"
+"другой картины. Но посмотрим, как пойдет*"
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:612
 msgid "Let's check how does the posterior predictive looks like:"
@@ -650,7 +650,7 @@ msgid ""
 msgstr ""
 "Если после прочтения блокнота у вас появились новые идеи, вы хотите обсудить"
 " их более подробно или хотите поработать со мной, вы всегда можете "
-":doc:`связаться со мной </contacts> `."
+":doc:`связаться со мной </contacts>`."
 
 #: ../../source/posts/2022/loo-pit/post.ipynb:0
 msgid "Resources"

@@ -6,7 +6,7 @@ Media Mix Models
 .. grid:: 1 1 2 2
 
     .. grid-item::
-        :columns: 12 12 5 54
+        :columns: 12 12 5 5
 
         .. figure:: /images/cases/marketing.jpeg
 

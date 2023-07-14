@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"POT-Creation-Date: 2023-07-14 12:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -79,5 +79,107 @@ msgstr ""
 
 #: ../../source/teaching.rst:47
 msgid "Request a Workshop"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:2
+msgid "State of Bayes"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:3
+msgid ""
+"State of Bayes is a series of webinars about advances in practical "
+"methods and modeling intuition. The major focus of the webinar series "
+"will be on understanding concepts of advanced statistical models and "
+"introducing prior knowledge into the loop. This free course will be "
+"interesting for Bayesian practitioners who want to deepen their "
+"understanding about Bayesian modeling."
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:12
+msgid "Materials"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:13
+msgid ":fa:`bars` :xref:`Full YouTube Playlist <talks:2023:state-of-bayes>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:14
+msgid ""
+":fab:`youtube` `Introduction <https://www.youtube.com/watch?v=X4y2UfU-"
+"2cs>`_"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:15
+msgid ":download:`Presentation <https://disk.yandex.ru/i/S3sqn1CyIVwW9A>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:16
+msgid ""
+":fab:`youtube` `Bayesian Thinking "
+"<https://www.youtube.com/watch?v=L9XMT08_KgY>`_"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:17
+msgid ":download:`Presentation <https://disk.yandex.ru/i/-ID8GxjQcQCSsQ>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:18
+msgid ""
+":fab:`youtube` `Hierarchical Modeling "
+"<https://www.youtube.com/watch?v=pnJgDSdgqVg>`_"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:19
+msgid ":download:`Presentation <https://disk.yandex.ru/i/T-ugd8oS-B3joA>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:20
+msgid ""
+":fab:`youtube` `Interpretable Linear Regression "
+"<https://www.youtube.com/watch?v=fpS0NjqNHn8>`_"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:21
+msgid ":download:`Presentation <https://disk.yandex.ru/i/j-Yoe29iJAW0ZA>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:22
+msgid ":fab:`youtube` `AB Testing <https://www.youtube.com/watch?v=QllfKQH-yQ4>`_"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:23
+msgid ":download:`Presentation <https://disk.yandex.ru/i/3hXlNyvyCXgprw>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:25
+msgid ""
+":fab:`youtube` `Gaussian Processes "
+"<https://www.youtube.com/watch?v=KJEoKsGJKEg>`_"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:25
+msgid ":download:`Presentation <https://disk.yandex.ru/i/v_hhau2ZytU0YQ>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:26
+msgid ""
+":download:`Code <https://drive.google.com/file/d/1pCkOW-"
+"Q5r69GIDXgaiKfqzscQ8ymQmXb/view>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:28
+msgid ""
+":fab:`youtube` `Gaussian Processes for Time Series "
+"<https://www.youtube.com/watch?v=GLbuVeqoagk>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:28
+msgid ":download:`Presentation <https://disk.yandex.ru/d/jp9tm0htDm7auw>`"
+msgstr ""
+
+#: ../../source/teaching/state-of-bayes.rst:29
+msgid ""
+":download:`Code "
+"<https://gist.github.com/ferrine/b8dd4d28e5eb81dbd9000274196628bd>`"
 msgstr ""
 

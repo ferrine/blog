@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"POT-Creation-Date: 2023-07-14 12:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,14 +25,14 @@ msgstr ""
 msgid "Brain Activity"
 msgstr ""
 
-#: ../../source/cases/brain.rst:15
+#: ../../source/cases/brain.rst:17
 msgid ""
 "Developing drugs is a very tedious process that involves rigor testing on"
 " animals and on humans. While treatment effect for most of the cases can "
 "be relatively easy quantified, brain activity is a challenge."
 msgstr ""
 
-#: ../../source/cases/brain.rst:18
+#: ../../source/cases/brain.rst:20
 msgid ""
 "Measuring qualitative activity of human brain is a very non trivial task."
 " It is only possible to get indirect measurement of what is treated and "

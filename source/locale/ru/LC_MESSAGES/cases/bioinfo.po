@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: In Search of the Holy Posterior \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"POT-Creation-Date: 2023-07-14 12:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Bioinformatics"
 msgstr ""
 
-#: ../../source/cases/bioinfo.rst:14
+#: ../../source/cases/bioinfo.rst:16
 msgid ""
 "Molecules are everywhere. Sometimes you need to figure out what a "
 "specific molecule is. There are numerous approaches to infer the molecule"
@@ -34,7 +34,7 @@ msgid ""
 "approach is cheap and scalable."
 msgstr ""
 
-#: ../../source/cases/bioinfo.rst:20
+#: ../../source/cases/bioinfo.rst:22
 msgid ""
 "The approach involves inference on the unobserved part of the experiment "
 "which generates the noisy observation. After understanding the latent "

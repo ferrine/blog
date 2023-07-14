@@ -59,7 +59,7 @@ When Bayesian
 
       .. card:: Is your problem **white box**?
 
-         If your problem is not white box it makes little sense to use Bayesian methods.
+         If your problem is not :ref:`White-Box` it makes little sense to use Bayesian methods.
          The approach relies on clear understanding and reasoning about the problem.
 
       .. card:: How much do you know about the problem?

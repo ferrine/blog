@@ -7,12 +7,6 @@ source_file  = build/gettext/blog.pot
 type         = PO
 minimum_perc = 0
 
-[o:ferrine:p:ferrine-github-io:r:cases]
-file_filter  = source/locale//<lang>/LC_MESSAGES/cases.po
-source_file  = build/gettext/cases.pot
-type         = PO
-minimum_perc = 0
-
 [o:ferrine:p:ferrine-github-io:r:cases--ab]
 file_filter  = source/locale//<lang>/LC_MESSAGES/cases/ab.po
 source_file  = build/gettext/cases/ab.pot
@@ -55,21 +49,9 @@ source_file  = build/gettext/index.pot
 type         = PO
 minimum_perc = 0
 
-[o:ferrine:p:ferrine-github-io:r:pages]
-file_filter  = source/locale//<lang>/LC_MESSAGES/pages.po
-source_file  = build/gettext/pages.pot
-type         = PO
-minimum_perc = 0
-
 [o:ferrine:p:ferrine-github-io:r:pages--book-a-call]
 file_filter  = source/locale//<lang>/LC_MESSAGES/pages/book-a-call.po
 source_file  = build/gettext/pages/book-a-call.pot
-type         = PO
-minimum_perc = 0
-
-[o:ferrine:p:ferrine-github-io:r:posts]
-file_filter  = source/locale//<lang>/LC_MESSAGES/posts.po
-source_file  = build/gettext/posts.pot
 type         = PO
 minimum_perc = 0
 
@@ -94,12 +76,6 @@ minimum_perc = 0
 [o:ferrine:p:ferrine-github-io:r:sphinx]
 file_filter  = source/locale//<lang>/LC_MESSAGES/sphinx.po
 source_file  = build/gettext/sphinx.pot
-type         = PO
-minimum_perc = 0
-
-[o:ferrine:p:ferrine-github-io:r:talks]
-file_filter  = source/locale//<lang>/LC_MESSAGES/talks.po
-source_file  = build/gettext/talks.pot
 type         = PO
 minimum_perc = 0
 

@@ -30,7 +30,6 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/nbsphinx-code-cells.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/light/default.css" />
@@ -217,11 +216,7 @@ document.write(`
     <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
         EN
     </a>
-    <ul class="dropdown-menu dropdown-menu-right center" style="min-width: 100%">
-        
-            
-        
-    </ul>
+    
 </div></div>
       
     </div>
@@ -314,11 +309,7 @@ document.write(`
     <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
         EN
     </a>
-    <ul class="dropdown-menu dropdown-menu-right center" style="min-width: 100%">
-        
-            
-        
-    </ul>
+    
 </div></div>
         
       </div>
@@ -397,13 +388,13 @@ document.write(`
     </span>
   
   
-  <a href="../../../blog/tag/pymc.html">pymc</a>
-  
-  
-  
-  
-  
   <a href="../../../blog/tag/statistics.html">statistics</a>
+  
+  
+  
+  
+  
+  <a href="../../../blog/tag/pymc.html">pymc</a>
   
   
   
@@ -426,6 +417,12 @@ document.write(`
 </h3>
 <ul>
   
+  
+  <li>
+    <a href="../../2023/problem-landscape/post.html">
+      Jul 07, 2023 - On Problem Landscape and Conformal Prediction vs. Bayes Dilemma
+    </a>
+  </li>
   
   <li>
     <a href="../../../talks/2023/data-fest/event.html">
@@ -451,12 +448,6 @@ document.write(`
     </a>
   </li>
   
-  <li>
-    <a href="../labs-ab-histogram/post.html">
-      Aug 12, 2022 - Bayesian inference at scale: Running A/B tests with millions of observations
-    </a>
-  </li>
-  
 </ul>
 </div>
 </div>
@@ -466,7 +457,7 @@ document.write(`
 <ul class="ablog-cloud">
   
   
-  <li class="ablog-cloud ablog-cloud-5">
+  <li class="ablog-cloud ablog-cloud-3">
     <a href="../../../blog/tag/ab-testing.html">ab-testing</a>
   </li>
   
@@ -484,20 +475,32 @@ document.write(`
   
   
   
-  <li class="ablog-cloud ablog-cloud-5">
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/bayes.html">bayes</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
     <a href="../../../blog/tag/beginner.html">beginner</a>
   </li>
   
   
   
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/conformal-prediction.html">conformal prediction</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
     <a href="../../../blog/tag/high-level.html">high-level</a>
   </li>
   
   
   
   <li class="ablog-cloud ablog-cloud-1">
-    <a href="../../../blog/tag/linear-regression.html">linear-regression</a>
+    <a href="../../../blog/tag/linear-regression.html">linear regression</a>
   </li>
   
   
@@ -508,7 +511,7 @@ document.write(`
   
   
   
-  <li class="ablog-cloud ablog-cloud-3">
+  <li class="ablog-cloud ablog-cloud-2">
     <a href="../../../blog/tag/pymc.html">pymc</a>
   </li>
   
@@ -537,7 +540,7 @@ document.write(`
   
   
   <li>
-    <a href="../../../blog/category/post.html">Post (3)</a>
+    <a href="../../../blog/category/post.html">Post (4)</a>
   </li>
   
   
@@ -559,7 +562,7 @@ document.write(`
   
   
   <li>
-    <a href="../../../blog/2023.html">2023 (3)</a>
+    <a href="../../../blog/2023.html">2023 (4)</a>
   </li>
   
   
@@ -1462,19 +1465,12 @@ Sampling: [y_obs]
 <p>If you have new ideas after reading the notebook,
 want to discuss it in more details or want to work with me,
 you can always <a class="reference internal" href="../../../contacts.html"><span class="doc">reach me out</span></a>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
-<summary class="sd-summary-title sd-card-header">
-Resources<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
+<hr class="docutils" />
 <ul class="simple">
-<li><p class="sd-card-text">Download the <a class="reference download internal" download="" href="../../../_downloads/c1fb0189895e68e21036210e55162c85/post.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">post.ipynb</span></code></a></p></li>
-<li><p class="sd-card-text">Download the <a class="reference download internal" download="" href="../../../_downloads/2e3798dd92ddadad70115827e02ae1fc/environment.yml"><code class="xref download docutils literal notranslate"><span class="pre">environment.yml</span></code></a></p></li>
+<li><p>Download the <a class="reference download internal" download="" href="../../../_downloads/c1fb0189895e68e21036210e55162c85/post.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">post.ipynb</span></code></a></p></li>
+<li><p>Download the <a class="reference download internal" download="" href="../../../_downloads/2e3798dd92ddadad70115827e02ae1fc/environment.yml"><code class="xref download docutils literal notranslate"><span class="pre">environment.yml</span></code></a></p></li>
 </ul>
-</div>
-</details>
+
 <div class="section ablog__blog_comments">
   
   

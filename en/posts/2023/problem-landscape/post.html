@@ -1,0 +1,1167 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>On Problem Landscape and Conformal Prediction vs. Bayes Dilemma &#8212; In Search of the Holy Posterior</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/light/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/dark/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/font/text/font.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/font/text/finlandica.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/font/text/noto-emoji.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/font/text/noto-serif.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/font/code/font.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'posts/2023/problem-landscape/post';</script>
+    <script src="../../../_static/require-2.3.6.min.js"></script>
+    <script src="../../../_static/embed-amd-1.0.1.min.js"></script>
+    <link rel="icon" href="../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(94179175, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/94179175" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+
+
+
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">In Search of the Holy Posterior</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../contacts.html">
+                        Contacts
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../teaching.html">
+                        Teaching
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../blog.html">
+                        Blog
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><div class="dropdown">
+    <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+        EN
+    </a>
+    
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../contacts.html">
+                        Contacts
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../teaching.html">
+                        Teaching
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../blog.html">
+                        Blog
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><div class="dropdown">
+    <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+        EN
+    </a>
+    
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<div class="ablog-sidebar-item ablog__postcard">
+
+
+<h2>
+  
+  
+  <i class="fa fa-calendar"></i>
+  
+  07 July 2023
+  
+</h2>
+<ul>
+  
+
+<li id="ablog-sidebar-item author ablog__author">
+  <span>
+    
+    <i class="fa-fw fa fa-user"></i>
+    
+    </span>
+  
+  
+  <a href="../../../blog/author/max-kochurov.html">Max Kochurov</a>
+  
+  
+  
+</li>
+
+
+
+<li id="ablog-sidebar-item language ablog__language">
+  <span>
+    
+    <i class="fa-fw fa fa-language"></i>
+    
+    </span>
+  
+  
+  <a href="../../../blog/language/english.html">English</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item category ablog__category">
+  <span>
+    
+    <i class="fa-fw fa fa-folder-open"></i>
+    
+    </span>
+  
+  
+  <a href="../../../blog/category/post.html">Post</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item tags ablog__tags">
+  <span>
+    
+    
+    <i class="fa-fw fa fa-tags"></i>
+    
+    
+    </span>
+  
+  
+  <a href="../../../blog/tag/statistics.html">statistics</a>
+  
+  
+  
+  
+  
+  <a href="../../../blog/tag/high-level.html">high-level</a>
+  
+  
+  
+  
+  
+  <a href="../../../blog/tag/bayes.html">bayes</a>
+  
+  
+  
+  
+  
+  <a href="../../../blog/tag/conformal-prediction.html">conformal prediction</a>
+  
+  
+  
+</li>
+
+
+</ul>
+</div>
+</div>
+        <div class="sidebar-primary-item">
+<div class="ablog-sidebar-item ablog__recentposts">
+<h3>
+  <a href="../../../blog.html">Recent Posts</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../talks/2023/data-fest/event.html">
+      Jun 04, 2023 - Bayes in the Wild
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../../talks/2023/analyst-days/event.html">
+      Apr 21, 2023 - Bayesian AB Testing
+    </a>
+  </li>
+  
+  <li>
+    <a href="../r2d2m2/post.html">
+      Feb 01, 2023 - The R2D2M2 Prior, the Awwwesome Linear Regression
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../../talks/2022/data-elka/event.html">
+      Dec 17, 2022 - Bayesian AB Testing
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../2022/labs-ab-histogram/post.html">
+      Aug 12, 2022 - Bayesian inference at scale: Running A/B tests with millions of observations
+    </a>
+  </li>
+  
+</ul>
+</div>
+</div>
+        <div class="sidebar-primary-item">
+<div class="ablog-sidebar-item ablog__tags">
+<h3><a href="../../../blog/tag.html">Tags</a></h3>
+<ul class="ablog-cloud">
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../blog/tag/ab-testing.html">ab-testing</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/advanced.html">advanced</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/arviz.html">arviz</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/bayes.html">bayes</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../blog/tag/beginner.html">beginner</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/conformal-prediction.html">conformal prediction</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../blog/tag/high-level.html">high-level</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/linear-regression.html">linear regression</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/prior.html">prior</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../blog/tag/pymc.html">pymc</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../blog/tag/pymc-labs.html">pymc-labs</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../../blog/tag/statistics.html">statistics</a>
+  </li>
+  
+  
+</ul>
+</div>
+</div>
+        <div class="sidebar-primary-item">
+<div class="ablog-sidebar-item ablog__category">
+<h3>
+  <a href="../../../blog/category.html">Categories</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../blog/category/post.html">Post (4)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../blog/category/talk.html">Talk (3)</a>
+  </li>
+  
+  
+</ul>
+</div>
+</div>
+        <div class="sidebar-primary-item">
+<div class="ablog-sidebar-item ablog__archive">
+<h3>
+  <a href="../../../blog/archive.html">Archives</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../blog/2023.html">2023 (4)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../blog/2022.html">2022 (3)</a>
+  </li>
+  
+  
+</ul>
+</div>
+</div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">On Problem Landscape and Conformal Prediction vs. Bayes Dilemma</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+<section id="on-problem-landscape-and-conformal-prediction-vs-bayes-dilemma">
+<h1>On Problem Landscape and Conformal Prediction vs. Bayes Dilemma<a class="headerlink" href="#on-problem-landscape-and-conformal-prediction-vs-bayes-dilemma" title="Permalink to this heading">#</a></h1>
+<p>There are a lot of ongoing debates between the Bayesian approach and doing conformal prediction.
+And I think this debate should not exist at all.
+Conformal prediction is a great approach, and it is more or less orthogonal to the Bayesian analysis.
+I’ll try to explain my vision about how conformal prediction relates to Bayesian analysis,
+what they share in common and why they are still very different.</p>
+<section id="problems-landscape">
+<h2>Problems Landscape<a class="headerlink" href="#problems-landscape" title="Permalink to this heading">#</a></h2>
+<img alt="../../../_images/cover.jpg" src="../../../_images/cover.jpg" />
+<p>There are a lot of possible problem classifications.
+One of them puts a problem or domain task into either White Box, or Black Box set, there are also Grey Boxes.
+It turns around that this classification reveals conceptual differences and wide spectrum of problems people are dealing with.</p>
+<p>Not every problem is a nail, and not every method is a hammer, sometimes you just need a screwdriver.</p>
+<section id="black-boxes">
+<span id="black-box"></span><h3>Black Boxes<a class="headerlink" href="#black-boxes" title="Permalink to this heading">#</a></h3>
+<p>You might know a lot of black box tasks that are very-very common in real applications.
+Such include:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Image/Video classification</dt><dd><p>Images or Videos are very complex objects that come from many observation sources.
+To describe that complex algorithms have to be proposed and implemented.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Text/Sentiment analysis, generation</dt><dd><p>Text is more structured than images, it has grammar.
+It is structured as input, and the method objective is to translate it to machine or human-readable outputs</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Video segmentation</dt><dd><p>Sequences of images, videos, get an additional time structure.
+Neural networks create intrinsic abstractions to explain, transform it to outputs.
+Researches create algorithms in such a way that this structure is utilized.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<img alt="../../../_images/image-segmentation.jpg" src="../../../_images/image-segmentation.jpg" />
+<p>These are the problems where <strong>the main focus is prediction.</strong>
+Nobody would ask, what does the intermediate representation of a neural network do.
+Such Black Box problems are very important to drive business optimization,
+solve consumer tasks. These problems are often very scientifically involved.
+It is very hard to make algorithms that solve those tasks transparent and <em>interpretable</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By “interpretable” I mean the ability to inspect not only the model outputs but all the intermediate
+steps that were taken by an algorithm to create a prediction.</p>
+</div>
+<p>Fair to say that a lot of research and education materials about how to move Black Box Models to a more Grey Zone.
+One of the best resources is “Interpretable Machine Learning Book” <a class="footnote-reference brackets" href="#footcite-molnar-interpretable-ml" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p>Yet even with all the available methods model introspection solves a part of being “interpretable”.
+For Random Forest that would be all the binary decisions and splits for each tree and an explanation on why the splits were taken in a particular order.
+Treat this as an interview with a person who created all these rules and explains them to you. So “interpretability”
+is not only about being explicit about the actual steps but also about the ability to explain what does a particular step mean in “human language”</p>
+</section>
+<section id="grey-area">
+<span id="grey-box"></span><h3>Grey Area<a class="headerlink" href="#grey-area" title="Permalink to this heading">#</a></h3>
+<p>Somewhat in between fall all the problems where at least some structure has to be respected.</p>
+<p>Under this category we can refer such problems like:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Structural Prediction</dt><dd><p>The prediction has physical constraints</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Time Series analysis</dt><dd><p>Since we need to respect causality that future does not influence the past</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>All the Causal models</dt><dd><p>What we need are the building blocks and respect relations. What are exact relations is a separate issue.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="mermaid">
+            graph TB
+    A[Factor A]
+    B[Factor B]
+    C[Factor C]
+    D[Factor D]
+    E[Factor E]
+    F[Factor F]
+    G[Factor G]
+    H[Factor H]
+    I[Outcome]
+
+    A --&gt; B;
+    A --&gt; C;
+    B --&gt; D;
+    C --&gt; D;
+    C --&gt; E;
+    D --&gt; F;
+    D --&gt; G;
+    D --&gt; H;
+    F --&gt; I;
+    G --&gt; I;
+    H --&gt; I;
+        </div><p>There are sure a lot more problems that can be also discussed under this category.
+What is in common for these problems is that <strong>not only the prediction starts to be important, but the structure</strong>.
+We might be not interested in the exact functional relations and whether we can interpret each connection.
+Treating a data problem like this is much more powerful and make you think about the causes of the output, confounder variables, etc.
+More on the Causal Inference you can find in the legendary “The book of Why” <a class="footnote-reference brackets" href="#footcite-pearl-the-book-of-why" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
+<p>Causal framework, on the other hand is not often needed.
+Just a step back, where we were looking at the image classification or segmentation.
+There is little sense to introduce another layer of complexity to the problem if the sole purpose is to classify cats and dogs.</p>
+<p>Thus, the biggest difference from <a class="reference internal" href="#black-box"><span class="std std-ref">Black Box</span></a> models is the <strong>requirement</strong> on some sort of structure.
+The structure helps to either constrain set of algorithms together or make the model actionable for real applications.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can’t have an actionable model if it is not causal. <a class="reference internal" href="#black-box"><span class="std std-ref">Black Box</span></a> models are conditional.</p>
+<p>There is a special notation for Conditioning</p>
+<div class="math notranslate nohighlight">
+\[p(A|B)\]</div>
+<p>vs Causality</p>
+<div class="math notranslate nohighlight">
+\[p(A|\operatorname{do}(B))\]</div>
+<p><span class="math notranslate nohighlight">\(\operatorname{do}\)</span> is the intervention into the causal process.</p>
+</div>
+</section>
+<section id="white-box">
+<span id="id3"></span><h3>White Box<a class="headerlink" href="#white-box" title="Permalink to this heading">#</a></h3>
+<p>The White Box models are in 90% (I bet there are exceptions) cases causal by construction.
+In these types of models you think first about the causal graph.
+And after the causal graph is specified, you decide on <strong>how exactly graph entities are connected</strong>.</p>
+<p>Moreover, the <strong>real benefit</strong> in such applications is not the prediction per se (sure it can be useful),
+but <strong>the internals of the modeled process, its byproduct</strong>.
+In such applications the byproduct is central, not the outcome.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It might be controversial to put insights above the predictions.
+However, think of it, what drives your business, by how much? Build your mental model.
+You need insights, predictions are to validate you are not off with the conclusions.</p>
+</div>
+<p>On a Marketing example let’s see how it looks like to be White Box minded.
+Like every problem we need to build causal relations to figure out what has to be tight together, what not.</p>
+<figure class="align-default" id="id9">
+<div class="mermaid">
+            graph LR
+
+    S[User Search]
+    B[Budget]
+    ar[Ad Rank]
+    b[Bids]
+    s[Spend]
+    pk[Paid Clicks]
+    ok[Organic Clicks]
+    or[Organic Rank]
+    sales[Sales]
+
+    S --&gt; ar &amp; or
+    or --&gt; b --&gt; ar
+    B --&gt; b --&gt; s
+    or --&gt; ok
+    ar --&gt; pk
+    pk --&gt; s
+    ok &lt;-.-&gt; pk
+    ok &amp; pk --&gt; sales
+        </div><figcaption>
+<p><span class="caption-text">Bias Correction For Paid Search In Media Mix Modeling <a class="footnote-reference brackets" href="#footcite-chen2018bias-mmm" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Then we move to implementing each part of the causal graph with rigor mathematical models.
+Since usually we have a lot of structure assumptions we have to be extremely <strong>explicit about every equation</strong>.</p>
+<p>Concretely, given a time series target variable <span class="math notranslate nohighlight">\(y_{t}\)</span> (e.g. sales on conversions),
+media variables <span class="math notranslate nohighlight">\(x_{m, t}\)</span> (e.g. impressions, clicks or costs) and a set
+of control covariates <span class="math notranslate nohighlight">\(z_{c, t}\)</span> (e.g. holidays, special events)
+we can consider a linear model of the form</p>
+<div class="math notranslate nohighlight">
+\[y_{t} = \alpha + \sum_{m=1}^{M}\beta_{m}f(x_{m, t}) + \sum_{c=1}^{C}\gamma_{c}z_{c, t} + \varepsilon_{t},\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is the intercept, <span class="math notranslate nohighlight">\(f\)</span> is a media transformation function and <span class="math notranslate nohighlight">\(\varepsilon_{t}\)</span> is the error
+term which we assume is normally distributed. The function <span class="math notranslate nohighlight">\(f\)</span> encodes the contribution of media on the target variable.
+Typically, two types of transformation are considered: adstock (carry-over)</p>
+<div class="math notranslate nohighlight">
+\[X \mapsto A:\quad A_t = X_t + r * A_{t-1}\]</div>
+<p>and saturation effects</p>
+<div class="math notranslate nohighlight">
+\[x\mapsto s:\quad s=\beta \cdot \text{tanh} \Big(x /(\beta \cdot c_0) \Big)\]</div>
+<p>The modelling involves more and more steps to take in account and that is the day-job of stats practitioners.
+The key difference from <a class="reference internal" href="#grey-box"><span class="std std-ref">Grey Area</span></a> approach is that just causal graph is not
+enough and fitting a model per relation would not represent the actual process accurately and what is more important, reliably.</p>
+<p>Media Mix Models is just the most known example of White Box models.
+Many other problems that should be treated as White Box include such domains as</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Chemistry</dt><dd><p>All the mixture evolution equations, reaction times, diffusions
+they all benefit from writing a simple parametric function <strong>that comes from theory</strong>.
+Black Box models can be very off from theoretical assumptions and constraints.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Biology, Neurosciences</dt><dd><p>In such domains soft knowledge prevails and is not formalized. If there is data,
+a model, one of the requirements for the model would b to follow all these soft constraints.
+With weakly interpretable models it is hard to control if the model violates any of them.
+Simple equations can be the essence of the discussion, brainstorm, they can be challenged
+against any assumption.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Other</dt><dd><p>It is hard to enumerate all the spheres and applications where this is useful.
+Often, the problem is that niche, that it is only known to narrow PhD students or
+mature professionals. For these people they have a mental model in their heads
+and mostly do analysis on paper or Excel tables. However, if we are about to extract
+soft knowledge into a rigor model could be done with primarily White Box models.
+Simple should stay Simple.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is where the Bayesian approach really shines.
+In this rigor setting with a lot of domain knowledge and structure it is possible to quantify any soft assumption.</p>
+</div>
+</section>
+</section>
+<section id="conformal-vs-bayes">
+<h2>Conformal vs Bayes<a class="headerlink" href="#conformal-vs-bayes" title="Permalink to this heading">#</a></h2>
+<p>Time to discuss the conformal prediction <a class="footnote-reference brackets" href="#footcite-balasubramanian2014conformal" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a><a class="footnote-reference brackets" href="#footcite-manohin2024conformal" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>. Now we know what are Black Box models, White Box Models and the whole spectrum that
+includes the Grey Area of structured Models. The classification helps very much to decide on what
+approach to take to solve a concrete problem.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Conformal prediction</dt><dd><p>is a method to quantify uncertainty of an arbitrary model prediction.
+You can treat it as an additional output that estimates standard deviation of the prediction.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Bayesian uncertainty</dt><dd><p>is a measure of unknown about the model and the parameter space and encoded in a <em>prior distribution</em>.
+Bayesian inference uses data and <em>likelihood distribution</em> to reduce the amount of uncertainty.
+The combined expert and data knowledge is the <em>posterior distribution</em>.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt>So why conformal prediction is opposed to Bayesian approach?</dt><dd><p>Well, both deal with uncertainty.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>What should one use to calculate uncertainty?</dt><dd><p>Right, probabilities.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Is Bayesian approach the only to calculate uncertainty?</dt><dd><p>No! Conformal prediction does the thing too!</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>What uncertainty are we talking about?</dt><dd><p>Good question!</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>So indeed, there is the common application for these theoretical methods is to calculate uncertainty.
+The thing that is often missed in these debates is what uncertainty is assumed.</p>
+<figure class="align-default" id="id10">
+<img alt="../../../_images/epistemic-aleatoric.png" src="../../../_images/epistemic-aleatoric.png" />
+<figcaption>
+<p><span class="caption-text">Aleatoric and Epistemic Uncertainty in Machine Learning: An Introduction to Concepts and Methods <a class="footnote-reference brackets" href="#footcite-hllermeier2021epistemic-aleatoric" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Prediction Uncertainty</dt><dd><p>The uncertainty that is solely contained in the predictions of the model</p>
+<ul>
+<li><dl class="simple">
+<dt>Epistemic</dt><dd><p>Refers to the uncertainty of the model that is due to lack of data.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Aleatoric</dt><dd><p>Refers to known uncertainty of data, some randomness.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Prior Probability</dt><dd><p>The uncertainty over the model itself, not the prediction, not the input.
+This is also referred as “putting expertise into the model” or “taking in account assumptions”
+In a nutshell, it is the mental model I was talking about in <a class="reference internal" href="#white-box"><span class="std std-ref">White Box</span></a>, but in a rigor framing,
+reasonable skepticism and assumptions. You can often find this term mentioned in Bayesian analysis.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Posterior Probability</dt><dd><p>Once we get data and put it into our mental model, the outcome is more complete understanding of the model, the process.
+It is the refined picture like how we change our mind after getting into an investigation.
+Every piece of data contributes and challenges priors to for the posterior.
+The uncertainty that is reduced is about the mental model itself.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<section id="bayesian-vs-conformal">
+<h3>Bayesian vs Conformal<a class="headerlink" href="#bayesian-vs-conformal" title="Permalink to this heading">#</a></h3>
+<p>Prediction uncertainty can be calculated in a Bayesian analysis and using conformal prediction methods.
+Mental model uncertainty is only present for the Bayesian alternative. What is more useful and when?
+That is where the discussion about the Problem Landscape becomes useful.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Motivating the importance of uncertainty is not the idea. Sometimes it is not super useful.
+But when it is, you probably understand why already.</p>
+</div>
+<table class="table" id="id11">
+<caption><span class="caption-text">Where Bayesian, where Conformal?</span><a class="headerlink" href="#id11" title="Permalink to this table">#</a></caption>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Black Box</strong></p></td>
+<td><p><strong>Grey Box</strong></p></td>
+<td><p><strong>White Box</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Conformal Prediction</strong></p></td>
+<td><p>Predictions</p></td>
+<td><p>Predictions</p></td>
+<td><p>Predictions</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Bayesian</strong></p></td>
+<td></td>
+<td></td>
+<td><p>Model and Predictions</p></td>
+</tr>
+</tbody>
+</table>
+<p>The table above is an essence of the debate.
+It is obvious now, that the focus of the conformal prediction is prediction, it does not help much to reduce
+the uncertainty around the mental model. On the other hand, Bayesian methods do not help to deal with
+uncertainty of any kind in Black Box models or even Grey Box Models.</p>
+</section>
+</section>
+<section id="conclusions">
+<h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h2>
+<p>There is little place for debate, Bayesian methods focus on White Box applications and help
+to quantify the uncertainty for the model and insights.
+If you are passionate about predictions only, and need to quantify uncertainty as a bonus,
+conformal prediction is the way to go.</p>
+<div class="docutils container" id="id8">
+<aside class="footnote brackets" id="footcite-molnar-interpretable-ml" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Christoph Molnar. <em>Interpretable Machine Learning</em>. Web, 2018. <a class="reference external" href="https://christophm.github.io/interpretable-ml-book/">https://christophm.github.io/interpretable-ml-book/</a>.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-pearl-the-book-of-why" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>J. Pearl and D. Mackenzie. <em>The Book of Why: The New Science of Cause and Effect</em>. Basic Books, 2018. ISBN 9780465097616. URL: <a class="reference external" href="https://books.google.ru/books?id=BzM0DwAAQBAJ">https://books.google.ru/books?id=BzM0DwAAQBAJ</a>.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-chen2018bias-mmm" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p>Aiyou Chen, David Chan, Mike Perry, Yuxue Jin, Yunting Sun, Yueqing Wang, and Jim Koehler. Bias correction for paid search in media mix modeling. 2018. <a class="reference external" href="https://arxiv.org/abs/1807.03292">arXiv:1807.03292</a>.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-balasubramanian2014conformal" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">4</a><span class="fn-bracket">]</span></span>
+<p>Vineeth Balasubramanian, Shen-Shyang Ho, and Vladimir Vovk. <em>Conformal Prediction for Reliable Machine Learning: Theory, Adaptations and Applications</em>. ACM, 2014. ISBN 0123985374.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-manohin2024conformal" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">5</a><span class="fn-bracket">]</span></span>
+<p>Valery Manokhin. <em>Practical Guide to Applied Conformal Prediction</em>. Packt, 2024. ISBN 1805122762.</p>
+</aside>
+<aside class="footnote brackets" id="footcite-hllermeier2021epistemic-aleatoric" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">6</a><span class="fn-bracket">]</span></span>
+<p>Eyke Hüllermeier and Willem Waegeman. Aleatoric and epistemic uncertainty in machine learning: an introduction to concepts and methods. <em>Machine Learning</em>, 110(3):457–506, mar 2021. URL: <a class="reference external" href="https://doi.org/10.1007%2Fs10994-021-05946-3">https://doi.org/10.1007%2Fs10994-021-05946-3</a>, <a class="reference external" href="https://doi.org/10.1007/s10994-021-05946-3">doi:10.1007/s10994-021-05946-3</a>.</p>
+</aside>
+</aside>
+</div>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    <a href="../../../talks/2023/data-fest/event.html">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Bayes in the Wild</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+  </span>
+</div>
+
+  
+  
+</div>
+
+                </article>
+              
+              
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems-landscape">Problems Landscape</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#black-boxes">Black Boxes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grey-area">Grey Area</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#white-box">White Box</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conformal-vs-bayes">Conformal vs Bayes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bayesian-vs-conformal">Bayesian vs Conformal</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, Max Kochurov.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ferrine/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/in/ferrine/" title="LinkedIn" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-linkedin-in"></i></span>
+            <label class="sr-only">LinkedIn</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="mailto:max.kochurov@pymc-labs.io" title="Email" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-solid fa-envelope"></i></span>
+            <label class="sr-only">Email</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/ferrine96/" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

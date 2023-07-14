@@ -29,7 +29,6 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/light/default.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/dark/default.css" />
@@ -48,6 +47,8 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'blog/category';</script>
     <script src="../_static/require-2.3.6.min.js"></script>
     <script src="../_static/embed-amd-1.0.1.min.js"></script>
@@ -213,11 +214,7 @@ document.write(`
     <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
         EN
     </a>
-    <ul class="dropdown-menu dropdown-menu-right center" style="min-width: 100%">
-        
-            
-        
-    </ul>
+    
 </div></div>
       
     </div>
@@ -306,11 +303,7 @@ document.write(`
     <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
         EN
     </a>
-    <ul class="dropdown-menu dropdown-menu-right center" style="min-width: 100%">
-        
-            
-        
-    </ul>
+    
 </div></div>
         
       </div>
@@ -325,6 +318,12 @@ document.write(`
 </h3>
 <ul>
   
+  
+  <li>
+    <a href="../posts/2023/problem-landscape/post.html">
+      Jul 07, 2023 - On Problem Landscape and Conformal Prediction vs. Bayes Dilemma
+    </a>
+  </li>
   
   <li>
     <a href="../talks/2023/data-fest/event.html">
@@ -350,12 +349,6 @@ document.write(`
     </a>
   </li>
   
-  <li>
-    <a href="../posts/2022/labs-ab-histogram/post.html">
-      Aug 12, 2022 - Bayesian inference at scale: Running A/B tests with millions of observations
-    </a>
-  </li>
-  
 </ul>
 </div>
 </div>
@@ -365,7 +358,7 @@ document.write(`
 <ul class="ablog-cloud">
   
   
-  <li class="ablog-cloud ablog-cloud-5">
+  <li class="ablog-cloud ablog-cloud-3">
     <a href="tag/ab-testing.html">ab-testing</a>
   </li>
   
@@ -383,20 +376,32 @@ document.write(`
   
   
   
-  <li class="ablog-cloud ablog-cloud-5">
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="tag/bayes.html">bayes</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
     <a href="tag/beginner.html">beginner</a>
   </li>
   
   
   
   <li class="ablog-cloud ablog-cloud-1">
+    <a href="tag/conformal-prediction.html">conformal prediction</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
     <a href="tag/high-level.html">high-level</a>
   </li>
   
   
   
   <li class="ablog-cloud ablog-cloud-1">
-    <a href="tag/linear-regression.html">linear-regression</a>
+    <a href="tag/linear-regression.html">linear regression</a>
   </li>
   
   
@@ -407,7 +412,7 @@ document.write(`
   
   
   
-  <li class="ablog-cloud ablog-cloud-3">
+  <li class="ablog-cloud ablog-cloud-2">
     <a href="tag/pymc.html">pymc</a>
   </li>
   
@@ -436,7 +441,7 @@ document.write(`
   
   
   <li>
-    <a href="category/post.html">Post (3)</a>
+    <a href="category/post.html">Post (4)</a>
   </li>
   
   
@@ -458,7 +463,7 @@ document.write(`
   
   
   <li>
-    <a href="2023.html">2023 (3)</a>
+    <a href="2023.html">2023 (4)</a>
   </li>
   
   
@@ -529,6 +534,18 @@ document.write(`
     Posts in
     <a href="category/post.html">Post</a>
   </h2>
+  
+  <div class="section ablog__catalog_post">
+    <p>
+      
+      07 July 2023
+      
+      -
+      <a href="../posts/2023/problem-landscape/post.html"
+        >On Problem Landscape and Conformal Prediction vs. Bayes Dilemma</a
+      >
+    </p>
+  </div>
   
   <div class="section ablog__catalog_post">
     <p>

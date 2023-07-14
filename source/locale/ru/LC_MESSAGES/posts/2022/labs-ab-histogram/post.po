@@ -21,11 +21,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/blog.rst:2
-msgid "Blog"
+#: ../../source/posts/2022/labs-ab-histogram/post.rst:2
+msgid ""
+"Bayesian inference at scale: Running A/B tests with millions of "
+"observations"
 msgstr ""
 
-#: ../../source/blog.rst:3
-msgid "This is a placeholder to reference in toc"
+#: ../../source/posts/2022/labs-ab-histogram/post.rst:14
+msgid ""
+"Industry data scientists are increasingly making the shift over to using "
+"Bayesian methods. However, one often cited reason for avoiding this is "
+"because “Bayesian methods are slow.” There can be some truth to this, "
+"although this is often a non-issue unless working at serious scale."
 msgstr ""
 

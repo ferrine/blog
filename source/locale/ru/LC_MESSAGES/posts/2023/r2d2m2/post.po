@@ -1,0 +1,340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Max Kochurov
+# This file is distributed under the same license as the In Search of the
+# Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: In Search of the Holy Posterior \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-14 11:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:9
+msgid "The R2D2M2 Prior, the Awwwesome Linear Regression"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:-1
+msgid "cover"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:43
+msgid ""
+"There is an awesome paper that puts a simple idea of interpretable linear"
+" regression to an absolute. The `Intuitive Joint Priors for Bayesian "
+"Linear Multilevel Models: The R2D2M2 prior "
+"<https://arxiv.org/abs/2208.07132>`__. The idea resonates with me a lot, "
+"since I admire interpretable priors and the ability to describe the "
+"model, not an ability to explain."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:45
+msgid ""
+"Explaining the model, you try to interpret parameters that are already "
+"present in the model, and you need to put some human-readable explanation"
+" of the meaning. It reminds me of the top-down approach, then you "
+"introduce parameters as you need them."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:47
+msgid ""
+"Describing the model is the opposite. You start with simple statements "
+"that you or your peers both understand. It is usually referred to as the "
+"bottom up approach, you start with assumptions you understand and "
+"complete the model as you go."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:49
+msgid ""
+"Mastering the latter is the essence of Bayesian modeling. In this sense, "
+"the paper is of great interest to me."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:52
+msgid "Boston Housing Data"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:54
+msgid ""
+"As a benchmark dataset, I took the Boston housing dataset. It has the "
+"bare minimum to check the model parametrization. I took the part of the "
+"linear regression I really need and ignored varying intercept and varying"
+" slope. Here is the full model I'm referring to."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:65
+msgid ""
+"\\begin{equation}\n"
+"    \\begin{aligned}\n"
+"y_n & \\sim \\mathcal{N} (\\mu_n, \\sigma^2) \\\\\n"
+"\\mu_n &= b_{0}+ \\sum_{i=1}^p x_{ni} b_{i}+  \\sum_{g\\in G_0} u_{0 "
+"g_{j[n]}  }  + \\sum_{i=1}^p x_{ni} \\left( \\sum_{g \\in G_i} u_{i "
+"g_{j[n]}} \\right) \\\\\n"
+"b_{0}& \\sim  p(b_{0}) \\\\\n"
+"b_i &\\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}   "
+"\\phi_i \\tau^2\\right), \\quad\n"
+"    u_{ig_j} \\sim \\mathcal{N} \\left(0, "
+"\\frac{\\sigma^2}{\\sigma_{x_i}^2}   \\phi_{ig} \\tau^2\\right) \\\\\n"
+"    \\tau^2&= \\frac{R^2}{1-R^2}\\\\\n"
+"R^2  &\\sim \\operatorname{Beta}(\\mu_{R^2},\\varphi_{R^2}), \\ \\\n"
+"     \\phi \\sim \\operatorname{Dirichlet} (\\alpha), \\ \\\n"
+"     \\sigma \\sim p(\\sigma). \\\\\n"
+"\\end{aligned}\n"
+"\\end{equation}"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:91
+msgid "Let's finally get our hands dirty with code!"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:116
+msgid ""
+"It has to be remarked that I advocate normalizing your input data so it "
+"has :math:`\\mathbb{E}[X]=0`, :math:`\\mathbb{V}[X]=1`. This will save "
+"you a lot of time to figure out the right scale for slope parameters. "
+"Normalizing the output variable also makes a lot of sense. You may also "
+"notice that it is actually a part of the R2D2M2 linear regression "
+"parameterization. A rule of thumb is to take care of it one way or "
+"another."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:127
+msgid ""
+"b_i \\sim \\mathcal{N} \\left(0, "
+"\\frac{\\sigma^2}{\\sigma_{x_i}^2}\\right)"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:150
+msgid ""
+"We deal with positive outcome, prices. I would also expect the variable "
+"effect to have elasticity interpretation. To do so, I apply ``log`` "
+"transformation on positive valued regressors."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:193
+msgid "Non-centered R2D2M2"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:195
+msgid ""
+"Whenever I see a normal distribution with mean and scale, I tend to use "
+"non-centered parameterization. I was shocked to see how different it is "
+"from the centered case. But before we go to the working examples, let's "
+"see how to make an amazing model miserably fail."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:481
+msgid "Yet it has no divergences, the parameter landscape is very complicated."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:483
+msgid "Larger phi discourages large coefficients."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:484
+msgid "There is also a banana shape relationship"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:485
+msgid ""
+"Step size should be very different if you are in the center of the banana"
+" or on its boundary."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:486
+msgid "Total sampling time on my Supermicro is almost 1 hour 🤯"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:498
+msgid "Centered R2D2M2"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:500
+msgid ""
+"To my surprise, this model parametrization is 20 times faster than a non-"
+"centered variant. Once you download the notebook, you can play around "
+"with some parameters below to get the idea of R2D2M2 strong or weak "
+"places. Here is the bare minimum of what you should know about the model:"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:502
+msgid "You choose R2:"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:504
+msgid "In econometrics classes, you've seen what is R2."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:505
+msgid "1 - is a perfect data fit"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:506
+msgid "0 - total noise and predictors are irrelevant."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:507
+msgid "In a Bayesian setup, you do not pick one, you pick possible ones."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:508
+msgid ""
+"A suggestion is to pick a :math:`95\\%` range :math:`(R^2_{2.5\\%}, "
+"R^2_{97.5\\%})`."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:510
+msgid "You choose variable importance:"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:512
+msgid ""
+"There are usually many variables in the regression, one you might assume "
+"is more important than another."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:513
+msgid ":math:`\\alpha_i` is the parameter to look into to express the knowledge."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:514
+msgid ""
+":math:`\\alpha_i=1` is total unawareness of the importance of the "
+"variable."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:515
+msgid ""
+":math:`\\alpha_i<1` tells the model you tend to think the :math:`i`'th "
+"variable is likely to be not significant."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:516
+msgid ":math:`\\alpha_i>1` informs your model not to ignore the variable."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:517
+msgid ""
+"Extremely large or small :math:`\\alpha_i` may cause numerical problems "
+"or divergences"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:519
+msgid "0.001 was too small"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:520
+msgid "200 was too much"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:521
+msgid "You can explore better reasonable bounds using this notebook"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:685
+msgid "Combining residual and sigma"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:696
+msgid ""
+"Sampling is much faster but there are divergences. Let's try to combine "
+":math:`R^2` and :math:`\\sigma`"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:859
+msgid "Yet, there is correlation in sigma and :math:`R^2`"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:896
+msgid "What did the job was:"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:898
+msgid "Centered parametrization"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:904
+msgid "Attaching residual sigma to the model and :math:`R^2` parametrization"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:925
+msgid "Sparse solution"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:927
+msgid ""
+"Now imagine we have some doubtful variables under consideration. We are "
+"unsure we should use them, but some of them may be helpful. To create a "
+"model under this setting, we need variable importance which are "
+":math:`\\alpha` in the model parameterization."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:1045
+msgid ""
+"The amount of sparsity is incredible. Yet, there are few divergences and "
+"I think it can be ignored there."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:1047
+msgid ""
+"As authors claim, there are instabilities with low :math:`\\alpha`, and "
+"general recommendation (personal experience) is to exclude non-"
+"informative variables and set variable importance :math:`\\alpha` > 1"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:1081
+msgid "Conclusion"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:1083
+msgid "There are few practical advices to use R2D2M2 prior:"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:1085
+msgid ""
+"Use the prior to weight variables that make sense. The sparsity inducing "
+"alpha leads to some instabilities (which you may ignore)."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:1086
+msgid ""
+"Not always centered parametrization was great in my applications. I "
+"recommend trying both."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:1087
+msgid ""
+"Coupling the error term sigma into the model leads to fewer instabilities"
+" and more interpretable sigma prior."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:4
+msgid ""
+"If you have new ideas after reading the notebook, want to discuss it in "
+"more details or want to work with me, you can always :doc:`reach me out "
+"</contacts>`."
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb
+msgid "Resources"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:11
+msgid "Download the :download:`post.ipynb`"
+msgstr ""
+
+#: ../../source/posts/2023/r2d2m2/post.ipynb:12
+msgid "Download the :download:`environment.yml`"
+msgstr ""
+

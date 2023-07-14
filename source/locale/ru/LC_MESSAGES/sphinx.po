@@ -1,15 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
+# #-#-#-#-#  sphinx.pot (PROJECT VERSION)  #-#-#-#-#
+# Russian translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
+# #-#-#-#-#  sphinx.pot (ablog 0.10.30.dev19+gb9b1a31)  #-#-#-#-#
+# Russian translations for ablog.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the ablog project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-30 20:38+0000\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-07-14 11:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -269,7 +274,4 @@ msgstr ""
 #: ablog/templates/ablog/recentposts.html:4 ablog/templates/recentposts.html:5
 msgid "Recent Posts"
 msgstr ""
-
-#~ msgid "Max Kochurov"
-#~ msgstr ""
 

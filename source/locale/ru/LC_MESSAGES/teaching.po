@@ -68,7 +68,7 @@ msgstr "Современный практический курс по байес
 
 #: ../../source/teaching.rst:36
 msgid ":xref:`Announcement <talks:2022:msu-practical-bayes>`"
-msgstr ":xref:`Объявление <talks:2022:msu-practical-bayes> `"
+msgstr ":xref:`Объявление <talks:2022:msu-practical-bayes>`"
 
 #: ../../source/teaching.rst:38
 msgid "PyMC Labs State of Bayes"
@@ -80,7 +80,7 @@ msgstr "Серия вебинаров по передовой прикладно
 
 #: ../../source/teaching.rst:45
 msgid ":doc:`Online Materials <teaching/state-of-bayes>`"
-msgstr ":doc:`Онлайн-материалы <teaching/state-of-bayes> `"
+msgstr ":doc:`Онлайн-материалы <teaching/state-of-bayes>`"
 
 #: ../../source/teaching.rst:47
 msgid "Request a Workshop"

@@ -184,11 +184,11 @@ msgstr "Ссылки"
 
 #: ../../source/test.rst:96
 msgid "This is an example of an `external link <https://www.example.com>`_."
-msgstr "Это пример внешней ссылки <https://www.example.com>. `_."
+msgstr "Это пример внешней ссылки <https://www.example.com>`_."
 
 #: ../../source/test.rst:98
 msgid "This is an example of an :ref:`internal link <test_css_layout>`."
-msgstr "Это пример :ref:`внутренней ссылки <test_css_layout> `."
+msgstr "Это пример :ref:`внутренней ссылки <test_css_layout>`."
 
 #: ../../source/test.rst:102
 msgid "Is your problem white box?"

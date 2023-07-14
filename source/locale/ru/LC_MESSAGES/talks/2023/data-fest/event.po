@@ -53,4 +53,4 @@ msgstr ":xref:`talks:2023:data-fest`"
 
 #: ../../source/talks/2023/data-fest/event.rst:27
 msgid ":download:`Presentation <https://disk.yandex.ru/i/eiExGvv7wEtgbw>`"
-msgstr ":download:`Презентация <https://disk.yandex.ru/i/eiExGvv7wEtgbw> `"
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/eiExGvv7wEtgbw>`"

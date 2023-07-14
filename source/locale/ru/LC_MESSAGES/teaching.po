@@ -1,83 +1,87 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the In Search of the Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Daria Galimzianova, 2023
+# Maxim Kochurov, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
+"Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-14 13:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"PO-Revision-Date: 2023-06-25 18:45+0000\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../source/teaching.rst:2
 msgid "Teaching"
-msgstr ""
+msgstr "Преподавание"
 
 #: ../../source/teaching.rst:12
 msgid "Books"
-msgstr ""
+msgstr "Книги"
 
 #: ../../source/teaching.rst:13
 msgid ""
-"Fist of all a lot of materials already exist on the internet, and they "
-"are just amazing."
+"Fist of all a lot of materials already exist on the internet, and they are "
+"just amazing."
 msgstr ""
+"Во-первых, в интернете уже есть много материалов, и они просто потрясающие."
 
 #: ../../source/teaching.rst:15
 msgid "Learn PyMC with Books"
-msgstr ""
+msgstr "Изучайте PyMC по учебникам"
 
 #: ../../source/teaching.rst:19
 msgid "A collection of books is curated by PyMC Developers"
-msgstr ""
+msgstr "Коллекция книг курируется разработчиками PyMC."
 
 #: ../../source/teaching.rst:23
 msgid "Workshops"
-msgstr ""
+msgstr "Мастер-классы"
 
 #: ../../source/teaching.rst:24
 msgid ""
-"I give lectures in university, webinar format and give corporate "
-"workshops. Feel free to reach me out if you want something customized."
+"I give lectures in university, webinar format and give corporate workshops. "
+"Feel free to reach me out if you want something customized."
 msgstr ""
+"Читаю лекции в университете в формате вебинаров и корпоративные мастер-"
+"классы. Не стесняйтесь связаться со мной, если вы хотите что-то "
+"индивидуальное."
 
 #: ../../source/teaching.rst:29
 msgid "MSU Practical Bayes"
-msgstr ""
+msgstr "Прикладные Байесовские методы в МГУ"
 
 #: ../../source/teaching.rst:32
 msgid "Modern practical course on Bayesian statistics"
-msgstr ""
+msgstr "Современный практический курс по байесовской статистике"
 
 #: ../../source/teaching.rst:36
 msgid ":xref:`Announcement <talks:2022:msu-practical-bayes>`"
-msgstr ""
+msgstr ":xref:`Объявление <talks:2022:msu-practical-bayes> `"
 
 #: ../../source/teaching.rst:38
 msgid "PyMC Labs State of Bayes"
-msgstr ""
+msgstr "PyMC Labs State of Bayes"
 
 #: ../../source/teaching.rst:41
 msgid "Webinar series on state of the art applied Bayesian statistics"
-msgstr ""
+msgstr "Серия вебинаров по передовой прикладной байесовской статистике"
 
 #: ../../source/teaching.rst:45
 msgid ":doc:`Online Materials <teaching/state-of-bayes>`"
-msgstr ""
+msgstr ":doc:`Онлайн-материалы <teaching/state-of-bayes> `"
 
 #: ../../source/teaching.rst:47
 msgid "Request a Workshop"
-msgstr ""
-
+msgstr "Запросить мастер-класс"

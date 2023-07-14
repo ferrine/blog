@@ -1,44 +1,53 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the In Search of the Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Maxim Kochurov, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
+"Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-14 13:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"PO-Revision-Date: 2023-07-14 12:01+0000\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../source/cases/brain.rst:4
 msgid "Brain Activity"
-msgstr ""
+msgstr "Анализ поведенческой активности"
 
 #: ../../source/cases/brain.rst:17
 msgid ""
-"Developing drugs is a very tedious process that involves rigor testing on"
-" animals and on humans. While treatment effect for most of the cases can "
-"be relatively easy quantified, brain activity is a challenge."
+"Developing drugs is a very tedious process that involves rigor testing on "
+"animals and on humans. While treatment effect for most of the cases can be "
+"relatively easy quantified, brain activity is a challenge."
 msgstr ""
+"Разработка лекарств — очень длительный процесс, который включает в себя "
+"тщательные испытания на животных и людях. В то время как эффект лечения в "
+"большинстве случаев может быть относительно легко определен количественно, "
+"активность мозга представляет собой сложную задачу."
 
 #: ../../source/cases/brain.rst:20
 msgid ""
-"Measuring qualitative activity of human brain is a very non trivial task."
-" It is only possible to get indirect measurement of what is treated and "
-"patients participate in a game that involves certain brain activities. In"
-" PyMC Labs I helped to create the model and a packaged solution to "
-"estimate the latent property of brain activity. The Bayesian model "
-"allowed to compile indirect measurements to inform about drug efficiency."
+"Measuring qualitative activity of human brain is a very non trivial task. It"
+" is only possible to get indirect measurement of what is treated and "
+"patients participate in a game that involves certain brain activities. In "
+"PyMC Labs I helped to create the model and a packaged solution to estimate "
+"the latent property of brain activity. The Bayesian model allowed to compile"
+" indirect measurements to inform about drug efficiency."
 msgstr ""
-
+"Измерение качественной активности человеческого мозга — весьма нетривиальная"
+" задача. Можно получить только косвенное измерение того, что лечится. А "
+"пациенты участвуют в игре, которая включает в себя определенные мозговые "
+"активности. В PyMC Labs я помог создать модель и комплексное решение для "
+"оценки латентного свойства мозговой активности. Байесовская модель позволила"
+" собрать косвенные измерения для информирования об эффективности лекарств."

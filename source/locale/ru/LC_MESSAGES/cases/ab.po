@@ -1,45 +1,54 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the In Search of the Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Maxim Kochurov, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
+"Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 13:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"POT-Creation-Date: 2023-07-14 12:14+0000\n"
+"PO-Revision-Date: 2023-07-14 12:01+0000\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../source/cases/ab.rst:4
 msgid "AB Testing"
-msgstr ""
+msgstr "А/Б-тестирование"
 
 #: ../../source/cases/ab.rst:16
 msgid ""
-"AB Testing is a very common hypothesis testing technique in many "
-"companies. Bayesian AB testing is not a new but rarely used approach to a"
-" classical problem. Unlike traditional, Frequentist, approach, it enables"
-" more than qualitative decisions."
+"AB Testing is a very common hypothesis testing technique in many companies. "
+"Bayesian AB testing is not a new but rarely used approach to a classical "
+"problem. Unlike traditional, Frequentist, approach, it enables more than "
+"qualitative decisions."
 msgstr ""
+"A/Б-тестирование — очень распространенный метод проверки гипотез во многих "
+"компаниях. Байесовское A/B-тестирование — не новый, но редко используемый "
+"подход к классической задаче. В отличие от традиционного частотного подхода,"
+" он позволяет принимать более качественные решения."
 
 #: ../../source/cases/ab.rst:20
 msgid ""
-"Bayesian AB Testing is about qualitative answers to the same questions. "
-"So instead of \"is there an effect\", you can say \"what is the effect\"."
-" While this sounds similar, the latter enables to go beyond and do "
-"decision-making with money in mind. You can plug Bayesian posterior into "
-"a financial model that translates to money language. Find more from the "
-":doc:`ODS workshop </talks/2022/data-elka/event>`."
+"Bayesian AB Testing is about qualitative answers to the same questions. So "
+"instead of \"is there an effect\", you can say \"what is the effect\". While"
+" this sounds similar, the latter enables to go beyond and do decision-making"
+" with money in mind. You can plug Bayesian posterior into a financial model "
+"that translates to money language. Find more from the :doc:`ODS workshop "
+"</talks/2022/data-elka/event>`."
 msgstr ""
-
+"Байесовское A/Б-тестирование — это качественные ответы на одни и те же "
+"вопросы. Так что вместо \"есть ли эффект\" можно сказать \"каков эффект\". "
+"Хотя это и звучит знакомо, последнее позволяет выйти за рамки и принимать "
+"решения с учетом затрат. Вы можете включить байесовскую апостериорную "
+"вероятность в финансовую модель, которая переводит результаты на язык денег."
+" Узнайте больше из :doc:`ODS воркшопа </talks/2022/data-elka/event> `."

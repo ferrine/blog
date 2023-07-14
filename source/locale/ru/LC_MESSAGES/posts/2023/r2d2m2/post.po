@@ -1,91 +1,106 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the In Search of the Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Maxim Kochurov, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
+"Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-14 13:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"PO-Revision-Date: 2023-07-14 12:01+0000\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:9
 msgid "The R2D2M2 Prior, the Awwwesome Linear Regression"
-msgstr ""
+msgstr "R2D2M2 Prior, потрясающая линейная регрессия"
 
-#: ../../source/posts/2023/r2d2m2/post.ipynb:-1
+#: ../../source/posts/2023/r2d2m2/post.ipynb-1
 msgid "cover"
-msgstr ""
+msgstr "cover"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:43
 msgid ""
-"There is an awesome paper that puts a simple idea of interpretable linear"
-" regression to an absolute. The `Intuitive Joint Priors for Bayesian "
-"Linear Multilevel Models: The R2D2M2 prior "
-"<https://arxiv.org/abs/2208.07132>`__. The idea resonates with me a lot, "
-"since I admire interpretable priors and the ability to describe the "
-"model, not an ability to explain."
+"There is an awesome paper that puts a simple idea of interpretable linear "
+"regression to an absolute. The `Intuitive Joint Priors for Bayesian Linear "
+"Multilevel Models: The R2D2M2 prior <https://arxiv.org/abs/2208.07132>`__. "
+"The idea resonates with me a lot, since I admire interpretable priors and "
+"the ability to describe the model, not an ability to explain."
 msgstr ""
+"Есть замечательная статья, которая доводит до идеала простую идею "
+"интерпретируемой линейной регрессии. `Intuitive Joint Priors for Bayesian "
+"Linear Multilevel Models: The R2D2M2 prior  "
+"<https://arxiv.org/abs/2208.07132> `__. Идея очень резонирует со мной, так "
+"как я восхищаюсь интерпретируемыми априорными распределениями и способностью"
+" описывать модель, а не способностью объяснять."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:45
 msgid ""
 "Explaining the model, you try to interpret parameters that are already "
-"present in the model, and you need to put some human-readable explanation"
-" of the meaning. It reminds me of the top-down approach, then you "
-"introduce parameters as you need them."
+"present in the model, and you need to put some human-readable explanation of"
+" the meaning. It reminds me of the top-down approach, then you introduce "
+"parameters as you need them."
 msgstr ""
+"Объясняя модель, вы пытаетесь интерпретировать параметры, которые уже "
+"присутствуют в модели, и вам нужно вложить какое-то понятное человеку "
+"объяснение смысла. Это напоминает мне нисходящий подход, когда вы вводите "
+"параметры по мере необходимости."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:47
 msgid ""
-"Describing the model is the opposite. You start with simple statements "
-"that you or your peers both understand. It is usually referred to as the "
-"bottom up approach, you start with assumptions you understand and "
-"complete the model as you go."
+"Describing the model is the opposite. You start with simple statements that "
+"you or your peers both understand. It is usually referred to as the bottom "
+"up approach, you start with assumptions you understand and complete the "
+"model as you go."
 msgstr ""
+"Описание модели наоборот. Вы начинаете с простых утверждений, понятных вам "
+"или вашим коллегам. Обычно его называют подходом «снизу вверх». Вы начинаете"
+" с предположений, которые понимаете, и завершаете модель по мере "
+"продвижения."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:49
 msgid ""
-"Mastering the latter is the essence of Bayesian modeling. In this sense, "
-"the paper is of great interest to me."
+"Mastering the latter is the essence of Bayesian modeling. In this sense, the"
+" paper is of great interest to me."
 msgstr ""
+"Освоение последнего является сутью байесовского моделирования. В этом смысле"
+" статья представляет для меня большой интерес."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:52
 msgid "Boston Housing Data"
-msgstr ""
+msgstr "Данные о жилье в Бостоне"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:54
 msgid ""
-"As a benchmark dataset, I took the Boston housing dataset. It has the "
-"bare minimum to check the model parametrization. I took the part of the "
-"linear regression I really need and ignored varying intercept and varying"
-" slope. Here is the full model I'm referring to."
+"As a benchmark dataset, I took the Boston housing dataset. It has the bare "
+"minimum to check the model parametrization. I took the part of the linear "
+"regression I really need and ignored varying intercept and varying slope. "
+"Here is the full model I'm referring to."
 msgstr ""
+"В качестве контрольного набора данных я взял набор данных о жилье в Бостоне."
+" У него есть минимум для проверки параметризации модели. Я взял ту часть "
+"линейной регрессии, которая мне действительно нужна, и проигнорировал "
+"вариативность параметров регрессии. Вот полная модель, о которой я говорю."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:65
 msgid ""
 "\\begin{equation}\n"
 "    \\begin{aligned}\n"
 "y_n & \\sim \\mathcal{N} (\\mu_n, \\sigma^2) \\\\\n"
-"\\mu_n &= b_{0}+ \\sum_{i=1}^p x_{ni} b_{i}+  \\sum_{g\\in G_0} u_{0 "
-"g_{j[n]}  }  + \\sum_{i=1}^p x_{ni} \\left( \\sum_{g \\in G_i} u_{i "
-"g_{j[n]}} \\right) \\\\\n"
+"\\mu_n &= b_{0}+ \\sum_{i=1}^p x_{ni} b_{i}+  \\sum_{g\\in G_0} u_{0 g_{j[n]}  }  + \\sum_{i=1}^p x_{ni} \\left( \\sum_{g \\in G_i} u_{i g_{j[n]}} \\right) \\\\\n"
 "b_{0}& \\sim  p(b_{0}) \\\\\n"
-"b_i &\\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}   "
-"\\phi_i \\tau^2\\right), \\quad\n"
-"    u_{ig_j} \\sim \\mathcal{N} \\left(0, "
-"\\frac{\\sigma^2}{\\sigma_{x_i}^2}   \\phi_{ig} \\tau^2\\right) \\\\\n"
+"b_i &\\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}   \\phi_i \\tau^2\\right), \\quad\n"
+"    u_{ig_j} \\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}   \\phi_{ig} \\tau^2\\right) \\\\\n"
 "    \\tau^2&= \\frac{R^2}{1-R^2}\\\\\n"
 "R^2  &\\sim \\operatorname{Beta}(\\mu_{R^2},\\varphi_{R^2}), \\ \\\n"
 "     \\phi \\sim \\operatorname{Dirichlet} (\\alpha), \\ \\\n"
@@ -93,27 +108,44 @@ msgid ""
 "\\end{aligned}\n"
 "\\end{equation}"
 msgstr ""
+"\\begin{equation}\n"
+"    \\begin{aligned}\n"
+"y_n & \\sim \\mathcal{N} (\\mu_n, \\sigma^2) \\\\\n"
+"\\mu_n &= b_{0}+ \\sum_{i=1}^p x_{ni} b_{i}+  \\sum_{g\\in G_0} u_{0 g_{j[n]}  }  + \\sum_{i=1}^p x_{ni} \\left( \\sum_{g \\in G_i} u_{i g_{j[n]}} \\right) \\\\\n"
+"b_{0}& \\sim  p(b_{0}) \\\\\n"
+"b_i &\\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}   \\phi_i \\tau^2\\right), \\quad\n"
+"    u_{ig_j} \\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}   \\phi_{ig} \\tau^2\\right) \\\\\n"
+"    \\tau^2&= \\frac{R^2}{1-R^2}\\\\\n"
+"R^2  &\\sim \\operatorname{Beta}(\\mu_{R^2},\\varphi_{R^2}), \\ \\\n"
+"     \\phi \\sim \\operatorname{Dirichlet} (\\alpha), \\ \\\n"
+"     \\sigma \\sim p(\\sigma). \\\\\n"
+"\\end{aligned}\n"
+"\\end{equation}"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:91
 msgid "Let's finally get our hands dirty with code!"
-msgstr ""
+msgstr "Давайте, наконец, программировать!"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:116
 msgid ""
-"It has to be remarked that I advocate normalizing your input data so it "
-"has :math:`\\mathbb{E}[X]=0`, :math:`\\mathbb{V}[X]=1`. This will save "
-"you a lot of time to figure out the right scale for slope parameters. "
-"Normalizing the output variable also makes a lot of sense. You may also "
-"notice that it is actually a part of the R2D2M2 linear regression "
-"parameterization. A rule of thumb is to take care of it one way or "
-"another."
+"It has to be remarked that I advocate normalizing your input data so it has "
+":math:`\\mathbb{E}[X]=0`, :math:`\\mathbb{V}[X]=1`. This will save you a lot"
+" of time to figure out the right scale for slope parameters. Normalizing the"
+" output variable also makes a lot of sense. You may also notice that it is "
+"actually a part of the R2D2M2 linear regression parameterization. A rule of "
+"thumb is to take care of it one way or another."
 msgstr ""
+"Следует отметить, что я настаиваю за нормализацию ваших входных данных, "
+"чтобы они имели :math:`\\mathbb{E}[X]=0`, :math:`\\mathbb{V}[Х]=1`. Это "
+"сэкономит вам много времени, чтобы определить правильный масштаб для "
+"параметров регрессии. Нормализация выходной переменной также имеет большой "
+"смысл. Вы также можете заметить, что на самом деле это часть параметризации "
+"линейной регрессии R2D2M2. Эмпирическое правило заключается в том, чтобы "
+"позаботиться об этом так или иначе."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:127
-msgid ""
-"b_i \\sim \\mathcal{N} \\left(0, "
-"\\frac{\\sigma^2}{\\sigma_{x_i}^2}\\right)"
-msgstr ""
+msgid "b_i \\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}\\right)"
+msgstr "b_i \\sim \\mathcal{N} \\left(0, \\frac{\\sigma^2}{\\sigma_{x_i}^2}\\right)"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:150
 msgid ""
@@ -121,156 +153,187 @@ msgid ""
 "effect to have elasticity interpretation. To do so, I apply ``log`` "
 "transformation on positive valued regressors."
 msgstr ""
+"Мы работаем с положительным результатом, ценами. Я также ожидаю, что "
+"переменный эффект будет иметь интерпретацию эластичности. Для этого я "
+"применяю логарифмическое преобразование к регрессорам с положительными "
+"значениями."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:193
 msgid "Non-centered R2D2M2"
-msgstr ""
+msgstr "Нецентрированный R2D2M2"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:195
 msgid ""
-"Whenever I see a normal distribution with mean and scale, I tend to use "
-"non-centered parameterization. I was shocked to see how different it is "
-"from the centered case. But before we go to the working examples, let's "
-"see how to make an amazing model miserably fail."
+"Whenever I see a normal distribution with mean and scale, I tend to use non-"
+"centered parameterization. I was shocked to see how different it is from the"
+" centered case. But before we go to the working examples, let's see how to "
+"make an amazing model miserably fail."
 msgstr ""
+"Всякий раз, когда я вижу нормальное распределение со средним значением и "
+"масштабом, я склонен использовать нецентрированную параметризацию. Я был "
+"потрясен, увидев, насколько он отличается от центрированного случая. Но "
+"прежде чем мы перейдем к рабочим примерам, давайте посмотрим, как заставить "
+"потрясающую модель с треском провалиться."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:481
-msgid "Yet it has no divergences, the parameter landscape is very complicated."
-msgstr ""
+msgid ""
+"Yet it has no divergences, the parameter landscape is very complicated."
+msgstr "И хотя у него нет расхождений, ландшафт параметров очень сложен."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:483
 msgid "Larger phi discourages large coefficients."
-msgstr ""
+msgstr "Большие :math:`\\phi` препятствуют большим коэффициентам."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:484
 msgid "There is also a banana shape relationship"
-msgstr ""
+msgstr "Существует также связь формы \"банана\""
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:485
 msgid ""
-"Step size should be very different if you are in the center of the banana"
-" or on its boundary."
+"Step size should be very different if you are in the center of the banana or"
+" on its boundary."
 msgstr ""
+"Размер шага должен сильно различаться, если вы находитесь в центре банана "
+"или на его границе."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:486
 msgid "Total sampling time on my Supermicro is almost 1 hour 🤯"
-msgstr ""
+msgstr "Общее время выборки на моем Supermicro почти 1 час 🤯"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:498
 msgid "Centered R2D2M2"
-msgstr ""
+msgstr "Центрированный R2D2M2"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:500
 msgid ""
 "To my surprise, this model parametrization is 20 times faster than a non-"
-"centered variant. Once you download the notebook, you can play around "
-"with some parameters below to get the idea of R2D2M2 strong or weak "
-"places. Here is the bare minimum of what you should know about the model:"
+"centered variant. Once you download the notebook, you can play around with "
+"some parameters below to get the idea of R2D2M2 strong or weak places. Here "
+"is the bare minimum of what you should know about the model:"
 msgstr ""
+"К моему удивлению, параметризация этой модели в 20 раз быстрее, чем "
+"нецентрированный вариант. После того, как вы загрузите ноутбук, вы можете "
+"поиграть с некоторыми параметрами ниже, чтобы получить представление о "
+"сильных и слабых сторонах R2D2M2. Вот минимум того, что вы должны знать о "
+"модели:"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:502
 msgid "You choose R2:"
-msgstr ""
+msgstr "Вы выбираете R2:"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:504
 msgid "In econometrics classes, you've seen what is R2."
-msgstr ""
+msgstr "На уроках эконометрики вы видели, что такое R2."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:505
 msgid "1 - is a perfect data fit"
-msgstr ""
+msgstr "1 - идеально описывает данные"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:506
 msgid "0 - total noise and predictors are irrelevant."
-msgstr ""
+msgstr "0 - общий шум и предикторы не имеют значения."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:507
 msgid "In a Bayesian setup, you do not pick one, you pick possible ones."
-msgstr ""
+msgstr "В байесовском подходе вы выбираете не один, а возможные варианты."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:508
 msgid ""
 "A suggestion is to pick a :math:`95\\%` range :math:`(R^2_{2.5\\%}, "
 "R^2_{97.5\\%})`."
 msgstr ""
+"Предлагается выбрать диапазон :math:`95\\%` :math:`(R^2_{2.5\\%}, "
+"R^2_{97.5\\%})`."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:510
 msgid "You choose variable importance:"
-msgstr ""
+msgstr "Вы выбираете важность переменных:"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:512
 msgid ""
-"There are usually many variables in the regression, one you might assume "
-"is more important than another."
+"There are usually many variables in the regression, one you might assume is "
+"more important than another."
 msgstr ""
+"Обычно в регрессии много переменных, и вы можете предположить, что одна "
+"важнее другой."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:513
-msgid ":math:`\\alpha_i` is the parameter to look into to express the knowledge."
+msgid ""
+":math:`\\alpha_i` is the parameter to look into to express the knowledge."
 msgstr ""
+":math:`\\alpha_i` — это параметр, на который следует обратить внимание, "
+"чтобы выразить предположения."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:514
 msgid ""
-":math:`\\alpha_i=1` is total unawareness of the importance of the "
-"variable."
-msgstr ""
+":math:`\\alpha_i=1` is total unawareness of the importance of the variable."
+msgstr ":math:`\\alpha_i=1` — это полное непонимание важности переменной."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:515
 msgid ""
 ":math:`\\alpha_i<1` tells the model you tend to think the :math:`i`'th "
 "variable is likely to be not significant."
 msgstr ""
+":math:`\\alpha_i<1` говорит модели, что вы склонны думать, что :math:`i`'я "
+"переменная, вероятно, не имеет значения."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:516
 msgid ":math:`\\alpha_i>1` informs your model not to ignore the variable."
 msgstr ""
+":math:`\\alpha_i>1` сообщает вашей модели, что переменную нельзя "
+"игнорировать."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:517
 msgid ""
-"Extremely large or small :math:`\\alpha_i` may cause numerical problems "
-"or divergences"
+"Extremely large or small :math:`\\alpha_i` may cause numerical problems or "
+"divergences"
 msgstr ""
+"Чрезвычайно большие или маленькие :math:`\\alpha_i` могут вызвать численные "
+"проблемы или расхождения"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:519
 msgid "0.001 was too small"
-msgstr ""
+msgstr "0,001 было слишком мало"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:520
 msgid "200 was too much"
-msgstr ""
+msgstr "200 было слишком много"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:521
 msgid "You can explore better reasonable bounds using this notebook"
-msgstr ""
+msgstr "Вы можете исследовать более разумные границы с помощью этого ноутбука"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:685
 msgid "Combining residual and sigma"
-msgstr ""
+msgstr "Объединение остатка и сигмы"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:696
 msgid ""
 "Sampling is much faster but there are divergences. Let's try to combine "
 ":math:`R^2` and :math:`\\sigma`"
 msgstr ""
+"Выборка намного быстрее, но есть расхождения. Попробуем объединить "
+":math:`R^2` и :math:`\\sigma`"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:859
 msgid "Yet, there is correlation in sigma and :math:`R^2`"
-msgstr ""
+msgstr "Тем не менее, есть корреляция между сигмой и :math:`R^2`"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:896
 msgid "What did the job was:"
-msgstr ""
+msgstr "Что решило проблему:"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:898
 msgid "Centered parametrization"
-msgstr ""
+msgstr "Центрированная параметризация"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:904
 msgid "Attaching residual sigma to the model and :math:`R^2` parametrization"
-msgstr ""
+msgstr "Добавление остаточной сигмы к модели и параметризация :math:`R^2`"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:925
 msgid "Sparse solution"
-msgstr ""
+msgstr "Разреженное решение"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:927
 msgid ""
@@ -279,62 +342,83 @@ msgid ""
 "model under this setting, we need variable importance which are "
 ":math:`\\alpha` in the model parameterization."
 msgstr ""
+"Теперь представьте, что мы рассматриваем некоторые сомнительные переменные. "
+"Мы не уверены, что должны их использовать, но некоторые из них могут "
+"оказаться полезными. Чтобы создать модель с этой настройкой, нам нужны "
+"переменные важности, которые имеют значение :math:`\\alpha` в параметризации"
+" модели."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:1045
 msgid ""
-"The amount of sparsity is incredible. Yet, there are few divergences and "
-"I think it can be ignored there."
+"The amount of sparsity is incredible. Yet, there are few divergences and I "
+"think it can be ignored there."
 msgstr ""
+"Количество разреженности невероятно. Тем не менее, есть несколько "
+"дивергенций, и я думаю, что это может быть проигнорировано."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:1047
 msgid ""
 "As authors claim, there are instabilities with low :math:`\\alpha`, and "
-"general recommendation (personal experience) is to exclude non-"
-"informative variables and set variable importance :math:`\\alpha` > 1"
+"general recommendation (personal experience) is to exclude non-informative "
+"variables and set variable importance :math:`\\alpha` > 1"
 msgstr ""
+"Как утверждают авторы, при низкой :math:`\\alpha` возникают нестабильности, "
+"и общая рекомендация (из личного опыта) состоит в том, чтобы исключить "
+"неинформативные переменные и установить важность переменной :math:`\\alpha` "
+"> 1."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:1081
 msgid "Conclusion"
-msgstr ""
+msgstr "Заключение"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:1083
 msgid "There are few practical advices to use R2D2M2 prior:"
 msgstr ""
+"Есть несколько практических советов по использованию R2D2M2 распределения:"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:1085
 msgid ""
 "Use the prior to weight variables that make sense. The sparsity inducing "
 "alpha leads to some instabilities (which you may ignore)."
 msgstr ""
+"Используйте дополнительную информацию, чтобы обозначить переменные, которые "
+"имеют смысл. Маленькие альфы, приводят к некоторым нестабильностям (которые "
+"вы можете иногда игнорировать)."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:1086
 msgid ""
 "Not always centered parametrization was great in my applications. I "
 "recommend trying both."
 msgstr ""
+"Не всегда центрированная параметризация была хороша в моих задачах. Я "
+"рекомендую попробовать обе."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:1087
 msgid ""
-"Coupling the error term sigma into the model leads to fewer instabilities"
-" and more interpretable sigma prior."
+"Coupling the error term sigma into the model leads to fewer instabilities "
+"and more interpretable sigma prior."
 msgstr ""
+"Включение сигмы ошибки в модель приводит к меньшему количеству "
+"нестабильностей и более интерпретируемой сигме."
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:4
 msgid ""
-"If you have new ideas after reading the notebook, want to discuss it in "
-"more details or want to work with me, you can always :doc:`reach me out "
+"If you have new ideas after reading the notebook, want to discuss it in more"
+" details or want to work with me, you can always :doc:`reach me out "
 "</contacts>`."
 msgstr ""
+"Если после прочтения поста у вас появились новые идеи, вы хотите обсудить их"
+" более подробно или хотите поработать со мной, вы всегда можете "
+":doc:`связаться со мной </contacts> `."
 
-#: ../../source/posts/2023/r2d2m2/post.ipynb
+#: ../../source/posts/2023/r2d2m2/post.ipynb:0
 msgid "Resources"
-msgstr ""
+msgstr "Ресурсы"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:11
 msgid "Download the :download:`post.ipynb`"
-msgstr ""
+msgstr "Скачать :download:`post.ipynb`"
 
 #: ../../source/posts/2023/r2d2m2/post.ipynb:12
 msgid "Download the :download:`environment.yml`"
-msgstr ""
-
+msgstr "Скачать :download:`environment.yml`"

@@ -1,54 +1,58 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Max Kochurov
-# This file is distributed under the same license as the In Search of the
-# Holy Posterior package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
-#
+# This file is distributed under the same license as the In Search of the Holy Posterior package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Maxim Kochurov, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: In Search of the Holy Posterior \n"
+"Project-Id-Version: In Search of the Holy Posterior\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-14 13:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
-"Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"PO-Revision-Date: 2023-07-14 12:01+0000\n"
+"Last-Translator: Maxim Kochurov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/ferrine/teams/167491/ru/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../../source/talks/2022/data-elka/event.rst:2
 msgid "Bayesian AB Testing"
-msgstr ""
+msgstr "Байесовское А/Б-тестирование"
 
 #: ../../source/talks/2022/data-elka/event.rst:11
 msgid ""
-"I talk about the Bayesian approach to AB testing. The approach consists "
-"of 3 steps: making a hypothesis about the experiment, understanding time "
-"and data constraints, and interpreting the results after collecting the "
-"data. The advantage is that the Bayesian AB(C) test does not require "
-"p-values, corrections or bootstrap procedures, is conservative (does not "
-"exaggerate the result on small data) and is easily interpreted for "
-"business."
+"I talk about the Bayesian approach to AB testing. The approach consists of 3"
+" steps: making a hypothesis about the experiment, understanding time and "
+"data constraints, and interpreting the results after collecting the data. "
+"The advantage is that the Bayesian AB(C) test does not require p-values, "
+"corrections or bootstrap procedures, is conservative (does not exaggerate "
+"the result on small data) and is easily interpreted for business."
 msgstr ""
+"Я говорю о байесовском подходе к А/Б-тестированию. Подход состоит из 3 "
+"шагов: выдвижение гипотезы об эксперименте, понимание ограничений по времени"
+" и данным и интерпретация результатов после сбора данных. Преимущество "
+"заключается в том, что байесовский тест AB(C) не требует p-значений, "
+"поправок или процедур бутстрапа, является консервативным (не преувеличивает "
+"результат на небольших данных) и легко интерпретируется для бизнеса."
 
 #: ../../source/talks/2022/data-elka/event.rst:23
 msgid "Video"
-msgstr ""
+msgstr "Видео"
 
 #: ../../source/talks/2022/data-elka/event.rst:29
 msgid "Materials"
-msgstr ""
+msgstr "Материалы"
 
 #: ../../source/talks/2022/data-elka/event.rst:31
 msgid ":xref:`talks:2022:data-elka`"
-msgstr ""
+msgstr ":xref:`talks:2022:data-elka`"
 
 #: ../../source/talks/2022/data-elka/event.rst:32
 msgid ":download:`Presentation <https://disk.yandex.ru/i/W6YxDdeX78pe1w>`"
-msgstr ""
-
+msgstr ":download:`Презентация <https://disk.yandex.ru/i/W6YxDdeX78pe1w> `"
